@@ -26,8 +26,23 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
           text-align: center;
           font-size: 0.7em;
         }
-        footer a {
+        footer a, footer a:visited {
           color: #1f3a44;
+        }
+        h2 {
+          margin-bottom: 1ex;
+          font-size: 0.9em;
+        }
+        h1 {
+          margin-top: 0;
+          margin-bottom: 1em;
+          font-size: 2.2em;
+        }
+        a {
+          color: #0033cc;
+        }
+        a:visited {
+          color: #8C489F;
         }
     </style>
 </head>
@@ -87,6 +102,9 @@ def process(directory, header, breadcrumb, depth):
     out.write(Template(INDEX_TEMPLATE).render(dnames=dnames, fnames=fnames, header=header, breadcrumb=breadcrumb, depth=depth))
     out.close()
 
+    if breadcrumb == 'Index of':
+        breadcrumb = ''
+
     for dname in dnames:
         process(directory + '/' + dname, '', breadcrumb + header + ' &gt;', depth + '../')
 
@@ -96,7 +114,7 @@ def main():
     args = parser.parse_args()
     directory = args.dir if args.dir else os.getcwd()
 
-    process(directory, '', '', '')
+    process(directory, '', 'Index of', '')
 
 if __name__ == '__main__':
     main()
