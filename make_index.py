@@ -8,6 +8,7 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
 
 <head>
     <title>${header}</title>
+    <link rel="stylesheet" type="text/css" href="site/style.css">
 </head>
 
 <body>
@@ -28,7 +29,11 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
 </html>
 """
 
-EXCLUDED = ['.git', 'index.html', 'make_index.py']
+EXCLUDED = [
+'.git',
+'site',
+'index.html',
+'make_index.py']
 
 import os
 import argparse
