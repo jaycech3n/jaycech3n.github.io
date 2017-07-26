@@ -33,6 +33,13 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
           margin-bottom: 1ex;
           font-size: 0.9em;
         }
+        h2 a, h2 a:visited {
+          color: #1f3a44;
+          text-decoration: none;
+        }
+        h2 a:hover {
+          text-decoration: underline;
+        }
         h1 {
           margin-top: 0;
           margin-bottom: 1em;
@@ -49,7 +56,21 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
 
 <body>
 
-<h2>${breadcrumb}</h2>
+<h2>
+% if not breadcrumb:
+    Index of
+% else:
+    <%!
+        import os
+        def bn(dir):
+            return os.path.basename(dir)
+    %>
+    % for dir in breadcrumb:
+        <a href="${dir}">${bn(dir)}</a>
+        &nbsp;&gt;&nbsp;
+    % endfor
+%endif
+</h2>
 <h1>${header}</h1>
 
 <ul>
@@ -83,14 +104,17 @@ EXCLUDED = [
 'about.html',
 'make_index.py']
 
+
 import os
 import argparse
 
 # May need to do "pip install mako"
 from mako.template import Template
 
+
 def process(directory, header, breadcrumb, depth):
     print('Processing' + directory + '...')
+    print(breadcrumb)
 
     header = header if header else os.path.basename(directory)
     fnames = [name for name in sorted(os.listdir(directory))
@@ -102,11 +126,10 @@ def process(directory, header, breadcrumb, depth):
     out.write(Template(INDEX_TEMPLATE).render(dnames=dnames, fnames=fnames, header=header, breadcrumb=breadcrumb, depth=depth))
     out.close()
 
-    if breadcrumb == 'Index of':
-        breadcrumb = ''
+    breadcrumb.append(directory)
 
     for dname in dnames:
-        process(directory + '/' + dname, '', breadcrumb + header + ' &gt;', depth + '../')
+        process(directory + '/' + dname, '', breadcrumb, depth + '../')
 
 def main():
     parser = argparse.ArgumentParser()
@@ -114,7 +137,7 @@ def main():
     args = parser.parse_args()
     directory = args.dir if args.dir else os.getcwd()
 
-    process(directory, '', 'Index of', '')
+    process(directory, '', [], '')
 
 if __name__ == '__main__':
     main()
