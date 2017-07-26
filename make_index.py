@@ -10,17 +10,21 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
     <title>${header}</title>
     <style>
         body {
+          margin: 2em 8em 8em 4em;
           background-color: #fcfcfc;
-          color: #223f4a;
+          color: #1f3a44;
           font-size: 16px;
         }
-        @media screen and (orientation:landscape) {
-        body {
-          margin: 1em 10% 2em 10%;
+        footer {
+          position: absolute;
+          bottom: 1em;
+          border: 1px solid #1f3a44;
+          padding: 1px;
+          text-align: center;
+          font-size: 0.8em;
         }
-        }
-        @media screen and (orientation:landscape) {
-          margin: 1em;
+        footer a {
+          color: #1f3a44;
         }
     </style>
 </head>
@@ -40,7 +44,13 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
 </ul>
 
 <footer>
+<script src="https://use.fontawesome.com/fa49007a92.js"></script>
 Joshua Chen 2017
+<a href="about.html">
+    <span class="fa fa-hand-spock-o" id="hi"
+    onmouseover="javascript:document.getElementById('hi').setAttribute('class','fa fa-hand-lizard-o')"
+    onmouseout="javascript:document.getElementById('hi').setAttribute('class','fa fa-hand-spock-o')"></span>
+</a>
 </footer>
 
 </body>
@@ -52,6 +62,7 @@ EXCLUDED = [
 '.git',
 'site',
 'index.html',
+'about.html',
 'make_index.py']
 
 import os
