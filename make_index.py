@@ -18,7 +18,7 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
           font-family: 'Fira Mono', monospace;
         }
         footer {
-          position: absolute;
+          position: relative;
           bottom: 1em;
           box-shadow: 0px 1px 3px 1px #a0a0a0;
           background-color: #ffffff;
