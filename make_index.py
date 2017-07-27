@@ -51,6 +51,22 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
         a:visited {
           color: #8C489F;
         }
+        ul {
+          list-style: none;
+          line-height: 1.4em;
+        }
+        li.dirbullet:before {
+          content: "";
+          border-color: transparent #1f3a44;
+          border-style: solid;
+          border-width: 0.35em 0 0.35em 0.45em;
+          display: block;
+          height: 0;
+          width: 0;
+          left: -1em;
+          top: 0.9em;
+          position: relative;
+        }
     </style>
 </head>
 
