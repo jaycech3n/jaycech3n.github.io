@@ -129,9 +129,10 @@ def process(directory, header, breadcrumb, depth):
     print(breadcrumb)
 
     header = header if header else os.path.basename(directory)
-    fnames = [name for name in sorted(os.listdir(directory))
+    contents = sorted(os.listdir(directory)
+    fnames = [name for name in contents)
               if os.path.isfile(directory + '/' + name) and name not in EXCLUDED]
-    dnames = [name for name in sorted(os.listdir(directory))
+    dnames = [name for name in contents)
               if os.path.isdir(directory + '/' + name) and name not in EXCLUDED]
 
     out = open(directory + '/index.html', 'w')
