@@ -77,8 +77,8 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
 % if not breadcrumb:
     Index of
 % else:
-    % for dir in breadcrumb:
-        <a href="../">${dir}</a>
+    % for i, dir in enumerate(breadcrumb):
+        <a href="${'../'*(depth-i)}">${dir}</a>
         &nbsp;&gt;&nbsp;
     % endfor
 %endif
@@ -97,7 +97,7 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
 <footer>
 <script src="https://use.fontawesome.com/fa49007a92.js"></script>
 Joshua Chen 2017
-<a href="${depth}about.html">
+<a href="${'../'*depth}about.html">
     <span class="fa fa-hand-spock-o" id="hi"
     onmouseover="javascript:document.getElementById('hi').setAttribute('class','fa fa-hand-lizard-o')"
     onmouseout="javascript:document.getElementById('hi').setAttribute('class','fa fa-hand-spock-o')"></span>
@@ -129,10 +129,10 @@ def process(directory, header, breadcrumb, depth):
     print(breadcrumb)
 
     header = header if header else os.path.basename(directory)
-    contents = sorted(os.listdir(directory)
-    fnames = [name for name in contents)
+    contents = sorted(os.listdir(directory))
+    fnames = [name for name in contents
               if os.path.isfile(directory + '/' + name) and name not in EXCLUDED]
-    dnames = [name for name in contents)
+    dnames = [name for name in contents
               if os.path.isdir(directory + '/' + name) and name not in EXCLUDED]
 
     out = open(directory + '/index.html', 'w')
@@ -142,7 +142,7 @@ def process(directory, header, breadcrumb, depth):
     breadcrumb.append(header)
 
     for dname in dnames:
-        process(directory + '/' + dname, '', breadcrumb, depth + '../')
+        process(directory + '/' + dname, '', breadcrumb, depth + 1)
 
 def main():
     parser = argparse.ArgumentParser()
@@ -150,7 +150,7 @@ def main():
     args = parser.parse_args()
     directory = args.dir if args.dir else os.getcwd()
 
-    process(directory, '', [], '')
+    process(directory, '', [], 0)
 
 if __name__ == '__main__':
     main()
