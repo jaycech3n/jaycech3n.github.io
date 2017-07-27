@@ -76,13 +76,8 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
 % if not breadcrumb:
     Index of
 % else:
-    <%!
-        import os
-        def bn(dir):
-            return os.path.basename(dir)
-    %>
     % for dir in breadcrumb:
-        <a href="${dir}">${bn(dir)}</a>
+        <a href="../">${dir}</a>
         &nbsp;&gt;&nbsp;
     % endfor
 %endif
@@ -142,7 +137,7 @@ def process(directory, header, breadcrumb, depth):
     out.write(Template(INDEX_TEMPLATE).render(dnames=dnames, fnames=fnames, header=header, breadcrumb=breadcrumb, depth=depth))
     out.close()
 
-    breadcrumb.append(directory)
+    breadcrumb.append(header)
 
     for dname in dnames:
         process(directory + '/' + dname, '', breadcrumb, depth + '../')
