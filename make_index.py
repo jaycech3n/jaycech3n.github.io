@@ -114,7 +114,8 @@ EXCLUDED = [
 'site',
 'index.html',
 'about.html',
-'make_index.py']
+'make_index.py',
+'correcthorsebatterystaple']
 
 
 import os
