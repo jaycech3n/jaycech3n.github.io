@@ -2,92 +2,177 @@
 <html>
 
 <head>
-    <title>jaycech3n.github.io</title>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,500" rel="stylesheet">
-    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAn1BMVEUAAAAiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiLhUdjZAAAANHRSTlMAAQIDBAcICQsNEBIaHCgtNTY/TlRVV1ldcXN/goiLjo+XoKaorbfDxcfIzM/c6Ont9/n9yFQzqQAAAK1JREFUKFNtydtagmAYBeFBSMhCDUUrKdxEobmhn3X/19aBjwr4zeG8cC6KAXh8plP2B0BedeFT8LHvr5wBvjQ2gXTp2wBYsPsJbZCmNuy3kQ3gBQZ81bw4Zevaa/9Yi7CWdFTahtI9DCUp+3X95k/0ypMkTYbKGz+oTj2Y1dr0+FZ8g3c1K69/oHbJBYoOVMH5j9TtDQDvcAcaAMzvvwogdAZoBLn1dfDY2BD8A187Mm9IXZdQAAAAAElFTkSuQmCC" rel="icon" type="image/x-icon" />
-    <style>
-        body {
-          margin: 4em 4em 4em 4em;
-          background-color: #f6f6f6;
-          color: #1f3a44;
-          font-size: 16px;
-          font-family: 'Fira Mono', monospace;
-        }
-        footer {
-          position: fixed;
-          bottom: 1.4em;
-          box-shadow: 0px 1px 3px 1px #a0a0a0;
-          background-color: #ffffff;
-          padding: 1px;
-          text-align: center;
-          font-size: 0.7em;
-        }
-        footer a, footer a:visited {
-          color: #1f3a44;
-        }
-        h2 {
-          margin-bottom: 1ex;
-          font-size: 0.9em;
-        }
-        h2 a, h2 a:visited {
-          color: #1f3a44;
-          text-decoration: none;
-        }
-        h2 a:hover {
-          text-decoration: underline;
-        }
-        h1 {
-          margin-top: 0;
-          margin-bottom: 1em;
-          font-size: 2.2em;
-        }
-        a {
-          color: #0033cc;
-        }
-        a:visited {
-          color: #8C489F;
-        }
-        ul {
-          list-style: none;
-          line-height: 1.4em;
-        }
-        li.dirbullet:before {
-          content: "";
-          border-color: transparent #1f3a44;
-          border-style: solid;
-          border-width: 0.35em 0 0.35em 0.45em;
-          display: block;
-          height: 0;
-          width: 0;
-          left: -1em;
-          top: 0.9em;
-          position: relative;
-        }
-    </style>
+<title>Josh Chen</title>
+<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,600" rel="stylesheet">
+<link href="favicon.png" rel="icon" type="image/x-icon" />
+<style>
+  body {
+    background-color: #f6f6f6;
+    color: #1f3a44;
+    font-size: 16px;
+    font-family: 'Fira Mono', monospace;
+  }
+
+  #main {
+    text-align: justify;
+    background-color: #ffffff;
+    margin: 2em auto;
+    padding: 3em 5em 0.75em 5em;
+    box-shadow: 0px 1px 3px 0px #a0a0a0;
+    border-radius: 4px;
+    line-height: 1.4em;
+  }
+  #main a, #main a:visited {
+    color: #1f3a44;
+    text-decoration: none;
+    border-bottom: 2px #1f3a44 groove;
+  }
+  #main a:hover {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+  }
+  #main ul {
+    text-align: left;
+    padding-left: 1em;
+  }
+
+  #portrait {
+    text-align: center;
+    margin-top: 0.5em;
+  }
+  #portrait img {
+    width: 12em;
+    border-radius: 50%;
+    border: 1px solid #f6f6f6;
+    box-shadow: 0 0 3px 1px #a0a0a0;
+  }
+  #heading {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+  #cv {
+    padding-top: 1.5em;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 1.2em;
+    border-bottom: 2px #1f3a44 groove;
+  }
+  #social {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 4em;
+  }
+  #social a {
+    border: 0;
+  }
+  #social a:hover {
+    border: 0;
+  }
+  #social span {
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+  }
+  #footer {
+    text-align: center;
+    font-size: 0.7em;
+    /* border-top: 2px #1f3a44 groove; */
+  }
+
+  #main p:before {
+    font-family: FontAwesome;
+    display: block;
+    position: relative;
+    width: 0;
+  }
+  /* #about:before {
+    content: "\f19c";
+    left: -1.7em;
+    top: 1.3em;
+  } */
+  #work:before {
+    content: "\f040";
+    left: -1.5em;
+    top: 1.32em;
+  }
+  #play:before {
+    content: "\f0fc";
+    left: -1.5em;
+    top: 1.38em;
+  }
+  #links:before {
+    content: "\f0ac";
+    left: -1.5em;
+    top: 1.4em;
+  }
+
+  @media screen and (orientation:landscape) {
+    #main {
+      max-width: 32em;
+    }
+  }
+</style>
 </head>
 
 <body>
 
-<h2>
-    Index of
-</h2>
-<h1>jaycech3n.github.io</h1>
+<section id="main">
+
+<p id="portrait">
+<img src="https://www.gravatar.com/avatar/74fea4a3778ac9f5ac1b5b8e043f3449?s=1200" />
+</p>
+
+<p id="heading">
+Hi, I'm Josh.
+</p>
+
+<p id="about">
+<strong>I study mathematics at the University of Bonn</strong>, with my feet in both the pure and the applied.
+The things occupying me at the moment include mathematical logic and type theory on the one hand;
+data science, machine learning and natural language processing on the other.
+</p>
+
+<p id="cv">
+<a href="Curriculum Vitae.pdf">
+  <span class="fa fa-book"></span>
+  <strong>Curriculum Vitae</strong>
+</span>
+</p>
+
+<p id="work">
+<strong>Things I have worked/am working on</strong> include:
+</p>
 
 <ul>
-    <li class="dirbullet"><a href="Computational Fact-Checking">Computational Fact-Checking/<a></li>
-    <li class="filebullet"><a href="A pre-introduction to homotopy type theory.pdf">A pre-introduction to homotopy type theory.pdf<a></li>
-    <li class="filebullet"><a href="Curriculum Vitae.pdf">Curriculum Vitae.pdf<a></li>
+  <li><a href="Computational Fact-Checking/Computational Fact-Checking.pdf">Automated</a> <a href="Computational Fact-Checking/Automated fact-checking - Jun 20.pdf">fact</a>-<a href="Computational Fact-Checking/Automated fact-checking - Jul 25.pdf">checking</a></li>
+  <li><a href="https://github.com/jaycech3n/TTM">Topic modeling</a></li>
+  <li><a href="A pre-introduction to homotopy type theory.pdf">Homotopy type theory</a></li>
+  <li><a href="The Temperley-Lieb categories and skein modules.pdf">Category theory, quantum algebra and topological invariants</a></li>
 </ul>
 
-<footer>
+<p id="play">
+<strong>In my spare time</strong> I like to
+<a href="https://github.com/jaycech3n" target="_blank">code</a>,
+<a href="https://en.wikipedia.org/wiki/Parkour" target="_blank">trace</a>
+and
+<a href="https://soundcloud.com/jaycech3n" target="_blank">sing</a>.
+</p>
+
+<p id="links">
+Feel free to poke around here, or <strong>find me online</strong> elsewhere at:
+</p>
+
+<p id="social">
+<a href="https://twitter.com/jaycech3n" target="_blank"><span class="fa fa-lg fa-twitter" title="Twitter"></span></a>
+<a href="https://www.facebook.com/jaycech3n" target="_blank"><span class="fa fa-lg fa-facebook" title="Facebook"></span></a>
+<a href="https://www.linkedin.com/in/joshua-chen-ws/" target="_blank"><span class="fa fa-lg fa-linkedin" title="LinkedIn"></span></a>
+<a href="https://github.com/jaycech3n" target="_blank"><span class="fa fa-lg fa-github" title="GitHub"></span></a>
+<a href="https://soundcloud.com/jaycech3n" target="_blank"><span class="fa fa-lg fa-soundcloud" title="SoundCloud"></span></a>
+</p>
+
+</section>
+
 <script src="https://use.fontawesome.com/fa49007a92.js"></script>
-Joshua Chen 2017
-<a href="about.html">
-    <span class="fa fa-hand-spock-o" id="hi"
-    onmouseover="javascript:document.getElementById('hi').setAttribute('class','fa fa-hand-lizard-o')"
-    onmouseout="javascript:document.getElementById('hi').setAttribute('class','fa fa-hand-spock-o')"></span>
-</a>
-</footer>
 
 </body>
 
