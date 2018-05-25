@@ -58,7 +58,7 @@ ul#list li {
 
 #social {
   text-align: center;
-  padding-top: 1em;
+  padding-top: 0.5em;
   padding-bottom: 4em;
 }
 #social a, #social a:hover {
@@ -125,24 +125,17 @@ ul#list li {
   max-width: 200px;
 }
 
-#heading {
-  text-align: center;
-  font-weight: 400;
-  font-size: 1.6em;
-}
-
 #about {
   text-indent: 0;
-  text-align: left;
 }
 
 #work, #play, #links {
-  padding-top: 1em;
+  padding-top: 1.4em;
 }
 
 #social {
   text-align: center;
-  padding-top: 1em;
+  padding-top: 0.4em;
   padding-bottom: 4em;
 }
 #social a, #social a:hover {
@@ -153,11 +146,6 @@ ul#list li {
   margin-right: 0.4em;
 }
 
-#footer {
-  text-align: center;
-  font-size: 0.7em;
-}
-
 #main p:before {
   font-family: "FontAwesome";
   display: inline;
@@ -165,14 +153,5 @@ ul#list li {
   width: 0;
   left: 0;
   top: 0;
-}
-#work:before {
-  content: "\f02d";
-}
-#play:before {
-  content: "\f0f4";
-}
-#links:before {
-  content: "\f0ac";
 }
 }
