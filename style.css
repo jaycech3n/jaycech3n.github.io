@@ -52,10 +52,6 @@ strong {
   text-indent: 1.5em;
 }
 
-#work, #play, #links {
-  padding-top: 1em;
-}
-
 ul#list li {
   margin-bottom: 0.2em;
 }
@@ -138,6 +134,10 @@ ul#list li {
 #about {
   text-indent: 0;
   text-align: left;
+}
+
+#work, #play, #links {
+  padding-top: 1em;
 }
 
 #social {
