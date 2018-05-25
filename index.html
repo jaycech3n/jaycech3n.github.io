@@ -4,112 +4,8 @@
 <head>
 <title>Josh Chen</title>
 <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700" rel="stylesheet">
-<link href="favicon.png" rel="icon" type="image/x-icon" />
-<style>
-  body {
-    background-color: #f6f6f6;
-    color: #1f3a44;
-    font-size: 16px;
-    font-family: "Fira Mono", monospace;
-  }
-  strong {
-    font-weight: 700;
-  }
-
-  #main {
-    text-align: justify;
-    background-color: #ffffff;
-    margin: 2em auto;
-    padding: 3.4em 6.4em 0.75em 6.4em;
-    box-shadow: 0px 1px 3px 0px #a0a0a0;
-    border-radius: 4px;
-    line-height: 1.4em;
-  }
-  #main a, #main a:visited {
-    color: #1f3a44;
-    text-decoration: none;
-    border-bottom: 2px #1f3a44 groove;
-  }
-  #main a:hover {
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-  }
-  #main ul {
-    text-align: left;
-    padding-left: 2em;
-  }
-
-  #portrait {
-    text-align: center;
-    margin-top: 0.5em;
-  }
-  #portrait img {
-    width: 12em;
-    border-radius: 50%;
-    border: 1px solid #f6f6f6;
-    box-shadow: 0 0 3px 1px #a0a0a0;
-  }
-
-  #heading {
-    text-align: center;
-    font-weight: 400;
-    font-size: 1.6em;
-  }
-
-  #about {
-    text-indent: 1.5em;
-  }
-
-  #social {
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 4em;
-  }
-  #social a {
-    border: 0;
-  }
-  #social a:hover {
-    border: 0;
-  }
-  #social span {
-    margin-left: 0.4em;
-    margin-right: 0.4em;
-  }
-
-  #footer {
-    text-align: center;
-    font-size: 0.7em;
-  }
-
-  #main p:before {
-    font-family: "FontAwesome";
-    display: block;
-    position: relative;
-    width: 0;
-    left: -1.6em;
-    top: 1.4em;
-  }
-  /* #about:before {
-    content: "\f19c";
-    left: -1.7em;
-    top: 1.3em;
-  } */
-  #work:before {
-    content: "\f02d";
-  }
-  #play:before {
-    content: "\f0f4";
-  }
-  #links:before {
-    content: "\f0ac";
-  }
-
-  @media screen and (orientation:landscape) {
-    #main {
-      max-width: 32em;
-    }
-  }
-</style>
+<link href="favicon.png" rel="icon" type="image/x-icon">
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -117,7 +13,7 @@
 <section id="main">
 
 <p id="portrait">
-<img src="https://www.gravatar.com/avatar/74fea4a3778ac9f5ac1b5b8e043f3449?s=1200" />
+<img src="https://www.gravatar.com/avatar/74fea4a3778ac9f5ac1b5b8e043f3449?s=1200">
 </p>
 
 <p id="heading">
@@ -125,29 +21,29 @@ Hi, I'm Josh.
 </p>
 
 <p id="about">
-<strong>I study mathematics at the University of Bonn</strong>, with my feet in both the pure and the applied.
-The things occupying me at the moment include mathematical logic and type theory on the one hand;
+<strong>I study mathematics at the University of Bonn</strong>, with my feet in both the pure and the applied&mdash;mathematical logic and type theory on the one hand;
 data science, machine learning and natural language processing on the other.
 </p>
 
 <p id="work">
-<strong>Things I have worked/am working on</strong> include:
+<strong>Things I <span class="content-normal">have worked/am working</span><span class="content-small">work</span> on</strong><span class="content-normal"> include</span>:
 </p>
 
-<ul>
+<p>
+<ul id="list">
   <li><a href="Computational Fact-Checking/Computational Fact-Checking.pdf" target="_blank">Automated</a> <a href="Computational Fact-Checking/Automated fact-checking - Jun 20.pdf" target="_blank">fact</a>-<a href="Computational Fact-Checking/Automated fact-checking - Jul 25.pdf" target="_blank">checking</a></li>
   <li><a href="https://github.com/jaycech3n/TTM" target="_blank">Topic modeling</a></li>
   <li><a href="A pre-introduction to homotopy type theory.pdf" target="_blank">Homotopy type theory</a> and <a href="https://github.com/jaycech3n/HoTT" target="_blank">proof automation</a></li>
   <li><a href="https://arxiv.org/abs/1502.06845" target="_blank">Category theory, quantum algebra and topological invariants</a></li>
 </ul>
+</p>
 
-<p>
-For more details see my
-<a href="Joshua Chen.pdf"><strong>curriculum vitae</strong></a>.
+<p id="cv">
+<span class="content-normal">For more details</span><span class="content-small">also</span> see my <a href="Joshua Chen.pdf" target="_blank"><strong>curriculum vitae</strong></a>.
 </p>
 
 <p id="play">
-<strong>In my spare time</strong> I like to
+<strong>In my spare time</strong> I<span class="content-normal"> like to</span>
 <a href="https://github.com/jaycech3n" target="_blank">code</a>,
 <a href="https://en.wikipedia.org/wiki/Parkour" target="_blank">trace</a>
 and
@@ -155,7 +51,7 @@ and
 </p>
 
 <p id="links">
-Feel free to poke around here, or <strong>find me online</strong> elsewhere at:
+<span class="content-normal">Feel free to poke around here, or <strong>find me online</strong></span><span class="content-small"><strong>Find me</strong></span> elsewhere<span class="content-normal"> at</span>:
 </p>
 
 <p id="social">
