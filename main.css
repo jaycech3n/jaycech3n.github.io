@@ -46,6 +46,15 @@ a:hover {
     text-decoration: underline;
 }
 
+.tt {
+    font-family: monospace;
+}
+
+i.fa {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
 div#main {    
     /* display */
     display: flex;
@@ -102,6 +111,9 @@ div#content {
     /* layout */
     flex: 1;
     padding-top: 2em;
+
+    /* dimensions */
+    width: 100%;
 }
 
 @media screen and (max-width: 720px) {
@@ -226,6 +238,10 @@ li.twitter:before {
 
 li.linkedin:before {
     content: "\f0e1";
+}
+
+li.email:before {
+    content: "\f003"
 }
 
 @media screen and (max-width: 720px) {
@@ -357,7 +373,7 @@ section#maintext {
 }
 
 section#maintext:after {
-    content: "Handcoded with \2665  2018 Joshua Chen";
+    content: "Hand-coded with \2665  2018 Joshua Chen";
     position: absolute;
     bottom: -7em;
     height: 3em;
@@ -396,4 +412,26 @@ section#maintext {
 section#maintext:after {
     left: 0;
 }
+}
+
+ul.contact {
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+ul.contact li {
+    margin-left: 0;
+    margin-bottom: 1em;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+ul.contact li:before {
+    display: inline-block;
+    width: 1em;
+    padding-right: 0.75em;
+
+    font-family: "FontAwesome";
+    font-size: 1.25em;
+    text-align: center;
 }

@@ -2,67 +2,69 @@
 <html>
 
 <head>
-<title>Josh Chen</title>
-<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700" rel="stylesheet">
-<link href="style.css" rel="stylesheet" type="text/css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About - Joshua Chen</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+<link href="/main.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
 </head>
 
 <body>
 
-<section id="main">
-
-<p id="portrait">
-<img src="https://www.gravatar.com/avatar/74fea4a3778ac9f5ac1b5b8e043f3449?s=400">
-</p>
-
-<p id="heading">
-Hi, I'm Josh.
-</p>
-
-<p id="about" class="section">
-I'm a mathematician by training, interested in both the pure and the applied.
-My current work is in type theory and mathematical logic on the one hand, and machine learning and natural language processing on the other.
-</p>
-
-<p id="work">
-<strong>Current work</strong>
-</p>
-
-<p>
-<ul id="list">
-  <li><a href="Computational Fact-Checking/Computational Fact-Checking.pdf" target="_blank">Automated</a> <a href="Computational Fact-Checking/Automated fact-checking - Jun 20.pdf" target="_blank">fact</a>-<a href="Computational Fact-Checking/Automated fact-checking - Jul 25.pdf" target="_blank">checking</a></li>
-  <li><a href="https://github.com/jaycech3n/TTM" target="_blank">Topic modeling</a></li>
-  <li><a href="A pre-introduction to homotopy type theory.pdf" target="_blank">Homotopy type theory</a> and <a href="https://github.com/jaycech3n/HoTT" target="_blank">proof automation</a></li>
-  <li><a href="https://arxiv.org/abs/1502.06845" target="_blank">Category theory, quantum algebra and topological invariants</a></li>
-</ul>
-</p>
-
-<p id="cv">
-<span class="content-normal">For more details</span><span class="content-small">also</span> see my <a href="Joshua Chen.pdf" target="_blank"><strong>curriculum vitae</strong></a>.
-</p>
-
-<p id="play">
-<strong>For fun,</strong> I
-<a href="https://github.com/jaycech3n" target="_blank">code</a>,
-<a href="https://en.wikipedia.org/wiki/Parkour" target="_blank">trace</a>
-and
-<a href="https://soundcloud.com/jaycech3n" target="_blank">sing</a>.
-</p>
-
-<p id="links">
-<span class="content-normal">You can <strong>find me online</strong></span><span class="content-small"><strong>Find me</strong></span> elsewhere<span class="content-normal"> at</span>:
-</p>
-
-<p id="social">
-<a href="https://twitter.com/jaycech3n" target="_blank"><span class="fa fa-lg fa-twitter" title="Twitter"></span></a>
-<a href="https://www.facebook.com/jaycech3n" target="_blank"><span class="fa fa-lg fa-facebook" title="Facebook"></span></a>
-<a href="https://github.com/jaycech3n" target="_blank"><span class="fa fa-lg fa-github" title="GitHub"></span></a>
-<a href="https://www.linkedin.com/in/joshua-chen-ws/" target="_blank"><span class="fa fa-lg fa-linkedin" title="LinkedIn"></span></a>
-<a href="https://soundcloud.com/jaycech3n" target="_blank"><span class="fa fa-lg fa-soundcloud" title="SoundCloud"></span></a>
-</p>
-
-</section>
+<div id="main">
+    <div id="sidebar">
+        <section id="portrait">
+            <img src="https://www.gravatar.com/avatar/74fea4a3778ac9f5ac1b5b8e043f3449?s=400">
+        </section>
+        <section id="desc">
+            <h1>Joshua Chen</h1>
+            <p>
+            I'm a Masters student in mathematics at the University of Bonn.
+            I work on type theory and automated theorem proving on the one hand, and machine learning and natural language processing on the other.
+            </p>
+            <ul>
+                <li class="location"><a href="https://goo.gl/maps/sKKpTwPzD5S2" target="_blank">Bonn, DE</a></li>
+                <li class="github"><a href="https://github.com/jaycech3n" target="_blank">GitHub</a></li>
+                <li class="twitter"><a href="https://twitter.com/jaycech3n" target="_blank">Twitter</a></li>
+                <li class="linkedin" title="Twitter"><a href="https://www.linkedin.com/in/joshuacws/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </section>
+    </div>
+    <div id="content">
+        <nav>
+            <a href="/" id="currentpage">About</a>
+            <a href="/work/">Work</a>
+            <a href="/cv">CV</a>
+            <a href="/contact">Contact</a>
+        </nav>
+        <section id="maintext">
+            <h1>About</h1>
+            <p>
+                Hi, I'm Josh!
+                I'm a soon-to-be Masters graduate of the <a href="https://www.mathematics.uni-bonn.de/home?set_language=en" target="_blank">University of Bonn</a>, where I study mathematics and computer science.
+                My interests center around the broad themes of computation, logic, and human language, and in particular, how to use computers to augment and automate these processes.
+            </p>
+            <p>
+                My work has involved both pure and applied aspects.
+                Most recently I have been working in type theory and automated theorem proving, implementing a working version of homotopy type theory inside the interactive proof assistant <a href="https://isabelle.in.tum.de/" target="_blank">Isabelle</a>.
+                Homotopy type theory is a recent approach to extending intuitionistic type theory that is able to natively encode important mathematical concepts such as &ldquo;isomorphism-as-equality&rdquo;, and structures such as fundamental groups.
+                Its promise lies in its potential to provide an alternative foundation for large portions of mathematics.
+                As a result of its constructive nature it is amenable to mechanization, and in principle any mathematics encoded in it could be automatically checked for correctness or even proved.
+                I actively develop the <a href="https://github.com/jaycech3n/Isabelle-HoTT" target="_blank">Isabelle/HoTT</a> object logic as a first attempt to bring support for homotopy type theory to the Isabelle prover.
+            </p>
+            <p>
+                I also work in data mining and natural language processing at the <a href="https://www.iais.fraunhofer.de/" target="_blank">Fraunhofer Institute for Intelligent Analysis and Information Systems</a>, where my main work is to implement probabilistic machine learning models to automatically detect topics in Twitter data and classify tweets accordingly.
+                It is well-known that posts on public social media frequently reflect events occurring in the vicinity of the post location, in near real-time.
+                By automatically detecting and classifying the content and location of public posts, we can quickly identify issues which may be of particular relevance to law enforcement or emergency and rescue services, in much less time than would otherwise be needed by more traditional channels of information.
+                My work in this area is used as part of the <a href="https://www.e2mc-project.eu/" target="_blank">e2mc project</a>, a pilot project that aims to use social media to enhance the European Union's emergency and natural disaster response service.
+            </p>
+            <p>
+                Some other areas in which I am particularly interested are automated fact-checking and the theory of quantum computation.
+                Previously, I studied at the Australian National University <a href="https://maths.anu.edu.au/" target="_blank">Mathematical Sciences Institute</a>, writing my Bachelors thesis in category theory and quantum algebra, applied to low-dimensional topological invariants.
+            </p>
+        </section>
+    </div>
+</div>
 
 <script src="https://use.fontawesome.com/fa49007a92.js"></script>
 
