@@ -2,7 +2,7 @@ body {
   background-color: #f6f6f6;
   color: #1f3a44;
   font-size: 16px;
-  font-family: "Fira Mono", monospace;
+  font-family: "Fira Mono", sans-serif;
 }
 strong {
   font-weight: 700;
@@ -12,7 +12,7 @@ strong {
   text-align: justify;
   background-color: #ffffff;
   margin: 2em auto;
-  padding: 3.4em 6.4em 0.75em 6.4em;
+  padding: 3.5em 6.5em 0.5em 6.5em;
   box-shadow: 0px 1px 3px 0px #a0a0a0;
   border-radius: 4px;
   line-height: 1.4em;
@@ -33,7 +33,7 @@ strong {
 
 #portrait {
   text-align: center;
-  margin-top: 0.5em;
+  margin-top: 0em;
 }
 #portrait img {
   width: 12em;
@@ -45,11 +45,11 @@ strong {
 #heading {
   text-align: center;
   font-weight: 400;
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 
 #about {
-  text-indent: 1.5em;
+  /*text-indent: 1.5em;*/
 }
 
 ul#list li {
@@ -77,7 +77,7 @@ ul#list li {
   left: -1.6em;
   top: 1.4em;
 }
-#work:before {
+#cv:before {
   content: "\f02d";
 }
 #play:before {

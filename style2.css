@@ -1,0 +1,399 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    background-color: #fff;
+    
+    line-height: 1.25em;
+    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+
+    -webkit-animation: fadein 0.75s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.75s; /* Firefox < 16 */
+    -ms-animation: fadein 0.75s; /* Internet Explorer */
+    -o-animation: fadein 0.75s; /* Opera < 12.1 */
+    animation: fadein 0.75s;
+}
+
+@keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+a {
+    color: #9c0d38;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div#main {    
+    /* display */
+    display: flex;
+    align-items: flex-start;
+
+    /* fonts */
+    font-size: 16px;
+    font-weight: 400;
+    color: #0b132b;
+}
+
+@media screen and (min-width: 1201px) {
+div#main {
+    /* dimensions */
+    max-width: 1000px;
+
+    /* layout */
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+@media screen and (min-width: 721px) and (max-width: 1200px) {
+div#main {
+    /* layout */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+}
+
+@media screen and (max-width: 720px) {
+div#main {
+    /* display */
+    flex-direction: column;
+
+    /* layout */
+    margin-left: 2em;
+    margin-right: 2em;
+}
+}
+
+@media screen and (max-width: 600px) {
+div#main {
+    margin-left: 0;
+    margin-right: 0;
+}
+}
+
+div#main strong {
+    font-weight: 700;
+}
+
+div#content {
+    /* layout */
+    flex: 1;
+    padding-top: 2em;
+}
+
+@media screen and (max-width: 720px) {
+div#content {
+    padding-top: 0;
+}
+}
+
+div#sidebar {
+    /* layout */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    flex: 0 0 10em;
+    padding-top: 2em;
+    padding-right: 4.5em;
+
+    /* style */
+    background-color: #fff;
+}
+
+section#portrait img {
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 1px 1px #ccc;
+
+    /* transitions */
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 721px) {
+section#portrait {
+    /* layout */
+    margin-bottom: 1em;
+
+    /* text and font */
+    text-align: center;
+}
+section#portrait img {
+    width: 10em;
+}
+}
+
+@media screen and (max-width: 720px) {
+div#sidebar {
+    /* display */
+    display: flex;
+    position: relative;
+    flex: 0 1 auto;
+
+    /* layout */
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+    padding-right: 0;
+
+    /* dimensions */
+    width: 100%;
+}
+section#portrait img {
+    width: 4em;
+    border-width: 0.2em;
+}
+}
+
+@media screen and (max-width: 600px) {
+section#portrait {
+    margin-left: 1.5em;
+}
+section#portrait img {
+    width: 2.5em;
+    border-width: 0;
+}
+}
+
+section#desc h1 {
+    /* text and font */
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+section#desc p, ul {
+    /* text and font */
+    text-align: left;
+    font-size: 0.9em;
+}
+
+section#desc ul {
+    padding-left: 0;
+}
+
+section#desc li {
+    margin-left: 0;
+    margin-bottom: 0.5em;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+section#desc li:before {
+    /* display */
+    display: inline-block;
+    width: 1em;
+    padding-right: 0.5em;
+
+    /* text style */
+    text-align: center;
+    font-family: "FontAwesome";
+}
+
+li.location:before {
+    content: "\f041";
+}
+
+li.github:before {
+    content: "\f09b";
+}
+
+li.twitter:before {
+    content: "\f099";
+}
+
+li.linkedin:before {
+    content: "\f0e1";
+}
+
+@media screen and (max-width: 720px) {
+section#desc {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5em;
+}
+section#desc h1 {
+    margin: 0;
+    text-align: left;
+    font-size: 1.6em;
+}
+section#desc ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+section#desc li {
+    margin-bottom: 0;
+    margin-right: 0.75em;
+}
+section#desc li:before {
+    padding-right: 0.2em;
+}
+}
+
+@media screen and (max-width: 600px) {
+section#desc {
+    margin-right: 1.5em;
+}
+section#desc p {
+    margin-bottom: 0;
+}
+section#desc ul {
+    display: none;
+}
+}
+
+div#content nav {
+    /* display */
+    display: flex;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    /* layout */
+    padding-top: 1.25em;
+
+    /* style */
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 3px 4px -4px #ccc;
+
+    /* transitions */
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+div#content nav a {
+    /* display */
+    position: relative;
+
+    /* text and font */
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    color: #0b132b;
+
+    /* layout and border */
+    padding-bottom: 0.6em;
+}
+
+div#content nav a + a {
+    margin-left: 1.5em;
+}
+
+div#content nav a:after {
+    content: "";
+    width: 0;
+    height: 0.2em;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+    background-color: #0b132b;
+    opacity: 0;
+
+    /* transitions */
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+
+div#content nav a:hover:after {
+    width: 100%;
+    opacity: 1;
+}
+
+div#content nav a#currentpage {
+    font-weight: 500;
+}
+
+div#content nav a#currentpage:after {
+    width: 100%;
+    opacity: 1;
+}
+
+@media screen and (max-width: 720px) {
+div#content nav {
+    top: 0;
+}
+}
+
+@media screen and (max-width: 600px) {
+div#content nav {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+}
+
+section#maintext {
+    /* layout */
+    position: relative;
+    padding-top: 0.5em;
+
+    /* text */
+    line-height: 1.75em;
+}
+
+section#maintext:after {
+    content: "Handcoded with \2665  2018 Joshua Chen";
+    position: absolute;
+    bottom: -7em;
+    height: 3em;
+    width: 100%;
+
+    font-size: 0.75em;
+    text-align: right;
+
+    border-top: 1px solid #ccc;
+    box-shadow: 0 -3px 4px -4px #ccc;
+}
+
+section#maintext h1, h2 {
+    font-weight: 500;
+}
+
+section#maintext h1 {
+    font-size: 1.6em;
+}
+
+section#maintext h2 {
+    font-size: 1.25em;
+}
+
+@media screen and (max-width: 720px) {
+section#maintext:after {
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 600px) {
+section#maintext {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+section#maintext:after {
+    left: 0;
+}
+}
