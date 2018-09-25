@@ -396,7 +396,19 @@ section#maintext h1 {
 }
 
 section#maintext h2 {
-    font-size: 1.25em;
+    font-size: 1.2em;
+}
+
+section#maintext p {
+    margin-top: 0;
+}
+
+section#maintext p + h1 {
+    margin-top: 2em;
+}
+
+section#maintext p + h2 {
+    margin-top: 2em;
 }
 
 @media screen and (max-width: 720px) {
