@@ -74,8 +74,8 @@ div#main {
 @media screen and (min-width: 721px) and (max-width: 1200px) {
 div#main {
     /* layout */
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 }
 
@@ -134,6 +134,13 @@ div#sidebar {
 
     /* style */
     background-color: #fff;
+}
+
+@media screen and (min-width: 721px) and (max-width: 1200px) {
+div#sidebar {
+    /* layout */
+    padding-right: 3.5em;
+}
 }
 
 section#portrait img {
@@ -364,7 +371,7 @@ div#content nav {
 }
 }
 
-section#maintext {
+section.maintext {
     /* layout */
     position: relative;
     padding-top: 0.5em;
@@ -373,7 +380,7 @@ section#maintext {
     line-height: 1.75em;
 }
 
-section#maintext:after {
+section.maintext:after {
     content: "Hand-coded with \2665  2018 Joshua Chen";
     position: absolute;
     bottom: -7em;
@@ -387,43 +394,134 @@ section#maintext:after {
     box-shadow: 0 -3px 4px -4px #ccc;
 }
 
-section#maintext h1, h2 {
+section.maintext h1, h2 {
     font-weight: 500;
 }
 
-section#maintext h1 {
+section.maintext h1 {
     font-size: 1.6em;
 }
 
-section#maintext h2 {
+section.maintext h2 {
     font-size: 1.2em;
 }
 
-section#maintext p {
+section.maintext h1 + h2 {
     margin-top: 0;
 }
 
-section#maintext p + h1 {
+section.maintext p {
+    margin-top: 0;
+}
+
+section.maintext p + h1 {
     margin-top: 2em;
 }
 
-section#maintext p + h2 {
+section.maintext p + h2 {
     margin-top: 2em;
 }
 
 @media screen and (max-width: 720px) {
-section#maintext:after {
+section.maintext:after {
     text-align: center;
 }
 }
 
 @media screen and (max-width: 600px) {
-section#maintext {
+section.maintext {
     padding-left: 1.5em;
     padding-right: 1.5em;
 }
-section#maintext:after {
+section.maintext:after {
     left: 0;
+}
+}
+
+section#cv {
+    line-height: 1.5em;
+    font-family: "Libre Baskerville", serif;
+    font-size: 14px;
+}
+
+section#cv h1, section#cv h2 {
+    font-weight: 700;
+}
+
+section#cv p.item {
+    margin-bottom: 0;
+}
+
+section#cv p + p.item {
+    margin-top: 2.5em;
+}
+
+section#cv p.item + p {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+section#cv p.item + p.item {
+    margin-top: 2.5em;
+}
+
+section#cv .centered {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+section#cv .smallcaps {
+    font-variant: small-caps;
+}
+
+section#cv .underline {
+    display: inline-block;
+    border-bottom: 1px solid #0b132b;
+}
+
+section#cv .spread {
+    display: flex;
+    justify-content: space-between;
+}
+
+section#cv .itemheading {
+    flex: 2;
+}
+
+section#cv .itemdetail {
+    flex: 1;
+    text-align: right;
+}
+
+section#cv .comma:before {
+    display: none;
+    position: relative;
+    content: ", ";
+}
+
+@media screen and (max-width: 1080px) {
+section#cv .spread {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+section#cv .keeprowspread {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+section#cv .keeprowspread > .itemdetail {
+    text-align: right;
+}
+section#cv .itemdetail {
+    padding-top: 0.5em;
+    text-align: left;
+}
+section#cv .itemdetail .comma > br {
+    display: none;
+}
+section#cv .comma:before {
+    display: inline;
 }
 }
 
