@@ -444,8 +444,17 @@ section#cv {
     font-size: 14px;
 }
 
+section#cv > * {
+    margin-left: 1em;
+}
+
 section#cv h1, section#cv h2 {
+    margin-left: 0;
     font-weight: 700;
+}
+
+section#cv h2 {
+    font-variant: small-caps;
 }
 
 section#cv p.item {
