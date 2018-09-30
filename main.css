@@ -555,3 +555,13 @@ ul.contact li:before {
     font-size: 1.25em;
     text-align: center;
 }
+
+span.at:before {
+    content: "@";
+    position: relative;
+}
+
+span.dot:before {
+    content: ".";
+    position: relative;
+}
