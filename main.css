@@ -221,14 +221,13 @@ section#desc li {
     list-style-type: none;
 }
 
-/*
 section#desc li:before {
     display: inline-block;
     width: 1em;
     padding-right: 0.5em;
 
     text-align: center;
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
 }
 
 li.location:before {
@@ -254,7 +253,6 @@ li.linkedin:before {
 li.email:before {
     content: "\f003"
 }
-*/
 
 @media screen and (max-width: 720px) {
 section#desc {
