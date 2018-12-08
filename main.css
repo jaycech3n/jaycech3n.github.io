@@ -221,13 +221,12 @@ section#desc li {
     list-style-type: none;
 }
 
+/*
 section#desc li:before {
-    /* display */
     display: inline-block;
     width: 1em;
     padding-right: 0.5em;
 
-    /* text style */
     text-align: center;
     font-family: "FontAwesome";
 }
@@ -255,6 +254,7 @@ li.linkedin:before {
 li.email:before {
     content: "\f003"
 }
+*/
 
 @media screen and (max-width: 720px) {
 section#desc {
