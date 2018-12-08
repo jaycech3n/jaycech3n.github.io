@@ -244,6 +244,10 @@ li.twitter:before {
     content: "\f099";
 }
 
+li.twitter:before {
+    content: "\f4f6";
+}
+
 li.linkedin:before {
     content: "\f0e1";
 }
