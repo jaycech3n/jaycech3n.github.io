@@ -227,11 +227,11 @@ section#desc li:before {
     padding-right: 0.5em;
 
     text-align: center;
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Brands", "Font Awesome 5 Free";
 }
 
 li.location:before {
-    content: "\f041";
+    content: "\f3c5";
     font-weight: 900;
 }
 
