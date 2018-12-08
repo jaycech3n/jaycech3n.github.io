@@ -245,7 +245,7 @@ li.twitter:before {
 }
 
 li.mastodon:before {
-    content: "\uf4f6";
+    content: "\f4f6";
 }
 
 li.linkedin:before {
