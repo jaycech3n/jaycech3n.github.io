@@ -232,26 +232,31 @@ section#desc li:before {
 
 li.location:before {
     content: "\f041";
+    font-weight: 900;
 }
 
 li.github:before {
     content: "\f09b";
+    font-weight: 400;
 }
 
 li.twitter:before {
     content: "\f099";
+    font-weight: 400;
 }
 
 li.mastodon:before {
     content: "\f4f6";
+    font-weight: 400;
 }
 
 li.linkedin:before {
     content: "\f0e1";
+    font-weight: 400;
 }
 
 li.email:before {
-    content: "\f003"
+    content: "\f003";
 }
 
 @media screen and (max-width: 720px) {
