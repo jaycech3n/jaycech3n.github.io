@@ -256,7 +256,8 @@ li.linkedin:before {
 }
 
 li.email:before {
-    content: "\f003";
+    content: "\f0e0";
+    font-weight: 900;
 }
 
 @media screen and (max-width: 720px) {
@@ -558,7 +559,7 @@ ul.contact li:before {
     width: 1em;
     padding-right: 0.75em;
 
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Brands", "Font Awesome 5 Free";
     font-size: 1.25em;
     text-align: center;
 }
