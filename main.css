@@ -2,10 +2,10 @@ body {
     margin: 0;
     padding: 0;
     
-    background-color: #fff;
+    background-color: #efefef;
     
     line-height: 1.25em;
-    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    font-family: "Open Sans", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 }
 
 @keyframes fadein {
@@ -32,13 +32,21 @@ body {
 }
 
 a {
-    color: #9c0d38;
+    /*color: #9c0d38;*/
+    color: #5cb8e0;
+    color: #44318d;
+    color: #6147cc;
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px dashed;
 }
+
+/*a:visited {
+    color: #382974;
+}*/
 
 .tt {
     font-family: monospace;
@@ -55,9 +63,9 @@ div#main {
     align-items: flex-start;
 
     /* fonts */
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
-    color: #0b132b;
+    color: #1a333e /*#112229*/ /*#06313e*/;
 }
 
 @media screen and (min-width: 1201px) {
@@ -130,10 +138,10 @@ div#sidebar {
     top: 0;
     flex: 0 0 10em;
     padding-top: 2em;
-    padding-right: 4.5em;
+    padding-right: 4em;
 
     /* style */
-    background-color: #fff;
+    background-color: #efefef;
 }
 
 @media screen and (min-width: 721px) and (max-width: 1200px) {
@@ -145,24 +153,25 @@ div#sidebar {
 
 section#portrait img {
     border-radius: 50%;
-    border: 3px solid #fff;
-    box-shadow: 0 0 1px 1px #ccc;
+    border: 0px solid #efefef;
+    box-shadow: 0 0 6px 2px #ccc;
 
     /* transitions */
-    transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out;
+    -webkit-transition: width 0.2s ease-in-out;
 }
 
 @media screen and (min-width: 721px) {
 section#portrait {
     /* layout */
+    margin-top: 1em;
     margin-bottom: 1em;
 
     /* text and font */
     text-align: center;
 }
 section#portrait img {
-    width: 10em;
+    width: 9em;
 }
 }
 
@@ -200,7 +209,7 @@ section#portrait img {
 section#desc h1 {
     /* text and font */
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1.4em;
     font-weight: 500;
 }
 
@@ -208,6 +217,10 @@ section#desc p, ul {
     /* text and font */
     text-align: left;
     font-size: 0.9em;
+}
+
+section#desc p {
+    line-height: 1.5em;
 }
 
 section#desc ul {
@@ -306,10 +319,10 @@ div#content nav {
     z-index: 1;
 
     /* layout */
-    padding-top: 1.25em;
+    padding-top: 1em;
 
     /* style */
-    background-color: #fff;
+    background-color: #efefef;
     border-bottom: 1px solid #ccc;
     box-shadow: 0 3px 4px -4px #ccc;
 
@@ -330,6 +343,7 @@ div#content nav a {
 
     /* layout and border */
     padding-bottom: 0.6em;
+    border-bottom: 0;
 }
 
 div#content nav a + a {
@@ -385,7 +399,7 @@ section.maintext {
     padding-top: 0.5em;
 
     /* text */
-    line-height: 1.75em;
+    line-height: 1.8em;
 }
 
 section.maintext:after {
