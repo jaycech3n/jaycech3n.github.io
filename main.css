@@ -244,32 +244,38 @@ section#desc li:after {
     font-family: "Font Awesome 5 Brands", "Font Awesome 5 Free";
 }
 
-li.location:after {
+section#desc li.location:after,
+ul.contact li.location:before {
     content: "\f3c5";
     font-weight: 900;
 }
 
-li.github:after {
+section#desc li.github:after,
+ul.contact li.github:before {
     content: "\f09b";
     font-weight: 400;
 }
 
-li.twitter:after {
+section#desc li.twitter:after,
+ul.contact li.twitter:before {
     content: "\f099";
     font-weight: 400;
 }
 
-li.mastodon:after {
+section#desc li.mastodon:after,
+ul.contact li.mastodon:before {
     content: "\f4f6";
     font-weight: 400;
 }
 
-li.linkedin:after {
+section#desc li.linkedin:after,
+ul.contact li.linkedin:before {
     content: "\f0e1";
     font-weight: 400;
 }
 
-li.email:after {
+section#desc li.email:after,
+ul.contact li.email:before {
     content: "\f0e0";
     font-weight: 900;
 }
