@@ -215,16 +215,17 @@ section#desc h1 {
 
 section#desc p, ul {
     /* text and font */
-    text-align: left;
-    font-size: 0.9em;
+    text-align: right;
+    padding-right: 0.75em;
 }
 
 section#desc p {
     line-height: 1.5em;
+    font-size: 0.85em;
 }
 
 section#desc ul {
-    padding-left: 0;
+    font-size: 0.9em;
 }
 
 section#desc li {
@@ -234,41 +235,41 @@ section#desc li {
     list-style-type: none;
 }
 
-section#desc li:before {
+section#desc li:after {
     display: inline-block;
     width: 1em;
-    padding-right: 0.5em;
+    margin-left: 0.5em;
 
     text-align: center;
     font-family: "Font Awesome 5 Brands", "Font Awesome 5 Free";
 }
 
-li.location:before {
+li.location:after {
     content: "\f3c5";
     font-weight: 900;
 }
 
-li.github:before {
+li.github:after {
     content: "\f09b";
     font-weight: 400;
 }
 
-li.twitter:before {
+li.twitter:after {
     content: "\f099";
     font-weight: 400;
 }
 
-li.mastodon:before {
+li.mastodon:after {
     content: "\f4f6";
     font-weight: 400;
 }
 
-li.linkedin:before {
+li.linkedin:after {
     content: "\f0e1";
     font-weight: 400;
 }
 
-li.email:before {
+li.email:after {
     content: "\f0e0";
     font-weight: 900;
 }
