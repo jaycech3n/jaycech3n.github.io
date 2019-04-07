@@ -1,40 +1,37 @@
 body {
     margin: auto;
+    padding-top: 1em;
     max-width: 40em;
+    display: flex;
     background-color: #efefef;
     line-height: 1.5em;
     font-family: Roboto, sans-serif;
     font-size: 20px;
-    color: #112229 /*#1a333e #06313e*/;
+    color: #263543;
+}
+
+h1 {
+    font-weight: 700;
 }
 
 a {
-    /*color: #9c0d38;*/
-    color: #5cb8e0;
-    color: #44318d;
     color: #6147cc;
     text-decoration: none;
+    border: 1px solid #efefef;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: -2px;
+    margin-right: -2px;
+    border-radius: 2px;
 }
 
 a:hover {
     text-decoration: none;
-    border-bottom: 1px dashed;
+    border: 1px solid;
 }
 
-/*a:visited {
-    color: #382974;
-}*/
-
-code {
-    font-size: 0.9em;
-    font-family: monospace;
-}
-
-div#contactbar {
-  float: right
-}
-
-div#contactbar img {
+img#portrait {
+    margin: 1em 0 1em 0;
     width: 8em;
     border-radius: 50%;
     border: 0px solid #efefef;
