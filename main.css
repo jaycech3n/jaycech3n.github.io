@@ -30,9 +30,11 @@ code {
     font-family: monospace;
 }
 
-img#portrait {
-    float: left;
-    margin-right: 1em;
+div#contactbar {
+  float: right
+}
+
+div#contactbar img {
     width: 8em;
     border-radius: 50%;
     border: 0px solid #efefef;
