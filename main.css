@@ -72,3 +72,9 @@ ul#contact li {
   -webkit-transform: translateX(8px);
   transform: translateX(8px);
 }
+
+@media screen and (max-width: 800px) {
+    body { margin-right: 1em; margin-left: 1em }
+    div#contactbar { margin-left: 0.5em }
+    img#portrait { width: 4.5em }
+}
