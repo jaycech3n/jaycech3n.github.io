@@ -12,28 +12,47 @@ body {
 
 h1 {
     font-weight: 700;
+    font-family: "Libre Baskerville", serif;
 }
 
 a {
-    color: #6147cc;
+    color: #263543;
     text-decoration: none;
+    border-bottom: 1px solid;
+    /* color: #6147cc;
     border: 1px solid #efefef;
     padding-left: 2px;
     padding-right: 2px;
     margin-left: -2px;
     margin-right: -2px;
-    border-radius: 2px;
+    border-radius: 2px; */
 }
 
-a:hover {
+/* a:hover {
     text-decoration: none;
     border: 1px solid;
-}
+} */
 
 img#portrait {
-    margin: 1em 0 1em 0;
+    margin: 1em 0 0 0;
     width: 8em;
     border-radius: 50%;
     border: 0px solid #efefef;
     box-shadow: 0 0 6px 2px #ccc;
 }
+
+ul#contact {
+    padding: 0;
+}
+
+ul#contact li > a {
+    border: 0;
+}
+
+ul#contact li {
+    margin-bottom: 10px;
+    font-size: 28px;
+    text-align: center;
+    list-style-type: none;
+}
+
