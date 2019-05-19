@@ -1,3 +1,14 @@
+/* Color scheme
+
+General text:
+    Gunmetal #263543
+    Dark gunmetal #142535
+
+Highlights:
+    Slate gray #6b7d8e
+    UCLA blue #587591
+*/
+
 body {
     overflow-x: visible;
     margin: auto;
@@ -11,15 +22,18 @@ body {
     color: #263543;
 }
 
+a {
+    color: #6b7d8e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #263543;
+}
+
 h1 {
     font-weight: 700;
     font-family: "Libre Baskerville", serif;
-}
-
-a {
-    color: #263543;
-    text-decoration: none;
-    border-bottom: 1px solid;
 }
 
 img#portrait {
@@ -30,12 +44,17 @@ img#portrait {
     box-shadow: 0 0 6px 2px #ccc;
 }
 
+div#contactbar {
+    margin-left: 1.2em;
+}
+
 ul#contact {
     padding: 0;
 }
 
 ul#contact li a {
     border: 0;
+    color: #263543;
 }
 
 ul#contact li {
@@ -44,39 +63,6 @@ ul#contact li {
     text-align: center;
     list-style-type: none;
     line-height: 1em;
-}
-
-.email .text {
-    display: block;
-    position: absolute;
-    width: 12em;
-    height: 52px;
-    bottom: -12px;
-    left: 0;
-    z-index: -1;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.email .text > span {
-    position: absolute;
-    left: 38px;
-    top: 10px;
-    width: 12em;
-    text-align: left;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 19px;
-    font-weight: 500;
-}
-
-.email:hover > .text,
-.email:focus > .text,
-.email .text:hover,
-.email .text:focus {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
 }
 
 /* Contact menu effect */
@@ -98,6 +84,6 @@ ul#contact li {
 
 @media screen and (max-width: 800px) {
     body { margin-right: 1em; margin-left: 1em }
-    div#contactbar { margin-left: 0.5em }
+    div#contactbar { margin-left: 0.5em; }
     img#portrait { width: 4.5em }
 }
