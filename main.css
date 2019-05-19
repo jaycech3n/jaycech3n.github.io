@@ -23,12 +23,26 @@ body {
 }
 
 a {
-    color: #6b7d8e;
+    color: #263543;
     text-decoration: none;
+    border-bottom: 2px solid #263543;
+    
+    background:
+     linear-gradient(
+       to bottom, #263543 0%,
+       #263543 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 0px;
+
+    /* transition: background-size 0.15s ease-in-out; */
 }
 
 a:hover {
-    color: #263543;
+    color: #efefef;
+    background-size: 4px 50px;
+    /* transition: background-size 0.3s ease-in-out; */
 }
 
 h1 {
@@ -55,6 +69,7 @@ ul#contact {
 ul#contact li a {
     border: 0;
     color: #263543;
+    background: none;
 }
 
 ul#contact li {
