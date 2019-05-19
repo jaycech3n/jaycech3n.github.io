@@ -25,7 +25,7 @@ body {
 a {
     color: #263543;
     text-decoration: none;
-    border-bottom: 2px solid #263543;
+    border-bottom: 2px dotted #263543;
     
     background:
      linear-gradient(
@@ -41,6 +41,7 @@ a {
 
 a:hover {
     color: #efefef;
+    border-bottom-style: solid;
     background-size: 4px 50px;
     /* transition: background-size 0.3s ease-in-out; */
 }
