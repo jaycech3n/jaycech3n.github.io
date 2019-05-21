@@ -50,6 +50,10 @@ h1 {
     font-family: "Libre Baskerville", serif;
 }
 
+.emaildomain:before {
+    content: "@"
+}
+
 img#portrait {
     margin: 1em 0 0 0;
     width: 8em;
