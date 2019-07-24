@@ -22,6 +22,10 @@ body {
     color: #263543;
 }
 
+section {
+    margin-top: 2.5em;
+}
+
 a {
     color: #263543;
     text-decoration: none;
@@ -45,7 +49,7 @@ a:hover, a:focus {
     /* transition: background-size 0.3s ease-in-out; */
 }
 
-h1 {
+h1, h2 {
     font-weight: 700;
     font-family: "Libre Baskerville", serif;
 }
@@ -102,7 +106,9 @@ ul#contact li {
 }
 
 @media screen and (max-width: 800px) {
-    body { margin-right: 1em; margin-left: 1em }
-    div#contactbar { margin-left: 0.5em; }
-    img#portrait { width: 4.5em }
+    body { margin-right: 1em; margin-left: 1em; padding-top: 1.5em; padding-bottom: 1em; flex-direction: column-reverse; }
+    div#contactbar { margin-left: 0; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: end }
+    ul#contact { margin: 0; }
+    ul#contact > li { display: inline-block; margin-right: 16px; }
+    img#portrait { width: 6em; margin: 0 }
 }
