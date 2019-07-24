@@ -67,7 +67,7 @@ img#portrait {
 }
 
 div#contactbar {
-    margin-left: 1.2em;
+    margin-left: 1.5em;
 }
 
 ul#contact {
@@ -107,7 +107,7 @@ ul#contact li {
 
 @media screen and (max-width: 800px) {
     body { margin-right: 1em; margin-left: 1em; padding-top: 1.5em; padding-bottom: 1em; flex-direction: column-reverse; }
-    div#contactbar { margin-left: 0; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: end }
+    div#contactbar { margin-left: 0; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end }
     ul#contact { margin: 0; }
     ul#contact > li { display: inline-block; margin-right: 16px; }
     img#portrait { width: 6em; margin: 0 }
