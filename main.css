@@ -1,19 +1,8 @@
-/* Color scheme
-
-General text:
-    Gunmetal #263543
-    Dark gunmetal #142535
-
-Highlights:
-    Slate gray #6b7d8e
-    UCLA blue #587591
-*/
-
 body {
     overflow-x: visible;
     margin: auto;
     padding-top: 1em;
-    max-width: 40em;
+    max-width: 42em;
     display: flex;
     background-color: #efefef;
     line-height: 1.5em;
@@ -23,35 +12,28 @@ body {
 }
 
 section {
-    margin-top: 2.5em;
+    margin-bottom: 2.5em;
 }
 
 a {
+    display: inline-block;
     color: #263543;
     text-decoration: none;
-    border-bottom: 2px solid #263543;
-    
-    background:
-     linear-gradient(
-       to bottom, #263543 0%,
-       #263543 100%
-     );
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 4px 0px;
-
-    /* transition: background-size 0.15s ease-in-out; */
+    border-bottom: 1px solid #263543;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-a:hover, a:focus {
-    color: #efefef;
-    background-size: 4px 50px;
-    /* transition: background-size 0.3s ease-in-out; */
+h1 {
+    font-size: 1.5em;
 }
 
 h1, h2 {
     font-weight: 700;
     font-family: "Libre Baskerville", serif;
+}
+
+#about h1 {
+    font-size: 2em;
 }
 
 .emaildomain:before {
@@ -67,11 +49,23 @@ img#portrait {
 }
 
 div#contactbar {
-    margin-left: 1.5em;
+    margin-right: 3em;
 }
 
 ul#contact {
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul#contact li {
+    flex: 0 50%;
+    font-size: 28px;
+    text-align: center;
+    list-style-type: none;
+    line-height: 1.75em;
+    max-width: 2em;
 }
 
 ul#contact li a {
@@ -80,35 +74,28 @@ ul#contact li a {
     background: none;
 }
 
-ul#contact li {
-    margin-bottom: 10px;
-    font-size: 28px;
-    text-align: center;
-    list-style-type: none;
-    line-height: 1em;
-}
-
-/* Contact menu effect */
-.hvr-forward {
+/* Shadow effect */
+a, .hvr-shadow {
   display: inline-block;
-  vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
 }
-.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
-  -webkit-transform: translateX(8px);
-  transform: translateX(8px);
+.hvr-shadow {
+  vertical-align: middle;
+}
+.hvr-shadow:hover, .hvr-shadow:focus, .hvr-shadow:active, a:hover, a:focus {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 800px) {
-    body { margin-right: 1em; margin-left: 1em; padding-top: 1.5em; padding-bottom: 1em; flex-direction: column-reverse; }
-    div#contactbar { margin-left: 0; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end }
-    ul#contact { margin: 0; }
-    ul#contact > li { display: inline-block; margin-right: 16px; }
+    body { margin-right: 1em; margin-left: 1em; padding-top: 1.5em; padding-bottom: 1em; flex-direction: column; }
+    div#contactbar { margin-left: 0; margin-right: 0; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end }
+    ul#contact { margin: 0; justify-content: flex-end; }
+    ul#contact > li { display: inline-block; margin-right: 16px; flex: 0; }
     img#portrait { width: 6em; margin: 0 }
 }
