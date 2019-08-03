@@ -9,16 +9,23 @@
   <meta charset="utf-8">
 </head>
 <body>
-  <div id="contactbar">
-    <img id="portrait" src="pic.jpg" alt="Display photo">
+<div id="container">
+  <nav>
+    <img id="portrait" src="assets/pic.jpg" alt="Display photo">
     <ul id="contact">
       <li><a href="https://github.com/jaycech3n" aria-label="GitHub" class="hvr-shadow"><span class="fab fa-github" aria-hidden="true" title="GitHub"></span></a></li>
-      <li><a rel="me" href="https://scholar.social/@jaycech3n" aria-label="Mastodon" class="hvr-shadow"><span class="fab fa-mastodon" aria-hidden="true" title="Mastodon"></span></a></li>
+      <li><a href="mailto:hello@joshchen.io" aria-label="Email" class="hvr-shadow"><span class="far fa-envelope" aria-hidden="true" title="Email"></span></a></li>
       <li><a href="https://twitter.com/jaycech3n" aria-label="Twitter" class="hvr-shadow"><span class="fab fa-twitter" aria-hidden="true" title="Twitter"></span></a></li>
       <li><a href="https://www.linkedin.com/in/joshuacws/" aria-label="LinkedIn" class="hvr-shadow"><span class="fab fa-linkedin" aria-hidden="true" title="LinkedIn"></span></a></li>
     </ul>
-  </div>
-  <div>
+    <ul id="nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#activities">Activities</a></li>
+      <li><a href="#cv">CV</a></li>
+    </ul>
+  </nav>
+  <div id="content">
     <section id="about">
       <h1>Hi, I'm Josh!</h1>
       <p>
@@ -26,22 +33,37 @@
       </p>
       <p>
         My current research focuses on making interactive proof assistants more powerful and at the same time simpler to use, in order to become daily tools for mathematicians and computer scientists alike.
-        Right now I'm working on &ldquo;softly-typed&rdquo; set-theoretic foundations in <a href="http://isabelle.in.tum.de/">Isabelle</a>, as well as proof automation and hammer systems for <a href="https://coq.inria.fr/">Coq</a>.
+      </p>
+    </section>
+    <section id="research">
+      <h1>Research</h1>
+      <p>
+        I'm currently working on &ldquo;softly-typed&rdquo; set-theoretic foundations in <a href="http://isabelle.in.tum.de/">Isabelle</a>, as well as proof automation and hammer systems for <a href="https://coq.inria.fr/">Coq</a>.
       </p>
       <p>
         Previously, I studied mathematics at the University of Bonn and the Australian National University.
-        For my <a href="assets/MS_thesis_submitted.pdf">masters thesis</a> with <a href="https://www.hcm.uni-bonn.de/en/mitarbeiter/professorinnen/profile/peter-koepke/">Peter Koepke</a> I <a href="https://github.com/jaycech3n/Isabelle-HoTT">formalized</a> a version of homotopy type theory as an object logic in Isabelle.
-        My <a href="assets/BSc_thesis_submitted.pdf">bachelors thesis</a> under <a href="https://tqft.net/">Scott Morrison</a> was on quantum algebra, TQFTs, and an application to diagrammatic invariants of topological manifolds.
-        I'm still a mathematician at heart, and moonlight in mathematical logic, type theory, and univalent foundations.
+        For my <a href="assets/ms_thesis_submitted.pdf">masters thesis</a> with <a href="https://www.hcm.uni-bonn.de/en/mitarbeiter/professorinnen/profile/peter-koepke/">Peter Koepke</a> I <a href="https://github.com/jaycech3n/Isabelle-HoTT">formalized</a> a version of homotopy type theory as an object logic in Isabelle.
+        My <a href="assets/bsc_thesis_submitted.pdf">bachelors thesis</a> under <a href="https://tqft.net/">Scott Morrison</a> was on quantum algebra, TQFTs, and an application to diagrammatic invariants of topological manifolds.
       </p>
       <p>
-        If you'd like to contact me, drop me a line at <code><a href="mailto:hello@joshchen.io">hello<span class="emaildomain">joshchen.io</span></a></code>!
+        I'm still very much a mathematician at heart, and moonlight in mathematical logic, type theory, and univalent foundations.
       </p>
     </section>
-    <section>
-      <h1>Research</h1>
-      <p>Coming <small>(as)</small> soon <small>(as I make all my drafts readable)</small>.</p>
+    <section id="activities">
+      <h1>Activities</h1>
+      <h2>2019</h2>
+      <ul>
+        <li><a href="http://www.mathematik.uni-muenchen.de/~schwicht/pc19.php">Proof and Computation autumn school</a> &middot; <small>Munich</small> &middot; <small>Sep 20&ndash;26</small></li>
+        <li><a href="https://hott.github.io/HoTT-2019/">Homotopy Type Theory 2019</a> &middot; <small>Carnegie Mellon University</small> &middot; <small>Aug 7&ndash;10, 12&ndash;17</small></li>
+        <li><a href="https://www.cicm-conference.org/2019/cicm.php">Conference on Intelligent Computer Mathematics</a> &middot; <small>Czech Technical University in Prague</small> &middot; <small>Jul 8&ndash;12</small></li>
+        <li><a href="http://aitp-conference.org/2019/">Artificial Intelligence and Theorem Proving</a> &middot; <small>Obergurgl</small> &middot; <small>Apr 7&ndash;12</small></li>
+        <li><a href="https://unimath.github.io/bham2019/">School and Workshop on Univalent Mathematics</a> &middot; <small>University of Birmingham</small> &middot; <small>Apr 1&ndash;5</small></li>
+      </ul>
+    </section>
+    <section id="cv">
+      <h1><a href="assets/cv.pdf">Curriculum vitae</a></h1>
     </section>
   </div>
+</div>
 </body>
 </html>

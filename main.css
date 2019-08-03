@@ -1,77 +1,121 @@
 body {
-    overflow-x: visible;
-    margin: auto;
-    padding-top: 1em;
-    max-width: 42em;
-    display: flex;
-    background-color: #efefef;
-    line-height: 1.5em;
-    font-family: Roboto, sans-serif;
-    font-size: 20px;
-    color: #263543;
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+  font-family: Roboto, sans-serif;
+}
+
+#container {
+  margin: 0 auto 0 auto;
+  max-width: 42em;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  display: flex;
+  align-items: flex-start;
+  font-size: 20px;
+  color: #263543;
+}
+
+#content {
+  line-height: 1.5em;
 }
 
 section {
-    margin-bottom: 2.5em;
+  margin-bottom: 2.5em;
 }
 
 a {
-    display: inline-block;
-    color: #263543;
-    text-decoration: none;
-    border-bottom: 1px solid #263543;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  color: #263543;
+  text-decoration: none;
+  border-bottom: 1px solid #263543;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 h1 {
-    font-size: 1.5em;
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1em;
 }
 
 h1, h2 {
-    font-weight: 700;
-    font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-family: "Libre Baskerville", serif;
 }
 
 #about h1 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 .emaildomain:before {
-    content: "@"
+  content: "@"
 }
 
 img#portrait {
-    margin: 1em 0 0 0;
-    width: 8em;
-    border-radius: 50%;
-    border: 0px solid #efefef;
-    box-shadow: 0 0 6px 2px #ccc;
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+  width: 8em;
+  border-radius: 50%;
+  border: 0px solid #efefef;
+  box-shadow: 0 0 6px 2px #ccc;
 }
 
-div#contactbar {
-    margin-right: 3em;
+nav {
+  margin-right: 3em;
+  position: sticky;
+  top: 1em;
 }
 
 ul#contact {
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 ul#contact li {
-    flex: 0 50%;
-    font-size: 28px;
-    text-align: center;
-    list-style-type: none;
-    line-height: 1.75em;
-    max-width: 2em;
+  margin-bottom: 0.5em;
+  flex: 0 50%;
+  font-size: 28px;
+  text-align: center;
+  list-style-type: none;
+  max-width: 2em;
 }
 
 ul#contact li a {
-    border: 0;
-    color: #263543;
-    background: none;
+  border: 0;
+  color: #263543;
+  background: none;
+}
+
+ul#nav {
+  list-style: none;
+  padding: 0;
+  margin-left: 2em;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5em;
+}
+
+ul#nav li {
+  margin-bottom: 0.5em;
+}
+
+ul#nav li a {
+  padding: 0 5px 0 5px;
+  border: none;
+  color: #efefef;
+  background-color: #263543;
+}
+
+#activities ul {
+  padding-left: 1.2em;
+  list-style: disc;
+}
+
+#activities ul li {
+  margin-bottom: 0.2em;
 }
 
 /* Shadow effect */
@@ -93,9 +137,74 @@ a, .hvr-shadow {
 }
 
 @media screen and (max-width: 800px) {
-    body { margin-right: 1em; margin-left: 1em; padding-top: 1.5em; padding-bottom: 1em; flex-direction: column; }
-    div#contactbar { margin-left: 0; margin-right: 0; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end }
-    ul#contact { margin: 0; justify-content: flex-end; }
-    ul#contact > li { display: inline-block; margin-right: 16px; flex: 0; }
-    img#portrait { width: 6em; margin: 0 }
+#container {
+  margin: 0 1em 0 1em;
+  padding-top: 0em;
+  padding-bottom: 1em;
+  flex-direction: column;
 }
+
+nav {
+  position: relative;
+  margin: 2em 0 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+section {
+  margin: 0;
+  padding-top: 1em;
+}
+
+h1 {
+  margin-top: 0.5em;
+}
+
+ul#contact {
+  margin: 0 0 0.5em 1.5em;
+  flex: 0 50%;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+ul#contact > li {
+  display: inline-block;
+  margin-right: 16px;
+  margin-bottom: 0;
+  flex: 0;
+}
+
+ul#nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #263543;
+  z-index: 1;
+  margin: 0;
+  width: 100%;
+}
+
+ul#nav li {
+  margin: 0;
+}
+
+img#portrait {
+  max-width: 6em;
+  margin: 0;
+  flex: 0 50%;
+}
+
+#activities ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#activities ul a {
+  border: none;
+  text-decoration: underline;
+}
+}
+
