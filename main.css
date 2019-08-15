@@ -109,12 +109,12 @@ ul#nav li a {
   background-color: #263543;
 }
 
-#activities ul {
+#events ul {
   padding-left: 1.2em;
   list-style: disc;
 }
 
-#activities ul li {
+#events ul li {
   margin-bottom: 0.2em;
 }
 
@@ -185,6 +185,7 @@ ul#nav {
   z-index: 1;
   margin: 0;
   width: 100%;
+  box-shadow: 0 0 10px 0px #535353;
 }
 
 ul#nav li {
@@ -197,14 +198,14 @@ img#portrait {
   flex: 0 50%;
 }
 
-#activities ul {
+#events ul {
   list-style: none;
   padding-left: 0;
 }
 
-#activities ul a {
+/* #events ul a {
   border: none;
   text-decoration: underline;
-}
+} */
 }
 
