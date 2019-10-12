@@ -151,7 +151,7 @@ a, .hvr-shadow {
 }
 
 nav {
-  margin: 0 20px 0 0;
+  margin: 1.5em 20px 0 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
