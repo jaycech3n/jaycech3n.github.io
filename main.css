@@ -7,9 +7,8 @@ body {
 
 #container {
   margin: 0 auto 0 auto;
-  max-width: 42em;
-  padding-top: 1em;
-  padding-bottom: 2em;
+  max-width: 43.5em;
+  padding: 1em 0.5em 2em 0.5em;
   display: flex;
   align-items: flex-start;
   font-size: 20px;
@@ -40,7 +39,7 @@ h2 {
 }
 
 h1, h2 {
-  font-weight: 700;
+  font-weight: 00;
   font-family: "Libre Baskerville", serif;
 }
 
@@ -52,49 +51,23 @@ h1, h2 {
   content: "@"
 }
 
-img#portrait {
-  margin-top: 1em;
-  margin-bottom: 0.4em;
-  width: 8em;
-  border-radius: 50%;
-  border: 0px solid #efefef;
-  box-shadow: 0 0 6px 2px #ccc;
-}
-
 nav {
   margin-right: 3em;
   position: sticky;
   top: 1em;
-}
-
-ul#contact {
-  padding: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-ul#contact li {
-  margin-bottom: 0.5em;
-  flex: 0 50%;
-  font-size: 28px;
-  text-align: center;
-  list-style-type: none;
-  max-width: 2em;
-}
-
-ul#contact li a {
-  border: 0;
-  color: #263543;
-  background: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
 }
 
 ul#nav {
   list-style: none;
+  margin-bottom: 0.5em;
   padding: 0;
-  margin-left: 2em;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   line-height: 1.5em;
 }
 
@@ -107,6 +80,36 @@ ul#nav li a {
   border: none;
   color: #efefef;
   background-color: #263543;
+}
+
+ul#contact {
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+ul#contact li {
+  margin: 0 4px 0 4px;
+  font-size: 20px;
+  text-align: center;
+  list-style-type: none;
+}
+
+ul#contact li a {
+  border: 0;
+  color: #263543;
+  background: none;
+}
+
+img#portrait {
+  float: right;
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 128px;
+  border-radius: 50%;
+  box-shadow: 0 3px 3px 0px #ccc;
+  vertical-align: top;
 }
 
 #events ul {
@@ -136,76 +139,75 @@ a, .hvr-shadow {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 800px) {
+.rshow {
+  display: none;
+}
+
+@media screen and (max-width: 920px) {
 #container {
-  margin: 0 1em 0 1em;
-  padding-top: 0em;
+  padding-top: 0;
+  padding-left: 0;
   padding-bottom: 1em;
-  flex-direction: column;
 }
 
 nav {
-  position: relative;
-  margin: 2em 0 1em 0;
+  margin: 0 20px 0 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  top: 0;
+  bottom: 0;
+}
+
+ul#nav {
+  margin-top: 0;
+  align-items: flex-start;
+  font-size: 14px;
+}
+
+ul#nav li a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-width: 18px;
+  text-align: center;
+}
+
+ul#contact {
+  flex-direction: column;
+}
+
+ul#contact li {
+  margin-bottom: 5px;
 }
 
 section {
   margin: 0;
-  padding-top: 1em;
+  padding-bottom: 0.5em;
 }
 
-h1 {
-  margin-top: 0.5em;
-}
-
-ul#contact {
-  margin: 0 0 0.5em 1.5em;
-  flex: 0 50%;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-}
-
-ul#contact > li {
-  display: inline-block;
-  margin-right: 16px;
-  margin-bottom: 0;
-  flex: 0;
-}
-
-ul#nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: #263543;
-  z-index: 1;
-  margin: 0;
-  width: 100%;
-  box-shadow: 0 0 10px 0px #535353;
-}
-
-ul#nav li {
-  margin: 0;
-}
-
-img#portrait {
-  max-width: 6em;
-  margin: 0;
-  flex: 0 50%;
+#about h1 {
+  line-height: 1em;
 }
 
 #events ul {
   list-style: none;
-  padding-left: 0;
+  padding-left: 0.5em;
 }
 
-#events ul a {
-  border: none;
-  text-decoration: underline;
+#events ul li {
+  margin-bottom: 0.5em;
+}
+
+#events ul li a {
+  display: inline;
+}
+
+.rhide {
+  display: none;
+}
+
+.rshow {
+  display: initial;
 }
 }
 
