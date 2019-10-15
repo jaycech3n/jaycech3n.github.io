@@ -112,12 +112,12 @@ img#portrait {
   vertical-align: top;
 }
 
-#events ul {
+section > ul {
   padding-left: 1.2em;
   list-style: disc;
 }
 
-#events ul li {
+section > ul li {
   margin-bottom: 0.2em;
 }
 
@@ -189,16 +189,16 @@ section {
   line-height: 1em;
 }
 
-#events ul {
+section > ul {
   list-style: none;
   padding-left: 0.5em;
 }
 
-#events ul li {
+section > ul li {
   margin-bottom: 0.5em;
 }
 
-#events ul li a {
+section > ul li a {
   display: inline;
 }
 
