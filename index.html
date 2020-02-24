@@ -4,98 +4,75 @@
   <title>Josh Chen</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto%7CLibre+Baskerville:700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
+  <style>
+    ul#contact ::selection { background-color: #263543; color: #fff; }
+    ul#contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding: 12px;
+      margin-left: 1em;
+      max-width: 12em;
+      border-left: 0px #263543 solid;
+      border-radius: 4px;
+      box-shadow:  2px 2px 4px #b0b5ba, -2px -2px 4px #ffffff;
+    }
+    ul#contact li {
+      display: block;
+      padding: 0;
+      margin: 0.25em 0.5em 0.25em 0.5em;
+    }
+    ul#contact li a {
+      box-shadow: none;
+      padding: 2px 4px 2px 4px;
+    }
+    ul#contact li a:hover {
+      transform: scale(1.1);
+    }
+    ul#contact li a .label { font-size: 0.8em; }
+    ul#contact li > a > span { margin-right: 8px; }
+  </style>
 </head>
 <body>
 <div id="container">
   <nav>
-    <ul id="nav">
-      <!--
-      <li>
-        <a href="#about">
-          <span class="rhide">About</span>
-          <span class="rshow fas fa-home" aria-hidden="true" title="About"></span>
-        </a>
-      </li>
-      -->
-      <li>
-        <a href="#research">
-          <span class="rhide">Research</span>
-          <span class="rshow fas fa-university" aria-hidden="true" title="Research"></span>
-        </a>
-      </li>
-      <li>
-        <a href="#events">
-          <span class="rhide">Events</span>
-          <span class="rshow fas fa-calendar" aria-hidden="true" title="Events"></span>
-        </a>
-      </li>
-      <li>
-        <a href="#cv">
-          <span class="rhide">CV</span>
-          <span class="rshow fas fa-feather-alt" aria-hidden="true" title="CV"></span>
-        </a>
-      </li>
-    </ul>
-    <ul id="contact">
-      <li><a href="https://github.com/jaycech3n" target="_blank" aria-label="GitHub" class="hvr-shadow"><span class="fab fa-github" aria-hidden="true" title="GitHub"></span></a></li>
-      <li><a href="https://www.linkedin.com/in/joshuacws/" target="_blank" aria-label="LinkedIn" class="hvr-shadow"><span class="fab fa-linkedin" aria-hidden="true" title="LinkedIn"></span></a></li>
-      <li><a href="https://twitter.com/jaycech3n" target="_blank" aria-label="Twitter" class="hvr-shadow"><span class="fab fa-twitter" aria-hidden="true" title="Twitter"></span></a></li>
-      <li><a href="mailto:hello@joshchen.io" aria-label="Email" class="hvr-shadow"><span class="far fa-envelope" aria-hidden="true" title="Email"></span></a></li>
-    </ul>
+    <span><a href="papers.html">Papers</a></span>
+    <span><a href="events.html">Events</a></span>
+    <span><a href="pdf/cv.pdf">C.V.</a></span>
   </nav>
   <div id="content">
-    <section id="about">
+    <section id="home">
       <img id="portrait" src="assets/pic.jpg" alt="Display photo">
       <h1>Hi, I'm Josh.</h1>
       <p>
-        I'm a Ph.D. student with the <a href="http://cl-informatik.uibk.ac.at/cek/smart/" target="_blank">SMART project</a> at the <a href="http://cl-informatik.uibk.ac.at/" target="_blank">Computational Logic</a> group of the University of Innsbruck.
+        I'm a Ph.D. student researcher with the <a href="http://cl-informatik.uibk.ac.at/cek/smart/" target="_blank">SMART project</a> at the <a href="http://cl-informatik.uibk.ac.at/" target="_blank">Computational Logic</a> group of the University of Innsbruck.
       </p>
-    </section>
-    <section id="research">
-      <h1>Research</h1>
+      <p>Find me online elsewhere at:</p>
+      <ul id="contact">
+        <li><a href="mailto:hello@joshchen.io" aria-label="Email"><span class="far fa-paper-plane" aria-hidden="true"></span><span class="label">Email</span></a></li>
+        <li><a href="https://twitter.com/jaycech3n" target="_blank" aria-label="Twitter"><span class="fab fa-twitter" aria-hidden="true"></span><span class="label">Twitter</span></a></li>
+        <li><a href="https://github.com/jaycech3n" target="_blank" aria-label="GitHub"><span class="fab fa-github-alt" aria-hidden="true"></span><span class="label">GitHub</span></a></li>
+        <li><a href="https://www.linkedin.com/in/joshuacws/" target="_blank" aria-label="LinkedIn"><span class="fab fa-linkedin-in" aria-hidden="true"></span><span class="label">LinkedIn</span></a></li>
+        <li><a href="https://orcid.org/0000-0001-5041-0794" target="_blank" aria-label="ORCID"><span class="ai ai-orcid" aria-hidden="true"></span><span class="label">ORCID</span></a></li>
+      </ul>
+      <h2>Research</h2>
       <p>
         My current work is in formal verification and interactive theorem proving.
-        In particular, my goal is to make interactive proof assistants more powerful and at the same time simpler to use, in order to become daily tools for mathematicians and computer scientists alike.
+        I work towards making interactive proof assistants more powerful and at the same time simpler to use, in order to become daily tools for mathematicians and computer scientists alike.
       </p>
       <p>
-        More technically, I build logics and tools for the <a href="http://isabelle.in.tum.de/" target="_blank">Isabelle</a> and <a href="https://coq.inria.fr/" target="_blank">Coq</a> proof assistants.
-        At the moment I'm working on:
-      </p>
-      <ul>
-        <li><a href="https://github.com/jaycech3n/Isabelle-Spartan" target="_blank">Dependent types</a> and <a href="https://bitbucket.org/cezaryka/tyset/src/master/" target="_blank">softly-typed set theory</a> for Isabelle.</li>
-        <li><a href="http://cl-informatik.uibk.ac.at/cek/coqhammer/" target="_blank">CoqHammer</a> &mdash; a <a href="https://jfr.unibo.it/article/view/4593" target="_blank">hammer system</a> for Coq and the calculus of inductive constructions.</li>
-      </ul>
-      <p>
-        I'm also interested in type theory (homotopy and otherwise), univalent foundations, and mathematical logic.
+        More technically, I build logics and tools for the <a href="https://isabelle.in.tum.de/">Isabelle proof assistant</a>,
+        currently working on support for <a href="https://github.com/jaycech3n/Isabelle-Spartan" target="_blank">dependent type theory</a> and <a href="https://bitbucket.org/cezaryka/tyset/src/master/" target="_blank">softly-typed set theory</a>.
+        I'm also interested in type theory (homotopy and otherwise), univalent foundations and mathematical logic.
       </p>
       <p>
-        Previously, I studied mathematics at the University of Bonn and the Australian National University.
-        For my <a href="https://arxiv.org/abs/1911.00399" target="_blank">masters thesis</a> with <a href="https://www.hcm.uni-bonn.de/en/mitarbeiter/professorinnen/profile/peter-koepke/" target="_blank">Peter Koepke</a> I <a href="https://github.com/jaycech3n/Isabelle-HoTT" target="_blank">implemented</a> a version of homotopy type theory as an Isabelle object logic.
-        My <a href="https://arxiv.org/abs/1502.06845" target="_blank">bachelors thesis</a> under <a href="https://tqft.net/" target="_blank">Scott Morrison</a> was on quantum algebra, TQFTs, and an application to diagrammatic invariants of topological manifolds.
+        Previously, I studied mathematics at the University of Bonn under <a href="https://www.hcm.uni-bonn.de/en/mitarbeiter/professorinnen/profile/peter-koepke/" target="_blank">Peter Koepke</a>, <a href="https://github.com/jaycech3n/Isabelle-HoTT" target="_blank">implementing</a> a version of homotopy type theory as an Isabelle object logic for my <a href="https://arxiv.org/abs/1911.00399" target="_blank">masters thesis</a>.
+        My <a href="https://arxiv.org/abs/1502.06845" target="_blank">bachelors thesis</a> at the Australian National University under <a href="https://tqft.net/" target="_blank">Scott Morrison</a> was on quantum algebra, TQFTs, and an application to invariants of topological manifolds.
       </p>
-    </section>
-    <section id="events">
-      <h1>Events</h1>
-      <h2>2020</h2>
-      <ul>
-        <li><a href="https://www.hcm.uni-bonn.de/events/eventpages/2020/mathematical-language-practical-type-theory-2020/" target="_blank">Mathematical Language and Practical Type Theory</a> <span class="rhide">&middot; </span><span class="rshow"><br></span><small>Hausdorff Center for Mathematics</small> &middot; <small>Feb 1&ndash;4</small></li>
-      </ul>
-      <h2>2019</h2>
-      <ul>
-        <li><a href="http://arg.ciirc.cvut.cz/workshops_october_16-20_2019.html" target="_blank">Prague Inter-reasoning Workshop</a> <span class="rhide">&middot; </span><span class="rshow"><br></span><small>Czech Technical University in Prague </small> &middot; <small>Oct 16&ndash;20</small></li>
-        <li><a href="http://www.mathematik.uni-muenchen.de/~schwicht/pc19.php" target="_blank">Proof and Computation autumn school</a> <span class="rhide">&middot; </span><span class="rshow"><br></span><small>Herrsching</small> &middot; <small>Sep 20&ndash;26</small></li>
-        <li><a href="https://hott.github.io/HoTT-2019/" target="_blank">Homotopy Type Theory 2019</a> <span class="rhide">&middot; </span><span class="rshow"><br></span><small>Carnegie Mellon University</small> &middot; <small>Aug 7&ndash;10, 12&ndash;17</small></li>
-        <li><a href="https://www.cicm-conference.org/2019/cicm.php" target="_blank">Conference on Intelligent Computer Mathematics</a> <span class="rhide">&middot; </span><span class="rshow"><br></span><small>Czech Technical University in Prague</small> &middot; <small>Jul 8&ndash;12</small></li>
-        <li><a href="http://aitp-conference.org/2019/" target="_blank">Artificial Intelligence and Theorem Proving</a> <span class="rhide">&middot; </span><span class="rshow"><br></span><small>Obergurgl</small> &middot; <small>Apr 7&ndash;12</small></li>
-        <li><a href="https://unimath.github.io/bham2019/" target="_blank">School and Workshop on Univalent Mathematics</a> <span class="rhide">&middot; </span><span class="rshow"><br></span><small>University of Birmingham</small> &middot; <small>Apr 1&ndash;5</small></li>
-      </ul>
-    </section>
-    <section id="cv">
-      <h1>Curriculum Vitae</h1>
-      <p><span class="fas fa-file-pdf" aria-hidden="true"></span> <a href="assets/cv.pdf">PDF</a> here.</p>
     </section>
   </div>
 </div>
