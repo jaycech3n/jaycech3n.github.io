@@ -13,16 +13,8 @@
       font-weight: 700;
       margin-top: 2em;
     }
-    ol.papers span {
-      font-weight: normal;
-      display: inline-block;
-    }
-    ol.papers span.title {
-      display: block;
-      font-style: italic;
-    }
-    ol.papers span.paper:before, ol.papers span.arxiv:before { content: "["; }
-    ol.papers span.paper:after, ol.papers span.arxiv:after { content: "]"; }
+    ol.papers span { font-weight: normal; }
+    ol.papers span.item { font-style: italic; }
   </style>
 </head>
 <body>
@@ -38,9 +30,9 @@
       <h1>Papers</h1>
       <ol class="papers" reversed>
         <li>
-            <span class="title">Isabelle/Spartan &mdash; A Dependent Type Theory Framework for Isabelle</span>
-            <span class="paper"><a href="pdf/Isabelle-Spartan.pdf" target="_blank">preprint</a></span>
-            <span class="arxiv"><a href="https://arxiv.org/abs/2002.09282" target="_blank">arXiv</a></span>
+            <span class="item">Isabelle/Spartan &mdash; A Dependent Type Theory Framework for Isabelle</span>
+            <span class="detail"><a href="pdf/Isabelle-Spartan.pdf" target="_blank">preprint</a></span>
+            <span class="detail"><a href="https://arxiv.org/abs/2002.09282" target="_blank">arXiv</a></span>
         </li>
       </ol>
     </section>

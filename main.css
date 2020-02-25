@@ -36,13 +36,24 @@ section > p + p {
   margin-top: 1em;
 }
 
-section > ul {
+ul {
   padding-left: 2em;
   list-style: square;
 }
 
-section > ul > li + li {
-  margin-bottom: 0.5em;
+section li + li {
+  margin-top: 0.5em;
+}
+
+li > span.item { display: block; }
+li > span.detail {
+  font-size: 0.8em;
+}
+
+li > span.detail + span.detail:before {
+  content: "•";
+  margin-left: 4px;
+  margin-right: 8px;
 }
 
 img#portrait {
@@ -72,14 +83,6 @@ img#portrait {
 } */
 
 img#portrait::selection {background-color: #164fd1; }
-
-span#nickname {
-  font-size: 0.5em;
-}
-
-.emaildomain:before {
-  content: "@"
-}
 
 /*
 ** Container div holds the nav bar and content div
