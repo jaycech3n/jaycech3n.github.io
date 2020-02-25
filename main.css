@@ -58,7 +58,7 @@ li > span.detail + span.detail:before {
 
 img#portrait {
   float: right;
-  width: 96px;
+  width: 100px;
   border-radius: 50%;
   box-shadow: 0 3px 3px 0 #b0b5ba;
   vertical-align: top;
