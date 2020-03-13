@@ -4,6 +4,7 @@
   <title>Josh Chen</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto%7CLibre+Baskerville:700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
     ul#contact {
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-start;
+      justify-content: space-between;
       padding: 12px;
       margin-left: 1em;
       max-width: 12em;
@@ -29,12 +30,14 @@
     ul#contact li a {
       box-shadow: none;
       padding: 2px 4px 2px 4px;
+      display: inline-block;
     }
     ul#contact li a:hover {
       transform: scale(1.1);
     }
     ul#contact li a .label { font-size: 0.8em; }
     ul#contact li > a > span { margin-right: 8px; }
+    .fa-matrix-org:before { font-size: 1.25em; line-height: 1.25em; vertical-align: middle; }
   </style>
 </head>
 <body>
@@ -49,29 +52,27 @@
       <img id="portrait" src="assets/pic.jpg" alt="Display photo">
       <h1>Hi, I'm Josh.</h1>
       <p>
-        I'm a Ph.D. student researcher with the <a href="http://cl-informatik.uibk.ac.at/cek/smart/" target="_blank">SMART project</a> at the <a href="http://cl-informatik.uibk.ac.at/" target="_blank">Computational Logic</a> group of the University of Innsbruck.
+        I'm a Ph.D. student researcher working on the <a href="http://cl-informatik.uibk.ac.at/cek/smart/" target="_blank">SMART project</a> at the <a href="http://cl-informatik.uibk.ac.at/" target="_blank">Computational Logic</a> group of the University of Innsbruck.
       </p>
       <p>Find me online elsewhere:</p>
       <ul id="contact">
         <li><a href="mailto:hello@joshchen.io" aria-label="Email"><span class="far fa-paper-plane" aria-hidden="true"></span><span class="label">Email</span></a></li>
-        <li><a href="https://twitter.com/jaycech3n" target="_blank" aria-label="Twitter"><span class="fab fa-twitter" aria-hidden="true"></span><span class="label">Twitter</span></a></li>
+        <li><a href="https://matrix.to/#/@jaycech3n:matrix.org" target="_blank" aria-label="Matrix"><span class="fa fa-matrix-org" aria-hidden="true"></span><span class="label">Matrix</span></a></li>
         <li><a href="https://github.com/jaycech3n" target="_blank" aria-label="GitHub"><span class="fab fa-github-alt" aria-hidden="true"></span><span class="label">GitHub</span></a></li>
+        <li><a href="https://twitter.com/jaycech3n" target="_blank" aria-label="Twitter"><span class="fab fa-twitter" aria-hidden="true"></span><span class="label">Twitter</span></a></li>
         <li><a href="https://www.linkedin.com/in/joshuacws/" target="_blank" aria-label="LinkedIn"><span class="fab fa-linkedin-in" aria-hidden="true"></span><span class="label">LinkedIn</span></a></li>
         <li><a href="https://orcid.org/0000-0001-5041-0794" target="_blank" aria-label="ORCID"><span class="ai ai-orcid" aria-hidden="true"></span><span class="label">ORCID</span></a></li>
       </ul>
       <h2>Research</h2>
       <p>
-        My current work is in formal verification and interactive theorem proving.
-        I work towards making interactive proof assistants more powerful and at the same time simpler to use, in order to become daily tools for mathematicians and computer scientists alike.
+        I'm interested in the development of better logical foundations and interactive proof assistants for mathematics, with a particular bent towards homotopy type theory and univalent foundations.
       </p>
       <p>
-        More technically, I build logics and tools for the <a href="https://isabelle.in.tum.de/">Isabelle proof assistant</a>,
-        currently working on support for <a href="https://github.com/jaycech3n/Isabelle-Spartan" target="_blank">dependent type theory</a> and <a href="https://bitbucket.org/cezaryka/tyset/src/master/" target="_blank">softly-typed set theory</a>.
-        I'm also interested in type theory (homotopy and otherwise), univalent foundations and mathematical logic.
+        Currently I build support for <a href="https://github.com/jaycech3n/Isabelle-Spartan" target="_blank">dependent type theory</a> and <a href="https://bitbucket.org/cezaryka/tyset/src/master/" target="_blank">softly-typed set theory</a> in the <a href="https://isabelle.in.tum.de/">Isabelle proof assistant</a>.
       </p>
       <p>
-        Previously, I studied mathematics at the University of Bonn under <a href="https://www.hcm.uni-bonn.de/en/mitarbeiter/professorinnen/profile/peter-koepke/" target="_blank">Peter Koepke</a>, <a href="https://github.com/jaycech3n/Isabelle-HoTT" target="_blank">implementing</a> a version of homotopy type theory as an Isabelle object logic for my <a href="https://arxiv.org/abs/1911.00399" target="_blank">masters thesis</a>.
-        My <a href="https://arxiv.org/abs/1502.06845" target="_blank">bachelors thesis</a> at the Australian National University under <a href="https://tqft.net/" target="_blank">Scott Morrison</a> was on quantum algebra, TQFTs, and an application to invariants of topological manifolds.
+        Previously, I studied mathematics at the University of Bonn and the Australian National University.
+        For my <a href="https://arxiv.org/abs/1911.00399" target="_blank">masters thesis</a> I implemented a <a href="https://github.com/jaycech3n/Isabelle-HoTT" target="_blank">homotopy type theory object logic</a> for Isabelle, while my <a href="https://arxiv.org/abs/1502.06845" target="_blank">bachelors thesis</a> was on quantum algebra, TQFTs, and an application to invariants of topological manifolds.
       </p>
     </section>
   </div>
