@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Josh Chen</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto%7CLibre+Baskerville:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500%7CLibre+Baskerville:700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
@@ -38,6 +38,18 @@
     ul#contact li a .label { font-size: 0.8em; }
     ul#contact li > a > span { margin-right: 8px; }
     .fa-matrix-org:before { font-size: 1.25em; line-height: 1.25em; vertical-align: middle; }
+
+    p#spam::selection, p#spam ::selection { background-color: #fff; color: #ef0000; }
+    p#spam {
+      display: inline-block;
+      margin: 0.5em;
+      padding: 2px 10px;
+      border-radius: 4px;
+      box-shadow:  2px 2px 4px #ef0000, -2px -2px 4px #ffffff;
+      background-color: #ef0000;
+      color: #fff;
+      font-size: smaller;
+    }
   </style>
 </head>
 <body>
@@ -63,6 +75,10 @@
         <li><a href="https://www.linkedin.com/in/joshuacws/" target="_blank" aria-label="LinkedIn"><span class="fab fa-linkedin-in" aria-hidden="true"></span><span class="label">LinkedIn</span></a></li>
         <li><a href="https://orcid.org/0000-0001-5041-0794" target="_blank" aria-label="ORCID"><span class="ai ai-orcid" aria-hidden="true"></span><span class="label">ORCID</span></a></li>
       </ul>
+      <p id="spam">
+        If you're here because you've received <strong>spam email</strong> from this domain, I sincerely apologize.
+        This was caused by a small loophole in my email provider's security settings, and I'm working on fixing the problem shortly.
+      </p>
       <h2>Research</h2>
       <p>
         I'm interested in the development of better logical foundations and interactive proof assistants for mathematics, with a particular bent towards homotopy type theory and univalent foundations.
