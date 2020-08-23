@@ -76,7 +76,7 @@ img#portrait {
   margin-left: 1em;
 }
 
-img#portrait::selection {background-color: rgba(256, 256, 256, 0.1); }
+img#portrait::selection {background-color: rgba(255, 255, 255, 0.1); }
 
 /***********************************************
  Container div holds the nav bar and content div
