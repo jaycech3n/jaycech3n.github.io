@@ -1,165 +1,124 @@
-/**********************************
- Fundamental layout and formatting
-**********************************/
-
-::-moz-selection { background: #ffdc00; color: #222; }
-::selection { background: #ffdc00; color: #222; }
-
-.responsive-show { display: none; }
-
+/********
+Top-level
+********/
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
   font-family: Roboto, sans-serif;
-}
+  color: var(--font-color);
+  background-color: var(--bg-color)}
 
 h1, h2 {
   margin: 0;
   line-height: 100%;
-  font-family: "Libre Baskerville", "Linux Libertine Display", serif;
-}
-
+  font-family: "Libre Baskerville", "Linux Libertine Display", serif}
 h1 {
   font-size: 2em;
-  margin-bottom: 0.6em;
-}
-
+  margin-bottom: 0.6em}
 h2 {
   margin-top: 2em;
-  font-size: 1.2em;
-}
+  font-size: 1.2em}
+h1 + h2 {margin-top: 1.5em}
 
-h1 + h2 {
-  margin-top: 1.5em;
-}
-
-section + section {
-  padding-top: 1em;
-}
-
-section > p + p {
-  margin-top: 1em;
-}
-
-ul {
+section + section {padding-top: 1em}
+section > p + p {margin-top: 1em}
+section ul {
   padding-left: 2em;
-  list-style: square;
-}
-
-section li + li {
-  margin-top: 0.5em;
-}
-
-li > span.item { display: block; }
-li > span.detail {
-  font-size: 0.8em;
-}
-li > span.detail + span.detail:before {
+  list-style: square}
+section li + li {margin-top: 0.5em}
+section li > span.item {display: block}
+section li > span.detail {font-size: 0.8em}
+section li > span.detail + span.detail:before {
   content: "•";
   margin-left: 4px;
-  margin-right: 8px;
-}
-li a.current:after {
+  margin-right: 8px}
+section li a.current:after {
   content: " (current)";
   margin: 0;
-  color: #ef0000;
-}
+  color: var(--highlight-color1)}
+
+::selection {color: var(--highlight-font-color2); background-color: var(--highlight-color2)}
+::-moz-selection {color: var(--highlight-font-color2); background-color: var(--highlight-color2)}
 
 img#portrait {
   float: right;
   width: 100px;
   border-radius: 50%;
-  box-shadow: 0 3px 3px 0 #b0b5ba;
+  box-shadow: 0 3px 3px 0 var(--shadow-color1);
   vertical-align: top;
   margin-bottom: 1em;
-  margin-left: 1em;
-}
+  margin-left: 1em}
+img#portrait::selection {background-color: var(--shadow-color2)}
+img#portrait::-moz-selection {background-color: var(--shadow-color2)}
 
-img#portrait::selection {background-color: rgba(255, 255, 255, 0.1); }
-
-/***********************************************
- Container div holds the nav bar and content div
-************************************************/
-
+/****************************************************
+Container div; holds nav bar, content, and background
+****************************************************/
 #container {
   margin: 1em auto auto auto;
   max-width: 32em;
-  font-size: 18px;
-  color: #263543;
-}
-
+  font-size: 18px}
 #container a {
   text-decoration: none;
   transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -webkit-transition-duration: 0.1s;
-}
-
+  -webkit-transition-duration: 0.1s}
 #container a:hover, #container a:focus {
   border-radius: 2px;
-  box-shadow:  2px 2px 4px #b0b5ba, -2px -2px 4px #ffffff;
-}
+  box-shadow:  2px 2px 4px var(--shadow-color1), -2px -2px 4px var(--shadow-color2)}
 
-/***************
- Navigation bar
-***************/
-
+/******
+Nav bar
+******/
 nav {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-}
-
-nav > span + span {
-  margin-left: 0.5em;
-}
+  justify-content: flex-start}
+nav > span + span {margin-left: 0.5em}
 
 nav a {
-  color: #164fd1;
+  color: var(--nav-color);
   text-transform: uppercase;
   padding: 2px 4px;
-  display: inline-block;
-}
-
+  display: inline-block}
 nav a:hover, nav a:focus, nav a:active {
-  color: #263543;
-  background-color: #ffdc00;
-  transform: scale(1.1);
-}
+  color: var(--font-color);
+  background-color: var(--highlight-color2);
+  transform: scale(1.1)}
 
-nav a::-moz-selection { background: #ba2d0b; color: #fff; }
-nav a::selection { background: #ba2d0b; color: #fff; }
+nav a::-selection {background: var(--highlight-color1); color: var(--highlight-font-color1)}
+nav a::-moz-selection {background: var(--highlight-color1); color: var(--highlight-font-color1)}
 
-nav + #content {
-  margin-top: 2em;
-}
+nav + #content {margin-top: 2em}
 
-/***********************************
- Content div, separate from nav bar
-***********************************/
-
+/*****************************
+Content; separate from nav bar
+*****************************/
 #content {
   position: relative;
-  line-height: 1.5em;
-  padding-bottom: 248px;
-  background-image: url(assets/pullback.png);
+  line-height: 1.5em}
+
+#content a {
+  color: var(--font-color);
+  box-shadow: 0px 3px 4px -4px var(--shadow-color1)}
+
+/***************
+Background image
+***************/
+#background {
+  height: 248px;
+  background-image: url(assets/pullback.svg);
   background-size: 32em;
   background-repeat: no-repeat;
   background-position: bottom 2em center;
   overflow: hidden;
-}
+  margin-bottom: 0.5em;
+  filter: var(--filter)}
 
-#content a {
-  color: #263543;
-  box-shadow: 0px 3px 4px -4px #b0b5ba;
-}
-
-/****************
- Smaller screens
-****************/
-
+/**************
+Smaller screens
+**************/
 @media screen and (max-width: 920px) {
   #container {
     padding: 0 1em 0 1em;
@@ -169,8 +128,9 @@ nav + #content {
     margin-right: 1em;
   }
 
-  #content {
-    padding-bottom: 200px;
+  #background {
+    height: 200px;
+    margin-bottom: 1.5em;
     background-position: bottom 0 right 0;
   }
 
@@ -178,3 +138,32 @@ nav + #content {
     display: inline;
   }
 }
+
+/*****
+Colors
+*****/
+:root {
+  --font-color: #263543;
+  --bg-color: #fff;
+  --nav-color: #164fd1;
+  --highlight-color1: #ef0000;
+  --highlight-font-color1: #fff;
+  --highlight-color2: #ffdc00;
+  --highlight-font-color2: #222;
+  --shadow-color1: #b0b5ba;
+  --shadow-color2: #ffffff33;
+  --filter: invert(16%) sepia(61%) saturate(298%) hue-rotate(167deg) brightness(95%) contrast(92%)}
+
+/* Dark theme WIP
+[data-theme="sec"] {
+  --font-color: #efefef;
+  --bg-color: #404547;
+  --nav-color: #fff;
+  --highlight-color1: #723881;
+  --highlight-font-color1: #fff;
+  --highlight-color2: #ffdc00;
+  --highlight-font-color2: #222;
+  --shadow-color1: #272a2b;
+  --shadow-color2: #40454733;
+  --filter: invert(98%) sepia(7%) saturate(333%) hue-rotate(272deg) brightness(114%) contrast(87%)}
+*/

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Josh Chen</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500%7CLibre+Baskerville:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400%7CLibre+Baskerville:700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
@@ -10,7 +10,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <style>
-    ul#contact ::selection { background-color: #263543; color: #fff; }
     ul#contact {
       display: flex;
       flex-wrap: wrap;
@@ -19,26 +18,23 @@
       margin-left: 1em;
       margin-bottom: 2em;
       max-width: 12em;
-      border-left: 0px #263543 solid;
+      border-left: 0px var(--font-color) solid;
       border-radius: 4px;
-      box-shadow:  2px 2px 4px #b0b5ba, -2px -2px 4px #ffffff;
-    }
+      box-shadow:  2px 2px 4px var(--shadow-color1), -2px -2px 4px var(--shadow-color2)}
     ul#contact li {
       display: block;
       padding: 0;
-      margin: 0.25em 0.5em 0.25em 0.5em;
-    }
+      margin: 0.25em 0.5em 0.25em 0.5em}
     ul#contact li a {
       box-shadow: none;
       padding: 2px 4px 2px 4px;
-      display: inline-block;
-    }
-    ul#contact li a:hover {
-      transform: scale(1.1);
-    }
-    ul#contact li a .label { font-size: 0.8em; }
-    ul#contact li > a > span { margin-right: 8px; }
-    .fa-matrix-org:before { font-size: 1.25em; line-height: 1.25em; vertical-align: middle; }
+      display: inline-block}
+    ul#contact li a:hover {transform: scale(1.1)}
+    ul#contact li a .label {font-size: 0.8em}
+    ul#contact li > a > span {margin-right: 8px}
+    ul#contact ::selection {background-color: var(--font-color); color: var(--bg-color)}
+    ul#contact ::-moz-selection {background-color: var(--font-color); color: var(--bg-color)}
+    .fa-matrix-org:before {font-size: 1.25em; line-height: 1.25em; vertical-align: middle}
   </style>
 </head>
 <body>
@@ -71,6 +67,7 @@
       </p>
     </section>
   </div>
+  <div id="background"></div>
 </div>
 </body>
 </html>
