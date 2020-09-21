@@ -13,6 +13,7 @@ h1, h2 {
   line-height: 100%;
   font-family: "Libre Baskerville", "Linux Libertine Display", serif}
 h1 {
+  color: var(--color1);
   font-size: 2em;
   margin-bottom: 0.6em}
 h2 {
@@ -35,21 +36,21 @@ section li > span.detail + span.detail:before {
 section li a.current:after {
   content: " (current)";
   margin: 0;
-  color: var(--highlight-color1)}
+  color: var(--attn-color)}
 
-::selection {color: var(--highlight-font-color2); background-color: var(--highlight-color2)}
-::-moz-selection {color: var(--highlight-font-color2); background-color: var(--highlight-color2)}
+::selection {color: var(--color4); background-color: var(--color3)}
+::-moz-selection {color: var(--color4); background-color: var(--color3)}
 
 img#portrait {
   float: right;
   width: 100px;
   border-radius: 50%;
-  box-shadow: 0 3px 3px 0 var(--shadow-color1);
+  box-shadow: 0 3px 3px 0 var(--shadow-color);
   vertical-align: top;
   margin-bottom: 1em;
   margin-left: 1em}
-img#portrait::selection {background-color: var(--shadow-color2)}
-img#portrait::-moz-selection {background-color: var(--shadow-color2)}
+img#portrait::selection {background-color: var(--lighten-color)}
+img#portrait::-moz-selection {background-color: var(--lighten-color)}
 
 /****************************************************
 Container div; holds nav bar, content, and background
@@ -65,7 +66,7 @@ Container div; holds nav bar, content, and background
   -webkit-transition-duration: 0.1s}
 #container a:hover, #container a:focus {
   border-radius: 2px;
-  box-shadow:  2px 2px 4px var(--shadow-color1), -2px -2px 4px var(--shadow-color2)}
+  box-shadow:  2px 2px 4px var(--highlight-color1), -2px -2px 4px var(--highlight-color2)}
 
 /******
 Nav bar
@@ -78,17 +79,14 @@ nav {
 nav > span + span {margin-left: 0.5em}
 
 nav a {
-  color: var(--nav-color);
+  color: var(--color2);
   text-transform: uppercase;
   padding: 2px 4px;
   display: inline-block}
 nav a:hover, nav a:focus, nav a:active {
-  color: var(--font-color);
-  background-color: var(--highlight-color2);
+  color: var(--color4);
+  background-color: var(--color3);
   transform: scale(1.1)}
-
-nav a::-selection {background: var(--highlight-color1); color: var(--highlight-font-color1)}
-nav a::-moz-selection {background: var(--highlight-color1); color: var(--highlight-font-color1)}
 
 nav + #content {margin-top: 2em}
 
@@ -101,7 +99,7 @@ Content; separate from nav bar
 
 #content a {
   color: var(--font-color);
-  box-shadow: 0px 3px 4px -4px var(--shadow-color1)}
+  box-shadow: 0px 3px 4px -4px var(--highlight-color1)}
 
 /***************
 Background image
@@ -114,7 +112,7 @@ Background image
   background-position: bottom 2em center;
   overflow: hidden;
   margin-bottom: 0.5em;
-  filter: var(--filter)}
+  filter: var(--bg-filter)}
 
 /**************
 Smaller screens
@@ -145,25 +143,30 @@ Colors
 :root {
   --font-color: #263543;
   --bg-color: #fff;
-  --nav-color: #164fd1;
-  --highlight-color1: #ef0000;
-  --highlight-font-color1: #fff;
-  --highlight-color2: #ffdc00;
-  --highlight-font-color2: #222;
-  --shadow-color1: #b0b5ba;
-  --shadow-color2: #ffffff33;
-  --filter: invert(16%) sepia(61%) saturate(298%) hue-rotate(167deg) brightness(95%) contrast(92%)}
+  --color1: var(--font-color);
+  --color2: #164fd1;
+  --color3: #ffdc00;
+  --color4: #222;
+  --attn-color: #ef0000;
+  --shadow-color: #12121244;
+  --lighten-color: #ffffff33;
+  --highlight-color1: var(--shadow-color);
+  --highlight-color2: transparent;
+  --bg-filter: invert(16%) sepia(61%) saturate(298%) hue-rotate(167deg) brightness(95%) contrast(92%)}
 
 /* Dark theme WIP
 [data-theme="sec"] {
-  --font-color: #efefef;
-  --bg-color: #404547;
-  --nav-color: #fff;
-  --highlight-color1: #723881;
-  --highlight-font-color1: #fff;
-  --highlight-color2: #ffdc00;
-  --highlight-font-color2: #222;
-  --shadow-color1: #272a2b;
-  --shadow-color2: #40454733;
-  --filter: invert(98%) sepia(7%) saturate(333%) hue-rotate(272deg) brightness(114%) contrast(87%)}
+  --font-color: #faf9f7;
+  --bg-color: #27241d;
+  --color1: #625d52;
+  --color2: var(--color1);
+  --color3: #fbb13c;
+  --color4: #121212;
+  --attn-color: #e462b0;
+  --shadow-color: #12121233;
+  --lighten-color: #e8e6e133;
+  --highlight-color1: var(--lighten-color);
+  --highlight-color2: transparent;
+  --bg-filter: invert(98%) sepia(7%) saturate(333%) hue-rotate(272deg) brightness(114%) contrast(87%)}
 */
+
