@@ -1,10 +1,39 @@
 /********
 Top-level
 ********/
+@font-face {
+  font-family: 'Atkinson-Hyperlegible';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Atkinson-Hyperlegible-Regular'),
+       url(assets/fonts/Atkinson-Hyperlegible-Regular.woff2) format('woff2'),
+       url(assets/fonts/Atkinson-Hyperlegible-Regular.woff) format('woff')}
+@font-face {
+  font-family: 'Atkinson-Hyperlegible';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Atkinson-Hyperlegible-Italic'),
+       url(assets/fonts/Atkinson-Hyperlegible-Italic.woff2) format('woff2'),
+       url(assets/fonts/Atkinson-Hyperlegible-Italic.woff) format('woff')}
+@font-face {
+  font-family: 'Atkinson-Hyperlegible';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Atkinson-Hyperlegible-Bold'),
+       url(assets/fonts/Atkinson-Hyperlegible-Bold.woff2) format('woff2'),
+       url(assets/fonts/Atkinson-Hyperlegible-Bold.woff) format('woff')}
+@font-face {
+  font-family: 'Atkinson-Hyperlegible';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Atkinson-Hyperlegible-BoldItalic'),
+       url(assets/fonts/Atkinson-Hyperlegible-BoldItalic.woff2) format('woff2'),
+       url(assets/fonts/Atkinson-Hyperlegible-BoldItalic.woff) format('woff')}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto, sans-serif;
+  font-family: "Atkinson-Hyperlegible", Roboto, sans-serif;
   color: var(--font-color);
   background-color: var(--bg-color)}
 
@@ -75,7 +104,8 @@ nav {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start}
+  justify-content: flex-start;
+  font-family: Roboto, sans-serif}
 nav > span + span {margin-left: 0.5em}
 
 nav a {
