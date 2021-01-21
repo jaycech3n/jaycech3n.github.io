@@ -87,7 +87,7 @@ Container div; holds nav bar, content, and background
 #container {
   margin: 1em auto auto auto;
   max-width: 32em;
-  font-size: 18px}
+  font-size: 20px}
 #container a {
   text-decoration: none;
   transition-duration: 0.1s;
