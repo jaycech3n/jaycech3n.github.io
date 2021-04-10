@@ -1,6 +1,6 @@
-/********
+/****************************************************************
 Top-level
-********/
+****************************************************************/
 @font-face {
   font-family: 'Atkinson-Hyperlegible';
   font-style: normal;
@@ -33,7 +33,7 @@ Top-level
 body {
   margin: 0;
   padding: 0;
-  font-family: "Atkinson-Hyperlegible", Roboto, sans-serif;
+  font-family: "Atkinson-Hyperlegible", sans-serif;
   color: var(--font-color);
   background-color: var(--bg-color)}
 
@@ -44,18 +44,43 @@ h1, h2 {
 h1 {
   color: var(--color1);
   font-size: 1.8em;
-  margin-bottom: 0.6em}
+  margin-bottom: 0.8em}
 h2 {
   margin-top: 2em;
   font-size: 1.2em}
 h1 + h2 {margin-top: 1.5em}
 
-section + section {padding-top: 1em}
+header + section {padding-top: 1.5em}
+section + section {padding-top: 1.5em}
 section > p + p {margin-top: 1em}
-section ul {
-  padding-left: 2em;
-  list-style: square}
-section li + li {margin-top: 0.5em}
+section h1 {
+  font-size: 1.2em;
+}
+
+section ul, ol {
+  margin-left: 0.2em;
+  padding-left: 0em;
+  list-style: none;
+}
+section ul li, section ol li {
+  padding-left: 1em;
+  border-left: 4px var(--color1) solid;
+}
+section ol {
+  counter-reset: paperNum 5;
+}
+section ol li::before {
+  counter-increment: paperNum -1;
+  content: counter(paperNum);
+  position: absolute;
+  left: 0em;
+  padding: 0 2px 0 2px;
+  text-align: right;
+  font-weight: bold;
+  background-color: var(--bg-color);
+}
+
+section li + li {margin-top: 0.75em}
 section li > span.item {display: block}
 section li > span.detail {font-size: 0.8em}
 section li > span.detail + span.detail:before {
@@ -67,26 +92,88 @@ section li a.current:after {
   margin: 0;
   color: var(--attn-color)}
 
+code, pre {
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.9em;
+}
+
 ::selection {color: var(--color4); background-color: var(--color3)}
 ::-moz-selection {color: var(--color4); background-color: var(--color3)}
 
+
+/****************************************************************
+ID/class-specific styling
+****************************************************************/
+
+.at::before {
+  content: "@";
+}
+
+.less {
+  display: none;
+}
+
+.more {
+  display: inline;
+}
+
 img#portrait {
   float: right;
-  width: 100px;
+  width: 110px;
   border-radius: 50%;
   box-shadow: 0 3px 3px 0 var(--shadow-color);
   vertical-align: top;
-  margin-bottom: 1em;
   margin-left: 1em}
 img#portrait::selection {background-color: var(--lighten-color)}
 img#portrait::-moz-selection {background-color: var(--lighten-color)}
 
-/****************************************************
+#contact {
+  padding-left: 1em;
+  margin-bottom: 1.2em;
+}
+#contact li {
+  list-style: none;
+}
+#contact li + li {
+  margin-top: 4px;
+}
+#contact li .label {
+  margin-left: 0.5em;
+}
+
+.tag {
+  font-size: 0.8em;
+  padding: 3px 4px;
+  border-radius: 4px;
+  color: var(--bg-color);
+  background-color: var(--highlight-color1);
+  vertical-align: middle;
+}
+
+.color1 {
+  background-color: var(--color1);
+}
+
+#togglemoreless:hover {
+  cursor: pointer;
+}
+
+.papers li .item {
+  font-family: "Libre Baskerville", "Linux Libertine Display", serif;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.small {
+  display: none;
+}
+
+/****************************************************************
 Container div; holds nav bar, content, and background
-****************************************************/
+****************************************************************/
 #container {
-  margin: 1em auto auto auto;
-  max-width: 32em;
+  margin: 1em auto 4em auto;
+  max-width: 45em;
   font-size: 20px}
 #container a {
   text-decoration: none;
@@ -97,9 +184,9 @@ Container div; holds nav bar, content, and background
   border-radius: 2px;
   box-shadow:  2px 2px 4px var(--highlight-color1), -2px -2px 4px var(--highlight-color2)}
 
-/******
+/****************************************************************
 Nav bar
-******/
+****************************************************************/
 nav {
   position: relative;
   display: flex;
@@ -120,9 +207,9 @@ nav a:hover, nav a:focus, nav a:active {
 
 nav + #content {margin-top: 2em}
 
-/*****************************
+/****************************************************************
 Content; separate from nav bar
-*****************************/
+****************************************************************/
 #content {
   position: relative;
   line-height: 1.5em}
@@ -131,29 +218,31 @@ Content; separate from nav bar
   color: var(--font-color);
   box-shadow: 0px 3px 4px -4px var(--highlight-color1)}
 
-/***************
+/****************************************************************
 Background image
-***************/
+****************************************************************/
 #background {
   height: 248px;
   background-image: url(assets/pullback.svg);
-  background-size: 32em;
+  background-size: 40em;
   background-repeat: no-repeat;
   background-position: bottom 2em center;
-  overflow: hidden;
+  overflow: visible;
   margin-bottom: 0.5em;
   filter: var(--bg-filter)}
 
-/**************
+/****************************************************************
 Smaller screens
-**************/
-@media screen and (max-width: 920px) {
+****************************************************************/
+@media screen and (max-width: 960px) {
   #container {
     padding: 0 1em 0 1em;
   }
-
+}
+@media screen and (max-width: 600px) {
   img#portrait {
     margin-right: 1em;
+    width: 90px;
   }
 
   #background {
@@ -162,14 +251,21 @@ Smaller screens
     background-position: bottom 0 right 0;
   }
 
+  #contact code {
+    display: none;
+  }
+  .small {
+    display: inline;
+  }
+
   #events ul a {
     display: inline;
   }
 }
 
-/*****
+/****************************************************************
 Colors
-*****/
+****************************************************************/
 :root {
   --font-color: #263543;
   --bg-color: #fff;
@@ -199,4 +295,3 @@ Colors
   --highlight-color2: transparent;
   --bg-filter: invert(98%) sepia(7%) saturate(333%) hue-rotate(272deg) brightness(114%) contrast(87%)}
 */
-

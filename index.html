@@ -1,72 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Josh Chen</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400%7CLibre+Baskerville:700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&family=Roboto&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  <style>
-    ul#contact {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      padding: 12px;
-      margin-bottom: 2em;
-      max-width: 12.5em;
-      border-left: 0px var(--font-color) solid;
-      border-radius: 4px;
-      box-shadow:  2px 2px 4px var(--shadow-color)}
-    ul#contact li {
-      display: block;
-      padding: 0;
-      margin: 0.25em 0.5em 0.25em 0.5em}
-    ul#contact li a {
-      box-shadow: none;
-      padding: 2px 4px 2px 4px;
-      display: inline-block}
-    ul#contact li a:hover {transform: scale(1.1)}
-    ul#contact li a .label {font-size: 0.8em}
-    ul#contact li > a > span {margin-right: 8px}
-    ul#contact ::selection {background-color: var(--font-color); color: var(--bg-color)}
-    ul#contact ::-moz-selection {background-color: var(--font-color); color: var(--bg-color)}
-    .fa-matrix-org:before {font-size: 1.25em; line-height: 1.25em; vertical-align: middle}
-  </style>
 </head>
 <body>
 <div id="container">
   <nav>
-    <span><a href="papers.html">Papers</a></span>
-    <span><a href="events.html">Events</a></span>
-    <span><a href="notes">Notes</a></span>
+    <span><a href="#research">Research</a></span>
+    <span><a href="#events">Events</a></span>
     <span><a href="pdf/cv.pdf">C.V.</a></span>
   </nav>
   <div id="content">
-    <section id="home">
+    <header>
       <img id="portrait" src="assets/pic.jpg" alt="Display photo">
-      <h1>Hi, I'm Josh.</h1>
-      <p>I'm a first year Ph.D. student at the University of Nottingham's <a href="https://www.nottingham.ac.uk/research/groups/fp-lab/" target="_blank">Functional Programming Lab</a>, advised by <a href="https://nicolaikraus.github.io/" target="_blank">Nicolai Kraus</a>.</p>
+      <h1>Josh Chen</h1>
       <ul id="contact">
-        <li><a href="mailto:josh@joshchen.io" aria-label="Email"><span class="far fa-paper-plane" aria-hidden="true"></span><span class="label">Email</span></a></li>
-        <li><a href="https://matrix.to/#/@jaycech3n:matrix.org" target="_blank" aria-label="Matrix"><span class="fa fa-matrix-org" aria-hidden="true"></span><span class="label">Matrix</span></a></li>
-        <li><a href="https://github.com/jaycech3n" target="_blank" aria-label="GitHub"><span class="fab fa-github-alt" aria-hidden="true"></span><span class="label">GitHub</span></a></li>
-        <li><a href="https://twitter.com/jaycech3n" target="_blank" aria-label="Twitter"><span class="fab fa-twitter" aria-hidden="true"></span><span class="label">Twitter</span></a></li>
-        <li><a href="https://www.linkedin.com/in/joshuacws/" target="_blank" aria-label="LinkedIn"><span class="fab fa-linkedin-in" aria-hidden="true"></span><span class="label">LinkedIn</span></a></li>
-        <li><a href="https://orcid.org/0000-0001-5041-0794" target="_blank" aria-label="ORCID"><span class="ai ai-orcid" aria-hidden="true"></span><span class="label">ORCID</span></a></li>
+        <li><a href="mailto:joshua.chen@nottingham.ac.uk" aria-label="Email"><span class="far fa-envelope-open" aria-hidden="true"></span><span class="label"><code>joshua.chen<span class="at"</span>nottingham.ac.uk</code><span class="small">Email</span></a></li>
+        <li><a href="https://orcid.org/0000-0001-5041-0794" target="_blank" aria-label="ORCID"><span class="ai ai-orcid" aria-hidden="true"></span><span class="label"><code>0000-0001-5041-0794</code><span class="small">ORCID</span></a></li>
+        <li><a href="https://github.com/jaycech3n" target="_blank" aria-label="GitHub"><span class="fab fa-github-alt" aria-hidden="true"></span><span class="label"><code>jaycech3n</code><span class="small">GitHub</span></a></li>
       </ul>
-      <p>
-        I'm interested in the big swath of mathematics encompassing category theory, logical foundations, and computer programs/proofs, with a particular bent towards homotopy type theory and univalent foundations.
+      <p>I'm a first year Ph.D. student at the <a href="https://www.nottingham.ac.uk/research/groups/fp-lab/" target="_blank">Functional Programming Lab</a> of the University of Nottingham, advised by <a href="https://nicolaikraus.github.io/" target="_blank">Nicolai Kraus</a>. <span id="togglemoreless" class="color1 tag" onclick="moreless()">more</span></p>
+      <p class="moreless" style="display: none">
+        I'm interested in the big swath of mathematics encompassing (higher) category theory, logical foundations, and computer programs/proofs, with a particular bent towards homotopy type theory and univalent foundations.
+        At the moment I mainly think about semisimplicial types, two-level type theory, and internal models of HoTT.
       </p>
-      <p>
+      <p class="moreless" style="display: none;">
         I was previously part of the <a href="http://cl-informatik.uibk.ac.at/cek/smart/" target="_blank">SMART project</a> at the Computational Logic group of the University of Innsbruck, investigating new object logics and hybrid type systems in the <a href="https://www.cl.cam.ac.uk/research/hvg/Isabelle/index.html" target="_blank">Isabelle proof assistant</a>.
         Prior to that I studied mathematics at the University of Bonn and the Australian National University.
       </p>
+    </header>
+    <section id="research" reversed>
+      <h1>Research</h1>
+      <ol class="papers">
+        <li>
+          <span class="item">Homotopy Type Theory in Isabelle</span>
+          <span class="detail">2021</span>
+          <span class="detail">12<sup>th</sup> International Conference on Interactive Theorem Proving</span>
+          <span class="detail">To appear</span>
+          <span class="detail"><a href="https://github.com/jaycech3n/Isabelle-HoTT" target="_blank">GitHub</a></span>
+        </li>
+        <li>
+          <span class="item">Isabelle/Spartan: A Dependent Type Theory Framework for Isabelle</span>
+          <span class="detail">2020</span>
+          <span class="detail"><span class="tag">Unpublished draft</span> Initial version of <i>Homotopy Type Theory in Isabelle</i></span>
+          <span class="detail"><a href="https://arxiv.org/abs/2002.09282" target="_blank">arXiv</a></span>
+          <span class="detail"><a href="https://github.com/jaycech3n/Isabelle-Spartan" target="_blank">GitHub</a></span>
+        </li>
+        <li>
+          <span class="item">An Implementation of Homotopy Type Theory in Isabelle/Pure</span>
+          <span class="detail">2018</span>
+          <span class="detail"><span class="tag">Masters thesis</span> University of Bonn</span>
+          <span class="detail"><a href="https://arxiv.org/abs/1911.00399" target="_blank">arXiv</a></span>
+        </li>
+        <li>
+          <span class="item">The Temperley-Lieb categories and skein modules</span>
+          <span class="detail">2014</span>
+          <span class="detail"><span class="tag">Honours thesis</span> The Australian National University</span>
+          <span class="detail"><a href="https://arxiv.org/abs/1502.06845" target="_blank">arXiv</a></span>
+        </li>
+      </ol>
+    </section>
+    <section id="events">
+      <h1>Events</h1>
+      <ul>
+        <li>
+          <span class="item"><a href="http://easyconferences.eu/itp2021/" target="_blank">12<sup>th</sup> International Conference on Interactive Theorem Proving</a></span>
+          <span class="detail">2021</span>
+          <span class="detail">Jun 29&ndash;Jul 1</span>
+          <span class="detail">Rome (virtual)</span>
+        </li>
+        <li>
+          <span class="item"><a href="https://staffwww.dcs.shef.ac.uk/people/G.Struth/mgs21.html" target="_blank">Midlands Graduate School in the Foundations of Computing Science</a></span>
+          <span class="detail">2021</span>
+          <span class="detail">Apr 12&ndash;16</span>
+          <span class="detail">Virtual</span>
+        </li>
+      </ul>
+      <p>If we have been, or will be, at the same meeting, feel free to drop me a line and say hi! <span class="far fa-smile" aria-hidden="true"></span></p>
     </section>
   </div>
-  <div id="background"></div>
 </div>
+<script>
+  function moreless() {
+    var m = document.getElementsByClassName("moreless")
+    for (let p of m) {
+      if (p.style.display === "none") {p.style.display = "block"}
+      else {p.style.display = "none"}
+    }
+    var x = document.getElementById("togglemoreless")
+    if (x.innerHTML === "more") {
+      x.innerHTML = "less"
+    }
+    else {
+      x.innerHTML = "more"
+    }
+  }
+</script>
 </body>
 </html>
