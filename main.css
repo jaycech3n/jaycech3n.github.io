@@ -149,6 +149,12 @@ img#portrait::-moz-selection {background-color: var(--lighten-color)}
   background-color: var(--highlight-color1);
   vertical-align: middle;
 }
+.tag::selection {
+  background-color: var(--color1);
+  color: var(--bg-color)}
+.tag::-moz-selection {
+  background-color: var(--color1);
+  color: var(--bg-color)}
 
 .color1 {
   background-color: var(--color1);
