@@ -67,7 +67,7 @@ section ul li, section ol li {
   border-left: 4px var(--color1) solid;
 }
 section ol {
-  counter-reset: paperNum 4;
+  counter-reset: paperNum 5;
 }
 section ol li::before {
   counter-increment: paperNum -1;
