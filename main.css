@@ -81,8 +81,13 @@ section ol li::before {
 }
 
 section li + li {margin-top: 0.75em}
-section li > span.item {display: block}
-section li > span.detail {font-size: 0.8em}
+section li > span.item {
+  display: block;
+  margin-bottom: 0.2em}
+section li span.detail {
+  display: inline-block;
+  font-size: 0.8em;
+  line-height: 1.5em}
 section li > span.detail + span.detail:before {
   content: "•";
   margin-left: 4px;
