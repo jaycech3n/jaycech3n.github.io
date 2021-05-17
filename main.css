@@ -63,7 +63,7 @@ section ul, ol {
   list-style: none;
 }
 section ul li, section ol li {
-  padding-left: 1em;
+  padding-left: 1.5ex;
   border-left: 4px var(--color1) solid;
 }
 section ol {
@@ -71,31 +71,43 @@ section ol {
 }
 section ol li::before {
   counter-increment: paperNum -1;
-  content: counter(paperNum);
+  content: counter(paperNum)".";
   position: absolute;
-  left: 0em;
-  padding: 0 2px 0 2px;
+  left: -0.75ex;
+  padding: 1px 2px 0 2px;
+  width: 2ex;
   text-align: right;
   font-weight: bold;
   background-color: var(--bg-color);
 }
 
-section li + li {margin-top: 0.75em}
-section li > span.item {
-  display: block;
-  margin-bottom: 0.2em}
-section li span.detail {
-  display: inline-block;
+section li + li {
+  margin-top: 0.75em
+}
+section li > div.item {
+  margin-bottom: 0.2em
+}
+section li div.detail {
+  padding-left: 1ex;
+}
+section li div.detail > span {
+  display: inline;
   font-size: 0.8em;
-  line-height: 1.5em}
-section li > span.detail + span.detail:before {
+  line-height: 1.5em
+}
+section li div.detail > span + span:before {
   content: "•";
   margin-left: 4px;
-  margin-right: 8px}
+  margin-right: 8px
+}
+section li div.detail .tag {
+  font-size: 0.66em
+}
 section li a.current:after {
   content: " (current)";
   margin: 0;
-  color: var(--attn-color)}
+  color: var(--attn-color)
+}
 
 code, pre {
   font-family: "Source Code Pro", monospace;
@@ -173,6 +185,7 @@ img#portrait::-moz-selection {background-color: var(--lighten-color)}
   font-family: "Libre Baskerville", "Linux Libertine Display", serif;
   font-style: italic;
   font-size: 0.9em;
+  margin-left: 2px;
 }
 
 .small {
