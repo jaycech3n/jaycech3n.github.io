@@ -71,12 +71,12 @@ section ol {
 }
 section ol li::before {
   counter-increment: paperNum -1;
-  content: counter(paperNum)".";
+  content: counter(paperNum);
   position: absolute;
-  left: -0.75ex;
+  left: -0.5ex;
   padding: 1px 2px 0 2px;
   width: 2ex;
-  text-align: right;
+  text-align: center;
   font-weight: bold;
   background-color: var(--bg-color);
 }
@@ -159,6 +159,8 @@ img#portrait::-moz-selection {background-color: var(--lighten-color)}
 }
 
 .tag {
+  font-family: "Atkinson-Hyperlegible", sans-serif;
+  font-style: normal;
   font-size: 0.8em;
   padding: 3px 4px;
   border-radius: 4px;
