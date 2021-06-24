@@ -100,6 +100,10 @@ section li div.detail > span + span:before {
   margin-left: 4px;
   margin-right: 8px
 }
+section li div.detail > span.tag + span:before {
+  content: "";
+  margin-right: 0
+}
 section li div.detail .tag {
   font-size: 0.66em
 }
@@ -168,16 +172,16 @@ img#portrait::-moz-selection {background-color: var(--lighten-color)}
   background-color: var(--highlight-color1);
   vertical-align: middle;
 }
+p .tag {
+  position: relative;
+  bottom: 2px;
+}
 .tag::selection {
   background-color: var(--color1);
   color: var(--bg-color)}
 .tag::-moz-selection {
   background-color: var(--color1);
   color: var(--bg-color)}
-
-.color1 {
-  background-color: var(--color1);
-}
 
 #togglemoreless:hover {
   cursor: pointer;
@@ -188,6 +192,10 @@ img#portrait::-moz-selection {background-color: var(--lighten-color)}
   font-style: italic;
   font-size: 0.9em;
   margin-left: 2px;
+}
+
+.color1 {
+  background-color: var(--color1);
 }
 
 .small {
@@ -302,7 +310,7 @@ Colors
   --attn-color: #ef0000;
   --shadow-color: #12121244;
   --lighten-color: #ffffff33;
-  --highlight-color1: var(--shadow-color);
+  --highlight-color1: #12121266 /*var(--shadow-color)*/;
   --highlight-color2: transparent;
   --bg-filter: invert(16%) sepia(61%) saturate(298%) hue-rotate(167deg) brightness(95%) contrast(92%)}
 
