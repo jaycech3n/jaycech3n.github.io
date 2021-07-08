@@ -64,7 +64,7 @@ section ul, ol {
 }
 section ul li, section ol li {
   padding-left: 1.5ex;
-  border-left: 4px var(--color1) solid;
+  border-left: 2px var(--color1) solid;
 }
 section ol {
   counter-reset: paperNum 5;
