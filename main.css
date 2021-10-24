@@ -57,13 +57,26 @@ section h1 {
   font-size: 1.2em;
 }
 
-section ul, ol {
-  margin-left: 0.2em;
+section ol {
+  margin-left: 0.4em;
   padding-left: 0em;
+}
+section ul {
+  padding-left: 1em;
+}
+section ol {
   list-style: none;
 }
-section ul li, section ol li {
+section ul {
+  list-style: square;
+}
+section ol li {
   padding-left: 1.5ex;
+}
+section ul li {
+  padding-left: 0.5ex;
+}
+section ol li {
   border-left: 2px var(--color1) solid;
 }
 section ol {
@@ -73,7 +86,7 @@ section ol li::before {
   counter-increment: paperNum -1;
   content: counter(paperNum);
   position: absolute;
-  left: -0.5ex;
+  left: -0.3ex;
   padding: 1px 2px 0 2px;
   width: 2ex;
   text-align: center;
