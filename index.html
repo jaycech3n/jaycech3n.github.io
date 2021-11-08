@@ -29,7 +29,7 @@
       </ul>
       <p>
         I'm a Ph.D. student at the <a href="https://www.nottingham.ac.uk/research/groups/fp-lab/">Functional Programming Lab</a> of the University of Nottingham, advised by <a href="https://nicolaikraus.github.io/">Nicolai Kraus</a>.
-        <span id="togglemoreless" class="tag" onclick="moreless()">more</span>
+        <span id="togglemoreless" class="tag" onclick="moreless()">+</span>
       </p>
       <p class="moreless" style="display: none">
         At the moment I mainly think about higher categorical structures in and for type theory&mdash;in particular, semisimplicial types and models of homotopy type theory.
@@ -94,7 +94,7 @@
     <section id="events">
       <h1>Events</h1>
       <ul>
-        <li><a href="https://conferences.cirm-math.fr/2689.html">Logic and Higher Structures</a> · CIRM&ndash;Luminy · 21&ndash;25 Feb 2022</li>
+        <li><a href="https://conferences.cirm-math.fr/2689.html">Logic and Higher Structures</a> · CIRM&ndash;Luminy · 21&ndash;25 Feb &rsquo;22</li>
       </ul>
     </section>
   </div>
@@ -107,11 +107,11 @@
       else {p.style.display = "none"}
     }
     var x = document.getElementById("togglemoreless")
-    if (x.innerHTML === "more") {
-      x.innerHTML = "less"
+    if (x.innerHTML === "+") {
+      x.innerHTML = "−"
     }
     else {
-      x.innerHTML = "more"
+      x.innerHTML = "+"
     }
   }
 </script>

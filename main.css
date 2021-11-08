@@ -189,6 +189,9 @@ p .tag {
 .tag::-moz-selection {
   background-color: transparent}
 
+#togglemoreless {
+  background-color: var(--font-color);
+}
 #togglemoreless:hover {
   cursor: pointer;
 }
@@ -201,7 +204,7 @@ p .tag {
 }
 
 .research {
-  background-color: var(--color3);
+  background-color: var(--color2);
 }
 .abstract {
   background-color: var(--color4);
