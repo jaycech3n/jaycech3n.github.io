@@ -148,12 +148,14 @@ ID/class-specific styling
 }
 
 img#portrait {
+  position: relative;
   float: right;
+  top: -3em;
   width: 110px;
   border-radius: 50%;
   box-shadow: 0 3px 3px 0 var(--shadow-color);
-  vertical-align: middle;
-  margin-left: 1em}
+  padding: 0;
+  margin: 0 0 0 1em}
 img#portrait::selection {background-color: var(--darken-color)}
 img#portrait::-moz-selection {background-color: var(--darken-color)}
 
@@ -251,6 +253,9 @@ nav a:hover, nav a:focus, nav a:active {
   color: var(--bg-color);
   background-color: var(--color2);
   transform: scale(1.05)}
+
+nav a::selection {background-color: var(--color3); color: var(--bg-color)}
+nav a::-moz-selection {background-color: var(--color3); color: var(--bg-color)}
 
 nav + #content {margin-top: 2em}
 
