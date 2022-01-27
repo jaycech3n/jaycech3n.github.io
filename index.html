@@ -8,112 +8,157 @@
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-<div id="container">
-  <nav>
-    <span><a href="#research">Research</a></span>
-    <span><a href="#events">Events</a></span>
-    <span><a href="pdf/cv.pdf">CV</a></span>
-  </nav>
-  <div id="content">
-    <header>
-      <h1>Josh Chen</h1>
-      <img id="portrait" src="assets/pic.jpg" alt="Display photo">
-      <ul id="contact">
-        <li><a href="mailto:joshua.chen@nottingham.ac.uk" aria-label="Email"><span class="far fa-envelope-open" aria-hidden="true"></span><span class="label"><code>joshua.chen<span class="at"></span>nottingham.ac.uk</code><span class="small">Email</span></span></a></li>
-        <li><a href="https://orcid.org/0000-0001-5041-0794" aria-label="ORCID"><span class="ai ai-orcid" aria-hidden="true"></span><span class="label"><code>0000-0001-5041-0794</code><span class="small">ORCID</span></span></a></li>
-        <li><a href="https://github.com/jaycech3n" aria-label="GitHub"><span class="fab fa-github-alt" aria-hidden="true"></span><span class="label"><code>jaycech3n</code><span class="small">GitHub</span></span></a></li>
+  <header>
+    <h1>Josh Chen</h1>
+    <nav>
+      <a href="#research">Research</a>
+      <a href="#events">Events</a>
+      <a href="pdf/cv.pdf">Vitæ</a>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <ul>
+        <li id="email">
+          <a href="mailto:joshua.chen@nottingham.ac.uk" aria-label="Email">
+            <code class="hide-on-responsive">joshua.chen<span class="at"></span>nottingham.ac.uk</code>
+            <span class="show-on-responsive">Email</span>
+          </a>
+        </li>
+        <li id="orcid">
+          <a href="https://orcid.org/0000-0001-5041-0794" aria-label="ORCID">
+            <code class="hide-on-responsive">0000-0001-5041-0794</code>
+            <span class="show-on-responsive">ORCID</span>
+          </a>
+        </li>
+        <li id="github">
+          <a href="https://github.com/jaycech3n" aria-label="GitHub">
+            <code class="hide-on-responsive">jaycech3n</code>
+            <span class="show-on-responsive">GitHub</span>
+          </a>
+        </li>
       </ul>
       <p>
-        I'm a Ph.D. student at the <a href="https://www.nottingham.ac.uk/research/groups/fp-lab/">Functional Programming Lab</a> of the University of Nottingham, advised by <a href="http://www.cs.nott.ac.uk/~psznk/">Nicolai Kraus</a>.
+        Hello! I'm a Ph.D. student at the <a href="https://www.nottingham.ac.uk/research/groups/fp-lab/">Functional Programming Lab</a> of the University of Nottingham, advised by <a href="http://www.cs.nott.ac.uk/~psznk/">Nicolai Kraus</a>.
         <span id="togglemoreless" class="tag" onclick="moreless()">+</span>
       </p>
       <p class="moreless" style="display: none">
-        At the moment I mainly think about higher categorical structures in and for type theory&mdash;in particular, semisimplicial types and models of homotopy type theory.
-        More generally, I am interested in the mathematics of the so-called &OpenCurlyDoubleQuote;<a href="https://ncatlab.org/nlab/show/computational+trilogy">computational trilogy</a>&CloseCurlyDoubleQuote; spanning (higher) category theory, logical foundations, and computer programs/proofs.
+        I'm interested in the mathematics of the so-called &OpenCurlyDoubleQuote;<a href="https://ncatlab.org/nlab/show/computational+trilogy">computational trilogy</a>&CloseCurlyDoubleQuote; spanning (higher) category theory, logical foundations, and computer programs/proofs.
+        Currently, I mainly think about higher categorical structures in and for type theory&mdash;in particular, semisimplicial types, higher coherences, and models of homotopy type theory.
       </p>
       <p class="moreless" style="display: none;">
         I was previously part of the <a href="https://www.iais.fraunhofer.de/en/institute/departments/knowledge-discovery-en.html">Knowledge Discovery</a> group at Fraunhofer IAIS, and then of the <a href="http://cl-informatik.uibk.ac.at/cek/smart/">SMART project</a> at the Computational Logic group of the University of Innsbruck.
         Prior to that I studied mathematics at the University of Bonn and the Australian National University.
       </p>
-    </header>
+    </section>
     <section id="research">
       <h1>Research</h1>
-      <ol class="papers">
+      <ol class="work">
         <li>
-          <div class="item">Semisimplicial Types in Internal Categories with Families</div>
-          <div class="detail">
-            <span class="abstract tag">Extended abstract</span>
-            <span><a href="https://types21.liacs.nl/">TYPES 2021</a></span>
-            <span>With Nicolai Kraus</span>
-          </div>
-          <div class="detail">
-            <span><a href="pdf/Semisimplicial%20Types%20in%20Internal%20Categories%20with%20Families.pdf">Abstract</a></span>
-            <span><a href="media/Semisimplicial%20types%20in%20internal%20categories%20with%20families.mp4">Talk</a></span>
-            <span><a href="pdf/TYPES%202021%20slides.pdf">Slides</a></span>
-            <span><a href="https://github.com/jaycech3n/CwF">GitHub</a></span>
-          </div>
+          <details>
+            <summary>Semisimplicial Types in Internal Categories with Families</summary>
+            <div class="detail">
+              <span class="abstract tag">Extended abstract</span>
+              <span class="coauthor">Nicolai Kraus</span>
+              <span><a href="https://types21.liacs.nl/">TYPES 2021</a></span>
+            </div>
+            <div class="link detail">
+              <span><a href="pdf/Semisimplicial%20Types%20in%20Internal%20Categories%20with%20Families.pdf">Abstract</a></span>
+              <span><a href="pdf/TYPES%202021%20slides.pdf">Slides</a></span>
+              <span><a href="media/Semisimplicial%20types%20in%20internal%20categories%20with%20families.mp4">Talk</a></span>
+            </div>
+            <div class="github detail">
+              <span><a href="https://github.com/jaycech3n/CwF">GitHub</a></span>
+            </div>
+          </details>
         </li>
         <li>
-          <div class="item">Homotopy Type Theory in Isabelle</div>
-          <div class="detail">
-            <span class="research tag">Research paper</span>
-            <span><a href="http://easyconferences.eu/itp2021/">ITP 2021</a></span>
-          </div>
-          <div class="detail">
-            <span><a href="https://drops.dagstuhl.de/opus/volltexte/2021/13907/">DROPS</a></span>
-            <span><a href="https://arxiv.org/abs/2002.09282">arXiv</a></span>
-            <span><a href="https://github.com/jaycech3n/Isabelle-HoTT">GitHub</a></span>
-          </div>
+          <details>
+            <summary>Homotopy Type Theory in Isabelle</summary>
+            <div class="detail">
+              <span class="research tag">Research paper</span>
+              <span><a href="http://easyconferences.eu/itp2021/">ITP 2021</a></span>
+            </div>
+            <div class="link detail">
+              <span><a href="https://drops.dagstuhl.de/opus/volltexte/2021/13907/">DROPS</a></span>
+              <span><a href="https://arxiv.org/abs/2002.09282">arXiv</a></span>
+            </div>
+            <div class="github detail">
+              <span><a href="https://github.com/jaycech3n/Isabelle-HoTT">GitHub</a></span>
+            </div>
+          </details>
         </li>
         <li>
-          <div class="item">An Implementation of Homotopy Type Theory in Isabelle/Pure</div>
-          <div class="detail">
-            <span class="tag">Masters thesis</span>
-            <span>University of Bonn</span>
-          </div>
-          <div class="detail">
-            <span><a href="https://arxiv.org/abs/1911.00399">arXiv</a></span>
-          </div>
+          <details>
+            <summary>An Implementation of Homotopy Type Theory in Isabelle/Pure</summary>
+            <div class="detail">
+              <span class="thesis tag">Masters thesis</span>
+              <span>University of Bonn</span>
+            </div>
+            <div class="link detail">
+              <span><a href="https://arxiv.org/abs/1911.00399">arXiv</a></span>
+            </div>
+          </details>
         </li>
         <li>
-          <div class="item">The Temperley-Lieb categories and skein modules</div>
-          <div class="detail">
-            <span class="tag">Honours thesis</span>
-            <span>The Australian National University</span>
-          </div>
-          <div class="detail">
-            <span><a href="https://arxiv.org/abs/1502.06845">arXiv</a></span>
-          </div>
+          <details>
+            <summary>The Temperley-Lieb categories and skein modules</summary>
+            <div class="detail">
+              <span class="thesis tag">Honours thesis</span>
+              <span>The Australian National University</span>
+            </div>
+            <div class="link detail">
+              <span><a href="https://arxiv.org/abs/1502.06845">arXiv</a></span>
+            </div>
+          </details>
         </li>
       </ol>
     </section>
     <section id="events">
       <h1>Events</h1>
       <ul>
-        <li><a href="https://conferences.cirm-math.fr/2689.html">Logic and Higher Structures</a> · CIRM&ndash;Luminy · 21&ndash;25 Feb &rsquo;22</li>
+        <li class="detail">
+          <span><a href="https://conferences.cirm-math.fr/2689.html">Logic and Higher Structures</a></span>
+          <span>CIRM, Luminy</span>
+          <span>21&ndash;25 Feb 2022</span>
+        </li>
+        <li class="past detail">
+          <span><a href="http://easyconferences.eu/itp2021/">ITP 2021</a></span>
+          <span>La Sapienza, Rome (virtual)</span>
+        </li>
+        <li class="past detail">
+          <span><a href="https://types21.liacs.nl/">TYPES 2021</a></span>
+          <span>LIACS, Leiden (virtual)</span>
+        </li>
+        <li class="past detail">
+          <span><a href="https://www.mathematik.uni-muenchen.de/~schwicht/pc19.php">Proof and Computation 2019</a></span>
+          <span>Herrsching</span>
+        </li>
+        <li class="past detail">
+          <span><a href="https://hott.github.io/HoTT-2019/">HoTT 2019</a></span>
+          <span>CMU, Pittsburgh</span>
+        </li>
       </ul>
     </section>
-  </div>
-</div>
-<script>
-  function moreless() {
-    var m = document.getElementsByClassName("moreless")
-    for (let p of m) {
-      if (p.style.display === "none") {p.style.display = "block"}
-      else {p.style.display = "none"}
+  </main>
+  <script>
+    function moreless() {
+      var m = document.getElementsByClassName("moreless")
+      for (let p of m) {
+        if (p.style.display === "none") {p.style.display = "block"}
+        else {p.style.display = "none"}
+      }
+      var x = document.getElementById("togglemoreless")
+      if (x.innerHTML === "+") {
+        x.innerHTML = "−"
+      }
+      else {
+        x.innerHTML = "+"
+      }
     }
-    var x = document.getElementById("togglemoreless")
-    if (x.innerHTML === "+") {
-      x.innerHTML = "−"
-    }
-    else {
-      x.innerHTML = "+"
-    }
-  }
-</script>
+  </script>
 </body>
 </html>
