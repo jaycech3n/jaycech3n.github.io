@@ -3,13 +3,6 @@ Fonts
 ******************************************************************************/
 
 @font-face {
-  font-family: 'Symbola';
-  font-style: normal;
-  font-weight: normal;
-  src: url(assets/fonts/Symbola-400.woff2) format('woff2'),
-       url(assets/fonts/Symbola-400.woff)  format('woff')
-}
-@font-face {
   font-family: 'Atkinson-Hyperlegible';
   font-style: normal;
   font-weight: normal;
@@ -222,7 +215,7 @@ main section#research ol.work li::before {
 }
 
 main section#events ul li::before {
-  font-family: 'Symbola';
+  font-family: 'Noto Sans Symbols 2', sans-serif;
   content: "🙢"
 }
 main section#events ul li.past::before {content: "🙡"}
