@@ -3,29 +3,40 @@ Fonts
 ******************************************************************************/
 
 @font-face {
+  font-family: 'Symbola';
+  font-style: normal;
+  font-weight: normal;
+  src: url(assets/fonts/Symbola-400.woff2) format('woff2'),
+       url(assets/fonts/Symbola-400.woff)  format('woff')
+}
+@font-face {
   font-family: 'Atkinson-Hyperlegible';
   font-style: normal;
   font-weight: normal;
   src: url(assets/fonts/Atkinson-Hyperlegible-400.woff2) format('woff2'),
-       url(assets/fonts/Atkinson-Hyperlegible-400.woff)  format('woff')}
+       url(assets/fonts/Atkinson-Hyperlegible-400.woff)  format('woff')
+}
 @font-face {
   font-family: 'Atkinson-Hyperlegible';
   font-style: italic;
   font-weight: normal;
   src: url(assets/fonts/Atkinson-Hyperlegible-400i.woff2) format('woff2'),
-       url(assets/fonts/Atkinson-Hyperlegible-400i.woff)  format('woff')}
+       url(assets/fonts/Atkinson-Hyperlegible-400i.woff)  format('woff')
+}
 @font-face {
   font-family: 'Atkinson-Hyperlegible';
   font-style: normal;
   font-weight: bold;
   src: url(assets/fonts/Atkinson-Hyperlegible-700.woff2) format('woff2'),
-       url(assets/fonts/Atkinson-Hyperlegible-700.woff)  format('woff')}
+       url(assets/fonts/Atkinson-Hyperlegible-700.woff)  format('woff')
+}
 @font-face {
   font-family: 'Atkinson-Hyperlegible';
   font-style: italic;
   font-weight: bold;
   src: url(assets/fonts/Atkinson-Hyperlegible-700i.woff2) format('woff2'),
-       url(assets/fonts/Atkinson-Hyperlegible-700i.woff)  format('woff')}
+       url(assets/fonts/Atkinson-Hyperlegible-700i.woff)  format('woff')
+}
 
 
 /******************************************************************************
@@ -211,7 +222,7 @@ main section#research ol.work li::before {
 }
 
 main section#events ul li::before {
-  font-family: 'Libre Baskerville';
+  font-family: 'Symbola';
   content: "🙢"
 }
 main section#events ul li.past::before {content: "🙡"}
@@ -297,13 +308,14 @@ ol.work li div.detail.link + div.detail.github {margin-left: 1.5ex}
 
 ol.work li div.detail.link span:first-of-type::before {
   content: "\f0c1";
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   margin-right: 1ex
 }
 
 ol.work li div.detail.github span:first-of-type::before {
   content: "\f09b";
-  font-family: 'Font Awesome 5 Brands';
+  font-family: "Font Awesome 5 Brands";
   margin-right: 1ex
 }
 
