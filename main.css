@@ -189,6 +189,7 @@ main section#about ul {
 }
 
 main section#about ul {padding-left: 4ex}
+main section#about ul li::before {font-family: 'Font Awesome 5 Free'}
 main section#about ul li#email::before {left: -4ex}
 main section#about ul li#email::before {content: "\f2b6"}
 main section#about ul li#orcid::before {content: "\f8d2"}
@@ -201,7 +202,10 @@ main section#research ol.work li::before {
   content: counter(paperNum);
 }
 
-main section#events ul li::before {content: "🙢"}
+main section#events ul li::before {
+  font-family: 'Font Awesome 5 Free';
+  content: "🙢"
+}
 main section#events ul li.past::before {content: "🙡"}
 
 
@@ -285,12 +289,14 @@ ol.work li div.detail.link + div.detail.github {margin-left: 1.5ex}
 
 ol.work li div.detail.link span:first-of-type::before {
   content: "\f0c1";
-  margin-right: 1ex;
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 1ex
 }
 
 ol.work li div.detail.github span:first-of-type::before {
   content: "\f09b";
-  margin-right: 1ex;
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 1ex
 }
 
 
