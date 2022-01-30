@@ -46,7 +46,6 @@ Colors
   --attn-color: #c2095a;
   --darken-color: #12121266;
   --lighten-color: #ffffff33;
-  --shadow-color: #26354310;
 }
 
 
@@ -113,7 +112,7 @@ ul li + li {
 
 header {
   min-width: 16.67%;
-  padding-right: 4em
+  padding-right: 8ex
 }
 
 header h1 {
@@ -121,7 +120,7 @@ header h1 {
   margin-left: 33%;
   font-size: 1.8em;
   padding-top: 0;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 nav {
@@ -188,12 +187,11 @@ main section + section {margin-top: 2em}
 
 main section#about ul {
   padding-top: 0;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   margin-bottom: 1.5em;
 }
 
-main section#about ul {padding-left: 4ex}
-main section#about ul li#email::before {left: -4ex}
+main section#about ul li::before {left: -4.5ex}
 main section#about ul li#email::before {
   content: "\f2b6";
   font-family: "Font Awesome 5 Free"
@@ -352,10 +350,36 @@ Responsive
 .show-on-responsive {display: none}
 
 @media screen and (max-width: 960px) {
-  /*todo*/
+  body {flex-direction: column}
+  ol, ul {padding-left: 5ex}
+  header, main {padding-left: 3ex}
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5ex;
+  }
+  header h1 {margin-left: 0}
+  nav {
+    margin-left: 0;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: left
+  }
+  nav a {margin-right: 1ex}
+  main section#about ul {margin-top: 0.2rem}
+  main section#about ul li::before {left: -4ex}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .show-on-responsive {display: inline}
   .hide-on-responsive {display: none}
+  header {padding-right: 2ex}
+  header h1 {padding-right: 2ex}
+  main {padding-left: 2ex}
+  main section#about ul li::before {left: -3.5ex}
+  ol.work li div.detail.github {display: block}
+  ol.work li div.detail.link + div.detail.github {margin-left: 0.5ex}
 }
