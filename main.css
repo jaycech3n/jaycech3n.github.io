@@ -274,6 +274,10 @@ ol.work li details div.detail {
   margin-left: 0.5ex;
 }
 
+ol.work li details summary + div.detail {
+  margin-top: 0.4em;
+}
+
 ol.work li details div.detail + div.detail {
   margin-top: 0.25em;
 }
