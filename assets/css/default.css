@@ -89,7 +89,6 @@ code, pre {
 
 ol, ul {
   list-style: none;
-  padding-left: 6ex
 }
 
 ol li::before,
@@ -185,24 +184,27 @@ main section h2 {
 
 main section + section {margin-top: 2em}
 
-main section#about ul {
+main ul#contact {
   padding-top: 0;
   margin-top: 2.5rem;
   margin-bottom: 1.5em;
 }
 
-main section#about ul li::before {left: -4.5ex}
-main section#about ul li#email::before {
+main ul#contact li#email::before {
   content: "\f2b6";
   font-family: "Font Awesome 5 Free"
 }
-main section#about ul li#orcid::before {
+main ul#contact li#orcid::before {
   content: "\f8d2";
   font-family: "Font Awesome 5 Brands"
 }
-main section#about ul li#github::before {
+main ul#contact li#github::before {
   content: "\f113";
   font-family: "Font Awesome 5 Brands"
+}
+
+main summary:hover {
+  cursor: pointer;
 }
 
 main section#research ol.work {counter-reset: paperNum 5}
@@ -248,7 +250,7 @@ ol.work li details summary {
   cursor: pointer;
   font-family: "Libre Baskerville", serif;
   font-style: italic;
-  font-size: 0.95em;
+  font-size: 0.9em;
   transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
   -webkit-transition-duration: 0.1s
@@ -303,7 +305,7 @@ ol.work li div.detail.link + div.detail.github {margin-left: 1.5ex}
 ol.work li div.detail.link span:first-of-type::before {
   content: "\f0c1";
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font-weight: 600;
   margin-right: 1ex
 }
 
@@ -372,8 +374,8 @@ Responsive
     justify-content: left
   }
   nav a {margin-right: 1ex}
-  main section#about ul {margin-top: 0.2rem}
-  main section#about ul li::before {left: -4ex}
+  main ul#contact {margin-top: 0.2rem}
+  main ul#contact li::before {left: -4ex}
 }
 
 @media screen and (max-width: 800px) {
@@ -382,7 +384,7 @@ Responsive
   header {padding-right: 2ex}
   header h1 {padding-right: 2ex}
   main {padding-left: 2ex}
-  main section#about ul li::before {left: -3.5ex}
+  main ul#contact li::before {left: -3.5ex}
   ol.work li div.detail.github {display: block}
   ol.work li div.detail.link + div.detail.github {margin-left: 0.5ex}
 }
