@@ -70,7 +70,10 @@ body {
   font-size: 18px;
   color: var(--font-color);
 
-  background-color: var(--bg-color)
+  background-color: var(--bg-color);
+  /* background-image: url('../img/bg.svg');
+  background-repeat: no-repeat;
+  background-position: center; */
 }
 
 a {
