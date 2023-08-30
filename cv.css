@@ -1,0 +1,340 @@
+@font-face {
+  font-family: 'Julia Mono';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("JuliaMono-Regular"),
+    local("Julia Mono Regular"),
+    url("https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Regular.woff2");
+}
+
+@font-face {
+  font-family: 'Julia Mono';
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local("JuliaMono-Medium"),
+    local("Julia Mono Medium"),
+    url("https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Medium.woff2");
+}
+
+@font-face {
+  font-family: 'Julia Mono';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("JuliaMono-Bold"),
+    local("Julia Mono Bold"),
+    url("https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Bold.woff2");
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  font-size: 1em;
+  line-height: 1.5em;
+  overflow-anchor: none;
+}
+
+.uri, .email, code {
+  font-family: 'Julia Mono', monospace;
+  font-feature-settings: "zero";
+}
+
+h1, h2 {font-family: "Julia Mono", monospace}
+h1 {font-weight: 700}
+h2 {font-weight: 700; font-size: 1.2em}
+
+a {
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 2px 3px;
+  color: #2a1416;
+  background-color: #e3e3de;
+}
+
+a:hover {
+  background-color: #d9d9d3;
+}
+
+body {
+  color: #2a1416;
+  background-color: #f2f2f0;
+  background-image: url(img/header-alt.jpg);
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Noto Sans', sans serif;
+}
+
+body > section {
+  margin: 0;
+  padding: 2ex 30% 4ex 30%;
+  background-color: #f2f2f0;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px -5px inset;
+}
+
+section.level2 + section.level2 {
+  margin-top: 3.5ex;
+}
+
+section ul, section ol {
+  padding-left: 3ex;
+}
+
+section li::marker {
+  font-size: 1.6em;
+}
+
+section li > p {
+  display: inline;
+}
+
+section li + li {
+  margin-top: 1.5ex;
+}
+
+section li > em:first-of-type,
+section li > p > em:first-of-type {
+  position: relative;
+  bottom: 3px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+section li > em:first-of-type::after,
+section li > p > em:first-of-type::after {
+  content: '\000A';
+  white-space: pre;
+}
+
+/*
+** Header + About
+*/
+h1.title {
+  margin-top: 3ex;
+  margin-bottom: 2.2ex;
+  margin-left: 27.3%;
+  font-size: 3.3em;
+  width: 450px;
+  max-width: 450px;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px;
+}
+
+section#about {
+  width: 450px;
+  max-width: 450px;
+  margin-left: 27.3%;
+  padding: 1.5ex 0.9em;
+  background-color: #f2f2f066;
+  /* box-shadow: rgba(0, 0, 0, 0.2) 4px 5px 5px 0px; */
+  box-shadow: none;
+  border-radius: 3px;
+  line-height: 1.6em;
+}
+
+section#about p:first-of-type::first-letter {
+  font-size: 6em;
+  line-height: 1.2ex;
+  margin-top: 6px;
+  margin-right: 6px;
+  float: left;
+}
+
+section#about h1 {
+  display: none;
+}
+
+section#about p {
+  margin: 0
+}
+
+section#about p + p {
+  margin-top: 1.5ex;
+}
+
+section#about a {background-color: #e3e3deaa}
+section#about a:hover {background-color: #d9d9d3aa}
+
+/*
+** Contact
+*/
+section#contact {
+  margin-top: 457px;
+  background-color: #722036;
+  color: #f2f2f0;
+}
+
+section#contact a {background-color: #9f2d4b; color: #f2f2f0}
+section#contact a:hover {background-color: #af3153}
+
+section#contact ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+section#contact ul li + li {
+  margin-top: 1ex;
+}
+
+/*
+** Selected Talks
+*/
+section#selected-talks {background-color: #3ab2e2}
+section#selected-talks a {background-color: #44bdec}
+section#selected-talks a:hover {background-color: #52cafa}
+
+section#selected-talks li p {
+  margin: 0;
+}
+
+section#selected-talks li details {
+  display: inline-block;
+}
+
+section#selected-talks li details[open] {
+  margin-top: 1ex;
+}
+
+section#selected-talks li details[open] + p {
+  display: inline-block;
+  margin-top: 1ex;
+}
+
+section#selected-talks li details p {
+  font-style: italic;
+  margin: 0 0 0 1.2ex;
+}
+
+section#selected-talks li details p + p {
+  margin-top: 1.5ex;
+}
+
+section#selected-talks li details summary {
+  cursor: pointer;
+  display: inline;
+  background-color: #44bdec;
+  border-radius: 3px;
+  padding: 2px 3px;
+}
+
+section#selected-talks li details summary:hover {
+  background-color: #52cafa
+}
+
+section#selected-talks li details summary::marker {
+  content: "";
+  display: none;
+}
+
+section#selected-talks li details summary p {
+  display: inline;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+section#selected-talks li details summary + p {
+  margin-top: 0.5ex;
+}
+
+section#selected-talks li details summary p::after {content: ": \2026"}
+section#selected-talks li details[open] summary p::after {content: ":"}
+
+/*
+** Teaching
+*/
+section#teaching {
+  background-color: #e9bebb;
+  color: #2a1416;
+}
+
+section#teaching a {
+  background-color: #e6b5b2;
+}
+
+section#teaching a:hover {
+  background-color: #e1a7a3;
+}
+
+/*
+** Previous Work & Research
+*/
+section#previous-work-research {
+  background-color: #f2bb16;
+}
+
+section#previous-work-research a {background-color: #ffcf3f}
+section#previous-work-research a:hover {background-color: #ffda6a}
+
+/*
+** Formal Education
+*/
+section#formal-education {
+  background-color: #401d1d;
+  color: #f2f2f0;
+}
+
+/*
+** Date-based lists
+*/
+section#teaching > ul,
+section#organization-service > ul,
+section#previous-work-research > ul,
+section#formal-education > ul {
+  padding: 0;
+  position: relative;
+  top: -3px;
+  list-style-type: none;
+}
+
+section#teaching > ul > li,
+section#organization-service > ul > li,
+section#previous-work-research > ul > li,
+section#formal-education > ul > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: first baseline;
+  font-weight: 500;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  column-gap: 1.5em;
+}
+
+section#teaching > ul > li > ul,
+section#organization-service > ul > li > ul,
+section#previous-work-research > ul > li > ul,
+section#formal-education > ul > li > ul {
+  list-style-type: disc;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  width: calc(100% - 3ex);
+  min-width: calc(100% - 3ex);
+  position: relative;
+  top: 3px;
+  white-space: normal;
+}
+
+section#teaching > ul > li > ul p,
+section#organization-service > ul > li > ul p,
+section#previous-work-research > ul > li > ul p,
+section#formal-education > ul > li > ul p {
+  display: block;
+  margin: 0;
+}
+
+section#previous-work-research > ul > li + li,
+section#formal-education > ul > li + li {
+  margin-top: 1.8ex;
+}
+
+section#previous-work-research > ul > li > ul p + p,
+section#formal-education > ul > li > ul p + p {
+  margin-top: 1ex;
+}
