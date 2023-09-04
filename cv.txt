@@ -90,6 +90,13 @@ Miscellaneous technical writing.
     University of Bonn.
     URL: <https://joshchen.io/pdf/computational-fact-checking-report.pdf>.
 
+- *A pre-introduction to homotopy type theory.*
+    2017\.
+    Seminar notes.
+    University of Bonn.
+    URL: <https://joshchen.io/pdf/hott-preintro-notes.pdf>.
+
+
 Talks
 -----
 - *On internal models of type theory and Reedy fibrant diagrams.*
