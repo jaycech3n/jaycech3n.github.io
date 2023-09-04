@@ -7,14 +7,14 @@ I'm a PhD candidate in computer science at the [Functional Programming Lab][1.1]
 of the University of Nottingham, advised by [Nicolai Kraus][1.2].
 
 My current research involves the study of programming languages and logics known
-as *homotopy type theories*, and the extent to which we can use them to express,
-reason about, and compute with higher categorical structures that arise in
-software and physical systems.
+as *homotopy type theories*, and how we can use them to express, reason about,
+and compute with higher categorical structures that arise in software and
+physical systems.
 
-I previously worked in machine learning-based natural language processing at the
+Previously, I worked in machine learning and natural language processing at the
 [Knowledge Discovery][1.3] group at Fraunhofer IAIS, and on [formalization and
 proof assistants][1.4] at the Computational Logic group of the University of
-Innsbruck. Prior to that, I majored in mathematics at the University of Bonn and
+Innsbruck. Prior to that I majored in mathematics at the University of Bonn and
 the Australian National University.
 
 [1.1]: https://www.nottingham.ac.uk/research/groups/fp-lab
@@ -36,43 +36,61 @@ Research & Publications
 
 ### Peer-reviewed
 
+- *Categories as Semicategories with Identities.*
+    With Tom de Jong, Nicolai Kraus and Stiéphen Pradal.
+    29th International Conference on Types for Proofs and Programs (TYPES).
+    Jun 2023.
+    Extended abstract.
+    Valencia.
+    URL: <https://types2023.webs.upv.es/TYPES2023.pdf>.
+
 - *Semisimplicial Types in Internal Categories with Families.*
     With Nicolai Kraus.
     27th International Conference on Types for Proofs and Programs (TYPES).
     Jun 2021.
     Extended abstract.
     Leiden (virtual).
-    URL: <https://types21.liacs.nl/download/semisimplicial-types-in-internal-categories-with-families>
+    URL: <https://types21.liacs.nl/download/semisimplicial-types-in-internal-categories-with-families>.
 
 - *Homotopy Type Theory in Isabelle.*
     12th International Conference on Interactive Theorem Proving (ITP).
     Jun 2021.
     Rome (virtual).
-    URL: <https://doi.org/10.4230/LIPIcs.ITP.2021.12>
+    URL: <https://doi.org/10.4230/LIPIcs.ITP.2021.12>.
 
 ### Theses
 
 - *An Implementation of Homotopy Type Theory in Isabelle.*
     Sep 2018.
     Masters thesis.
+    Type theory, mathematical logic and proof assistants.
     University of Bonn.
-    URL: <https://arxiv.org/abs/1911.00399>
+    URL: <https://arxiv.org/abs/1911.00399>.
 
 - *The Temperley-Lieb categories and skein modules.*
     May 2014.
-    Bachelors thesis.
+    Bachelors (Honours) thesis.
+    Diagrammatic quantum algebra and category theory.
     The Australian National University.
-    URL: <https://arxiv.org/abs/1502.06845>
+    URL: <https://arxiv.org/abs/1502.06845>.
 
+<!--
 ### Notes, reports, etc.
 
+Miscellaneous writing and past work.
 
-Selected Talks
---------------
+- *Semantic (aka soft) types.*
+
+- *Computational fact checking.*
+-->
+
+
+Talks
+-----
 - *On internal models of type theory and Reedy fibrant diagrams.*
     YaMCATS meeting 29.
     Dec 2022.
-    Invited.
+    Invited talk.
     University of Manchester.
 
     <details><summary>Abstract</summary>
@@ -104,21 +122,21 @@ Selected Talks
     speculate on possible formulations of the coherence problem for
     semisimplicial types. </details>
 
-    Slides: <https://joshchen.io/pdf/yamcats-29-slides.pdf>
+    Slides: <https://joshchen.io/pdf/yamcats-29-slides.pdf>.
 
 - *Semisimplicial Types in Internal Categories with Families.*
     27th International Conference on Types for Proofs and Programs (TYPES).
     Jun 2021.
     Leiden (virtual).
     URL: <https://joshchen.io/media/semisimplicial-types-in-internal-categories-with-families.mp4>
-    Slides: <https://joshchen.io/pdf/types-2021-slides.pdf>
+    Slides: <https://joshchen.io/pdf/types-2021-slides.pdf>.
 
 - *Homotopy Type Theory in Isabelle.*
     12th International Conference on Interactive Theorem Proving (ITP).
     Jun 2021.
     Rome (virtual).
     URL: <https://youtu.be/fGnIdt_jPfA?t=4630>
-    Slides: <https://joshchen.io/pdf/itp-2021-slides.pdf>
+    Slides: <https://joshchen.io/pdf/itp-2021-slides.pdf>.
 
 - *Dependent Types in Isabelle.*
     4th Prague Inter-Reasoning Workshop.
@@ -135,7 +153,7 @@ Selected Talks
     Jul 2019.
     Doctoral program.
     Prague.
-    Slides: <https://joshchen.io/pdf/cicm-2019-slides.pdf>
+    Slides: <https://joshchen.io/pdf/cicm-2019-slides.pdf>.
 
 - *What is Mathematics?*
     2014\.
@@ -155,6 +173,8 @@ Selected Talks
 
 Teaching
 --------
+I have been tutor and/or teaching assistant for the following courses.
+
 - 2023
     * *[Domain theory and denotational semantics][5.1]*
         Graduate course.
@@ -165,6 +185,7 @@ Teaching
 
 - 2021--2023
     * *Introduction to formal reasoning*
+        Formal logic in the Lean proof assistant.
         2nd year Bachelors course.
         University of Nottingham.
 
@@ -221,8 +242,8 @@ Organization & Service
 Previous Work & Research
 ------------------------
 - Jan 2019--Aug 2020
-    * *Type systems and set-theoretic foundations for formalized mathematics in
-        Isabelle*
+    * *Dependently typed and set-theoretic foundations for formalized
+        mathematics in Isabelle*
         University of Innsbruck.
 
         Investigated dependently typed and set theoretic logics, infrastructure

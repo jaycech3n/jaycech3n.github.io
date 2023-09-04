@@ -2,6 +2,7 @@
   font-family: 'Julia Mono';
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src:
     local("JuliaMono-Regular"),
     local("Julia Mono Regular"),
@@ -12,6 +13,7 @@
   font-family: 'Julia Mono';
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src:
     local("JuliaMono-Medium"),
     local("Julia Mono Medium"),
@@ -22,24 +24,26 @@
   font-family: 'Julia Mono';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src:
     local("JuliaMono-Bold"),
     local("Julia Mono Bold"),
     url("https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Bold.woff2");
 }
 
-html, body {
+body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  min-height: 100%;
-  font-size: 1em;
-  line-height: 1.5em;
+  height: 100vh;
+  min-height: 100vh;
   overflow-anchor: none;
+  color: #2a1416;
+  background-color: #f2f2f0;
+  font-family: "Noto Sans", sans serif;
 }
 
 .uri, .email, code {
-  font-family: 'Julia Mono', monospace;
+  font-family: "Julia Mono", monospace;
   font-feature-settings: "zero";
 }
 
@@ -53,26 +57,21 @@ a {
   padding: 2px 3px;
   color: #2a1416;
   background-color: #e3e3de;
+  overflow-wrap: break-word;
 }
 
 a:hover {
   background-color: #d9d9d3;
 }
 
-body {
-  color: #2a1416;
-  background-color: #f2f2f0;
-  background-image: url(img/header-alt.jpg);
-  background-position: 0 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-family: 'Noto Sans', sans serif;
-}
-
 body > section {
   margin: 0;
   padding: 2ex 30% 4ex 30%;
+  line-height: 1.5em;
   background-color: #f2f2f0;
+}
+
+body > section, body > footer {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px -5px inset;
 }
 
@@ -111,12 +110,20 @@ section li > p > em:first-of-type::after {
 }
 
 /*
-** Header + About
+** Header
 */
+body > header {
+  background-image: url(img/header-alt.jpg);
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  --header-padding-top: 7ex;
+  padding-top: var(--header-padding-top);
+  height: calc(1157px - var(--header-padding-top));
+}
+
 h1.title {
-  margin-top: 3ex;
-  margin-bottom: 2.2ex;
-  margin-left: 27.3%;
+  margin: 0 0 0 27.3%;
   font-size: 3.3em;
   width: 450px;
   max-width: 450px;
@@ -125,7 +132,13 @@ h1.title {
   text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px;
 }
 
+
+/*
+** About
+*/
 section#about {
+  position: absolute;
+  top: 20ex;
   width: 450px;
   max-width: 450px;
   margin-left: 27.3%;
@@ -134,7 +147,7 @@ section#about {
   /* box-shadow: rgba(0, 0, 0, 0.2) 4px 5px 5px 0px; */
   box-shadow: none;
   border-radius: 3px;
-  line-height: 1.6em;
+  line-height: 1.7em;
 }
 
 section#about p:first-of-type::first-letter {
@@ -164,7 +177,6 @@ section#about a:hover {background-color: #d9d9d3aa}
 ** Contact
 */
 section#contact {
-  margin-top: 457px;
   background-color: #722036;
   color: #f2f2f0;
 }
@@ -182,39 +194,39 @@ section#contact ul li + li {
 }
 
 /*
-** Selected Talks
+** Talks
 */
-section#selected-talks {background-color: #3ab2e2}
-section#selected-talks a {background-color: #44bdec}
-section#selected-talks a:hover {background-color: #52cafa}
+section#talks {background-color: #3ab2e2}
+section#talks a {background-color: #44bdec}
+section#talks a:hover {background-color: #52cafa}
 
-section#selected-talks li p {
+section#talks li p {
   margin: 0;
 }
 
-section#selected-talks li details {
+section#talks li details {
   display: inline-block;
 }
 
-section#selected-talks li details[open] {
+section#talks li details[open] {
   margin-top: 1ex;
 }
 
-section#selected-talks li details[open] + p {
+section#talks li details[open] + p {
   display: inline-block;
   margin-top: 1ex;
 }
 
-section#selected-talks li details p {
+section#talks li details p {
   font-style: italic;
   margin: 0 0 0 1.2ex;
 }
 
-section#selected-talks li details p + p {
+section#talks li details p + p {
   margin-top: 1.5ex;
 }
 
-section#selected-talks li details summary {
+section#talks li details summary {
   cursor: pointer;
   display: inline;
   background-color: #44bdec;
@@ -222,28 +234,28 @@ section#selected-talks li details summary {
   padding: 2px 3px;
 }
 
-section#selected-talks li details summary:hover {
+section#talks li details summary:hover {
   background-color: #52cafa
 }
 
-section#selected-talks li details summary::marker {
+section#talks li details summary::marker {
   content: "";
   display: none;
 }
 
-section#selected-talks li details summary p {
+section#talks li details summary p {
   display: inline;
   font-style: normal;
   margin: 0;
   padding: 0;
 }
 
-section#selected-talks li details summary + p {
+section#talks li details summary + p {
   margin-top: 0.5ex;
 }
 
-section#selected-talks li details summary p::after {content: ": \2026"}
-section#selected-talks li details[open] summary p::after {content: ":"}
+section#talks li details summary p::after {content: ": \2026"}
+section#talks li details[open] summary p::after {content: ":"}
 
 /*
 ** Teaching
@@ -337,4 +349,109 @@ section#formal-education > ul > li + li {
 section#previous-work-research > ul > li > ul p + p,
 section#formal-education > ul > li > ul p + p {
   margin-top: 1ex;
+}
+
+/*
+** Footer
+*/
+body > footer {
+  padding: 12em 0 3em 0;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0.85em;
+}
+
+body > footer p {
+  margin: 0;
+  padding: 0;
+}
+
+body > footer a {
+  padding: 0;
+  background-color: #f2f2f0;
+  border-bottom: 1px dotted #2a1416;
+  border-radius: 0;
+}
+
+body > footer a:hover {
+  background-color: #f2f2f0;
+  border-bottom: 1px solid #2a1416;
+}
+
+body > footer a.has-img {
+  border-bottom: none;
+}
+
+body > footer a img {
+  display: inline;
+  vertical-align: middle;
+  position: relative;
+  bottom: 2px;
+}
+
+body > footer p + p {
+  margin-top: 2px;
+}
+
+/*
+** Responsive
+*/
+@media screen and (max-width: 1720px) {
+  body > section {padding: 2ex 25% 4ex 25%}
+  h1.title {margin: 0 0 0 30%}
+  body > section#about {margin-left: 30%}
+}
+@media screen and (max-width: 1540px) {
+  body > section {padding: 2ex 20% 4ex 20%}
+  body > section#about {background-color: #f2f2f0cc}
+  section#about a {background-color: #e3e3deee}
+  section#about a:hover {background-color: #d9d9d3ee}
+}
+@media screen and (max-width: 1190px) {
+  body > section {padding: 2ex 15% 4ex 15%}
+  body > header {--header-padding-top: 10ex}
+  h1.title {
+    margin-left: 25%;
+    text-shadow:
+      rgba(0, 0, 0, 0.3) 2px 2px 5px,
+      rgba(255, 255, 255, 0.6) 0px -3px,
+      rgba(255, 255, 255, 0.6) 0px 3px,
+      rgba(255, 255, 255, 0.6) -3px 0px,
+      rgba(255, 255, 255, 0.6) 3px 0px,
+      rgba(255, 255, 255, 0.6) -3px -3px,
+      rgba(255, 255, 255, 0.6) -3px 3px,
+      rgba(255, 255, 255, 0.6) 3px -3px,
+      rgba(255, 255, 255, 0.6) 3px 3px;
+  }
+  body > section#about {
+    top: 24ex;
+    margin-left: 25%;
+  }
+  body > section#about a {border: 1px dotted #2a141699}
+  body > section#about a:hover {border: 1px dotted #2a1416cc}
+  section#teaching > ul > li,
+  section#organization-service > ul > li,
+  section#previous-work-research > ul > li,
+  section#formal-education > ul > li {
+    flex-direction: column;
+    font-size: 0.95em;
+    row-gap: 4px;
+  }
+}
+@media screen and (max-width: 820px) {
+  body > section {padding: 2ex 4ex 4ex 4ex}
+  h1.title {
+    width: auto;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 0 10%; */
+  }
+  body > section#about {
+    top: 27ex;
+    width: auto;
+    max-width: none;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
