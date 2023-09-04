@@ -409,7 +409,10 @@ body > footer p + p {
 }
 @media screen and (max-width: 1190px) {
   body > section {padding: 2ex 15% 4ex 15%}
-  body > header {--header-padding-top: 10ex}
+  body > header {
+    --header-padding-top: 10ex;
+    height: 800px;
+  }
   h1.title {
     margin-left: 25%;
     text-shadow:
@@ -427,8 +430,7 @@ body > footer p + p {
     top: 24ex;
     margin-left: 25%;
   }
-  body > section#about a {border: 1px dotted #2a141699}
-  body > section#about a:hover {border: 1px dotted #2a1416cc}
+  body > section#about a {border: 1px solid #2a141622}
   section#teaching > ul > li,
   section#organization-service > ul > li,
   section#previous-work-research > ul > li,

@@ -74,8 +74,7 @@ Research & Publications
     The Australian National University.
     URL: <https://arxiv.org/abs/1502.06845>.
 
-<!--
-### Notes, reports, etc.
+<!-- ### Notes, reports, etc.
 
 Miscellaneous writing and past work.
 
@@ -318,7 +317,7 @@ Formal Education
         GPA 8.64/9.00.
         Dean's Congratulations.
 
-<!--
+<!----
 Awards
 ------
 - 2013
