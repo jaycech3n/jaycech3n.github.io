@@ -415,7 +415,7 @@ body > footer p + p {
   body > section {padding: 2ex 15% 4ex 15%}
   body > header {
     --header-padding-top: 10ex;
-    height: 800px;
+    height: 850px;
   }
   h1.title {
     margin-left: 25%;
