@@ -47,6 +47,10 @@ body {
   font-feature-settings: "zero";
 }
 
+a.mastodon-verif {
+  display: none;
+}
+
 h1, h2 {font-family: "Julia Mono", monospace}
 h1 {font-weight: 700}
 h2 {font-weight: 700; font-size: 1.2em}
