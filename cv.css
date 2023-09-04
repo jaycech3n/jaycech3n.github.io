@@ -415,7 +415,7 @@ body > footer p + p {
   body > section {padding: 2ex 15% 4ex 15%}
   body > header {
     --header-padding-top: 10ex;
-    height: 850px;
+    height: 800px;
   }
   h1.title {
     margin-left: 25%;
@@ -451,7 +451,7 @@ body > footer p + p {
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    /* padding: 0 10%; */
+    padding: 0 24px;
   }
   body > section#about {
     top: 27ex;
@@ -459,5 +459,31 @@ body > footer p + p {
     max-width: none;
     margin-left: 10%;
     margin-right: 10%;
+    background-color: #f2f2f0dd;
   }
+@media screen and (max-width: 440px) {
+  body > header {--header-padding-top: 6ex}
+  body > section#about {top: 19ex}
+}
+@media screen and (max-width: 430px) {
+  body > header {height: 820px}
+}
+@media screen and (max-width: 396px) {
+  body > header {height: 760px}
+  body > section#about {
+    top: 23ex;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  body > section {
+    padding-left: 3ex;
+    padding-right: 3ex;
+  }
+}
+@media screen and (max-width: 378px) {body > header {height: 800px}}
+@media screen and (max-width: 372px) {body > header {height: 850px}}
+@media screen and (max-width: 340px) {body > header {height: 900px}}
+@media screen and (max-width: 305px) {body > header {height: 950px}}
+@media screen and (max-width: 294px) {body > header {height: 1000px}}
+@media screen and (max-width: 280px) {body > header {height: 1050px}}
 }
