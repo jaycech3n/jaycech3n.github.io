@@ -74,15 +74,21 @@ Research & Publications
     The Australian National University.
     URL: <https://arxiv.org/abs/1502.06845>.
 
-<!-- ### Notes, reports, etc.
+### Notes, reports, etc.
 
-Miscellaneous writing and past work.
+Miscellaneous technical writing.
 
 - *Semantic (aka soft) types.*
+    Nov 2019.
+    Extended abstract.
+    University of Innsbruck.
+    URL: <https://joshchen.io/pdf/soft-types-abstract.pdf>.
 
-- *Computational fact checking.*
--->
-
+- *Computational Fact-Checking.*
+    Jul 2017.
+    Technical report.
+    University of Bonn.
+    URL: <https://joshchen.io/pdf/computational-fact-checking-report.pdf>.
 
 Talks
 -----
@@ -153,6 +159,12 @@ Talks
     Doctoral program.
     Prague.
     Slides: <https://joshchen.io/pdf/cicm-2019-slides.pdf>.
+
+- *Semantic Types.*
+    May 2019.
+    Seminar talk.
+    Computational Logic research seminar, University of Innsbruck.
+    Slides: <https://joshchen.io/pdf/semantic-types-slides.pdf>.
 
 - *What is Mathematics?*
     2014\.
