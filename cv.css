@@ -117,7 +117,7 @@ section li > p > em:first-of-type::after {
 ** Header
 */
 body > header {
-  background-image: url(img/header.webp), url(img/header-alt.jpg);
+  background-image: /*url(img/header.webp),*/ url(img/header-alt.jpg);
   background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;
