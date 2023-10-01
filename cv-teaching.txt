@@ -1,0 +1,348 @@
+Joshua Chen
+===========
+
+About
+-----
+I'm a PhD candidate in computer science at the [Functional Programming Lab][1.1]
+of the University of Nottingham.
+
+My research is in programming languages, at the intersection of mathematics and
+computer science. I'm well versed in topics in mathematics and theoretical
+computer science, as well as the fundamentals of machine learning and writing
+good code.
+
+Previously, I worked in machine learning and natural language processing at the
+[Knowledge Discovery][1.3] group at Fraunhofer IAIS, and on [formalization and
+proof assistants][1.4] at the Computational Logic group of the University of
+Innsbruck. Prior to that I majored in mathematics at the University of Bonn and
+the Australian National University.
+
+[1.1]: https://www.nottingham.ac.uk/research/groups/fp-lab
+[1.2]: https://www.cs.nott.ac.uk/~psznk
+[1.3]: https://www.iais.fraunhofer.de/en/institute/departments/knowledge-discovery-en.html
+[1.4]: https://project-smart.uibk.ac.at
+
+
+Contact
+-------
+- Email: <joshua.chen@nottingham.ac.uk>
+- Website: <https://joshchen.io>
+- GitHub: <https://github.com/jaycech3n>
+
+
+Formal Education
+----------------
+- Oct 2020--present
+    * *Ph.D. in Computer Science*
+        University of Nottingham.
+
+- Oct 2015--Sep 2018
+    * *Masters in Mathematics*
+        University of Bonn.
+
+        German GPA 1.9.
+
+- Jun 2013--Jul 2014
+    * *B.Sc. (Hons) in Mathematics*
+        The Australian National University.
+
+        GPA 80%.
+        First Class Honours.
+
+- Feb 2010--Dec 2012
+    * *B.Sc. in Mathematics*
+        University of Canterbury.
+
+        Minors in computer science and physics.
+        GPA 8.64/9.00.
+        Dean's Congratulations.
+
+
+Teaching Experience
+-------------------
+
+I have substantial experience teaching computer science and mathematics at both
+high school (secondary school) and university levels, as well as physics at high
+school level.
+
+Subjects I have been teaching assistant/tutor for at university include:
+
+- 2023
+    * *[Domain theory and denotational semantics][5.1]*
+        Graduate course.
+        [Midlands Graduate School '23][5.2].
+
+        [5.1]: https://github.com/tomdjong/MGS-domain-theory
+        [5.2]: https://www.cs.bham.ac.uk/~mhe/events/MGS23
+
+- 2021--2023
+    * *Introduction to formal reasoning*
+        Formal logic in the Lean proof assistant.
+        2nd year Bachelors course.
+        University of Nottingham.
+
+    * *Introductory Haskell*
+        1st year Bachelors course.
+        University of Nottingham.
+
+- 2017--2018
+    * *Machine learning*
+        Masters course.
+        University of Bonn.
+
+- 2017
+    * *Data mining and knowledge discovery*
+        Masters course.
+        University of Bonn.
+
+- 2015
+    * *Engineering mathematics*
+        1st year Bachelors course.
+        University of Canterbury.
+
+- 2014
+    * *Mathematics and applications*
+        1st year Bachelors course.
+        The Australian National University.
+
+    * *Mathematics and applications*
+        1st year Bachelors course.
+        University of Canterbury.
+
+- 2013
+    * *Discrete mathematics*
+        1st year Bachelors course.
+        University of Canterbury.
+
+
+Technical Skills
+----------------
+- Programming languages:
+    * C++
+    * Java
+    * Python
+    * Haskell
+    * OCaml
+    * Standard ML
+    * Lean
+    * Agda
+    * Some amount of: Scala, MATLAB, Mathematica, Ruby
+
+- Markup languages:
+    * HTML, CSS
+    * LaTeX
+
+- Tools:
+    * Git
+    * Jupyter
+    * Proof assistants: Lean, Coq, Agda, Isabelle
+
+
+Awards
+------
+- 2013
+    * ANU Mathematical Sciences Institute Honours scholarship
+
+- 2012
+    * ANU Summer Research scholarship
+
+- 2011
+    * University of Canterbury Peter Bryant Prize for Pure Mathematics
+
+- 2010
+    * University of Canterbury Dux scholarship
+
+
+Previous Work & Research
+------------------------
+- Jan 2019--Aug 2020
+    * *Dependently typed and set-theoretic foundations for formalized
+        mathematics in Isabelle*
+        University of Innsbruck.
+
+        Investigated dependently typed and set theoretic logics, infrastructure
+        and tools for the formalization of mathematics in the Isabelle proof
+        assistant, under the ERC-funded ["SMART" project][7.1] at the
+        Computational Logic group.
+
+        [7.1]: https://project-smart.uibk.ac.at
+
+- 2017--2018
+    * *Machine learning and natural language processing for Copernicus EMS*
+        Fraunhofer Institute for Intelligent Analysis and Information Systems.
+
+        Worked in the Knowledge Discovery group, implenting and applying
+        probabilistic models to analyze and classify topics in Twitter data
+        corpora. Implemented targeted topic models in Java, and used Python for
+        natural language processing of Twitter and Facebook data. This work was
+        part of the European Union's E2mC project, a pilot project that used
+        publicly available social media data for real-time support of its
+        Copernicus emergency management service.
+
+- 2015
+    * *Enumeration and visualization of planar trivalent graphs*
+        The Australian National University.
+
+        Developed and implemented algorithms in Scala to count and automatically
+        draw certain classes of planar graphs. Part of quantum algebra research
+        investigating subfactors and planar algebras.
+
+- 2013--2014
+    * *Temperley-Lieb categories and skein modules*
+        The Australian National University.
+
+        Final year Honours research thesis in category theory, quantum algebra,
+        and applications to low-dimensional topological invariants.
+
+- Nov 2012--Jan 2013
+    * *Integer houses in cyclotomic fields*
+        The Australian National University.
+
+        Summer research scholarship. Investigated questions concerning the
+        dimensions of objects in fusion categories using Wolfram Mathematica.
+
+
+Research & Publications
+-----------------------
+
+### Peer-reviewed
+
+- *Categories as Semicategories with Identities.*
+    With Tom de Jong, Nicolai Kraus and Stiéphen Pradal.
+    29th International Conference on Types for Proofs and Programs (TYPES).
+    Jun 2023.
+    Extended abstract.
+    Valencia.
+    URL: <https://types2023.webs.upv.es/TYPES2023.pdf>.
+
+- *Semisimplicial Types in Internal Categories with Families.*
+    With Nicolai Kraus.
+    27th International Conference on Types for Proofs and Programs (TYPES).
+    Jun 2021.
+    Extended abstract.
+    Leiden (virtual).
+    URL: <https://types21.liacs.nl/download/semisimplicial-types-in-internal-categories-with-families>.
+
+- *Homotopy Type Theory in Isabelle.*
+    12th International Conference on Interactive Theorem Proving (ITP).
+    Jun 2021.
+    Rome (virtual).
+    URL: <https://doi.org/10.4230/LIPIcs.ITP.2021.12>.
+
+### Theses
+
+- *An Implementation of Homotopy Type Theory in Isabelle.*
+    Sep 2018.
+    Masters thesis.
+    Type theory, mathematical logic and proof assistants.
+    University of Bonn.
+    URL: <https://arxiv.org/abs/1911.00399>.
+
+- *The Temperley-Lieb categories and skein modules.*
+    May 2014.
+    Bachelors (Honours) thesis.
+    Diagrammatic quantum algebra and category theory.
+    The Australian National University.
+    URL: <https://arxiv.org/abs/1502.06845>.
+
+### Notes, reports, etc.
+
+Miscellaneous technical writing.
+
+- *Semantic (aka soft) types.*
+    Nov 2019.
+    Extended abstract.
+    University of Innsbruck.
+    URL: <https://joshchen.io/pdf/soft-types-abstract.pdf>.
+
+- *Computational Fact-Checking.*
+    Jul 2017.
+    Technical report.
+    University of Bonn.
+    URL: <https://joshchen.io/pdf/computational-fact-checking-report.pdf>.
+
+- *A pre-introduction to homotopy type theory.*
+    2017\.
+    Seminar notes.
+    University of Bonn.
+    URL: <https://joshchen.io/pdf/hott-preintro-notes.pdf>.
+
+
+Talks
+-----
+- *On internal models of type theory and Reedy fibrant diagrams.*
+    YaMCATS meeting 29.
+    Dec 2022.
+    Invited talk.
+    University of Manchester.
+    Slides: <https://joshchen.io/pdf/yamcats-29-slides.pdf>.
+
+- *Semisimplicial Types in Internal Categories with Families.*
+    27th International Conference on Types for Proofs and Programs (TYPES).
+    Jun 2021.
+    Leiden (virtual).
+    URL: <https://joshchen.io/media/semisimplicial-types-in-internal-categories-with-families.mp4>
+    Slides: <https://joshchen.io/pdf/types-2021-slides.pdf>.
+
+- *Homotopy Type Theory in Isabelle.*
+    12th International Conference on Interactive Theorem Proving (ITP).
+    Jun 2021.
+    Rome (virtual).
+    URL: <https://youtu.be/fGnIdt_jPfA?t=4630>
+    Slides: <https://joshchen.io/pdf/itp-2021-slides.pdf>.
+
+- *Dependent Types in Isabelle.*
+    4th Prague Inter-Reasoning Workshop.
+    Oct 2019.
+    Czech Technical University.
+
+- *Isabelle/HoTT.*
+    Jul 2019.
+    Seminar talk.
+    Chair for Logic and Verification, Technical University of Munich.
+
+- *Hybrid and Alternative Logics in Isabelle: Isabelle/Set.*
+    Conference on Intelligent Computer Mathematics.
+    Jul 2019.
+    Doctoral program.
+    Prague.
+    Slides: <https://joshchen.io/pdf/cicm-2019-slides.pdf>.
+
+- *Semantic Types.*
+    May 2019.
+    Seminar talk.
+    Computational Logic research seminar, University of Innsbruck.
+    Slides: <https://joshchen.io/pdf/semantic-types-slides.pdf>.
+
+- *What is Mathematics?*
+    2014\.
+    Outreach talk, ANU Open Day.
+    The Australian National University.
+
+- *An Introduction to Topological Quantum Field Theory.*
+    Australian Mathematical Sciences Student Conference.
+    2014\.
+    The University of Newcastle, Australia.
+
+- *The Temperley-Lieb categories and Turaev-Viro skein modules.*
+    ANU MSI Honours Conference.
+    2014\.
+    The Australian National University.
+
+
+
+Organization & Service
+--------------------------------
+- 2022
+    * *[Midlands Graduate School '22][6.1]*
+        Volunteered with organizing participant talks and social events.
+
+        [6.1]: https://www.cs.nott.ac.uk/~psznk/events/mgs22.html
+
+- 2021--2023
+    * *[FP Lunch][6.2]*
+        Organized weekly lunchtime research seminar meetings for the Functional
+        Programming Lab at the University of Nottingham.
+
+        [6.2]: https://www.nottingham.ac.uk/research/groups/fp-lab/fp-lunch/fp-lunch.aspx
+

@@ -62,10 +62,12 @@ a {
   color: #2a1416;
   background-color: #e3e3de;
   overflow-wrap: break-word;
+  /* border-bottom: 1px dotted #2a1416; */
 }
 
 a:hover {
   background-color: #d9d9d3;
+  /* border-bottom: 1px solid #2a1416; */
 }
 
 body > section {
@@ -421,20 +423,20 @@ body > footer p + p {
     margin-left: 25%;
     text-shadow:
       rgba(0, 0, 0, 0.3) 2px 2px 5px,
-      rgba(255, 255, 255, 0.6) 0px -3px,
+      /* rgba(255, 255, 255, 0.6) 0px -3px,
       rgba(255, 255, 255, 0.6) 0px 3px,
       rgba(255, 255, 255, 0.6) -3px 0px,
-      rgba(255, 255, 255, 0.6) 3px 0px,
-      rgba(255, 255, 255, 0.6) -3px -3px,
-      rgba(255, 255, 255, 0.6) -3px 3px,
-      rgba(255, 255, 255, 0.6) 3px -3px,
-      rgba(255, 255, 255, 0.6) 3px 3px;
+      rgba(255, 255, 255, 0.6) 3px 0px, */
+      rgba(255, 255, 255, 0.4) -1px 0px,
+      rgba(255, 255, 255, 0.4) 0px 1px,
+      rgba(255, 255, 255, 0.4) 0px -1px,
+      rgba(255, 255, 255, 0.4) 2px 0px;
   }
   body > section#about {
     top: 24ex;
     margin-left: 25%;
   }
-  body > section#about a {border: 1px solid #2a141622}
+  body > section#about a {border-bottom: 1px dotted #2a1416}
   section#teaching > ul > li,
   section#organization-service > ul > li,
   section#previous-work-research > ul > li,
