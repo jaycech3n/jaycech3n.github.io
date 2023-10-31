@@ -1,0 +1,105 @@
+\documentclass[a4paper]{article}
+
+\usepackage[left=2.5cm, right=2.5cm, top=2cm, bottom=2.5cm]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks, allcolors=Blue]{hyperref}
+\usepackage{titlesec}
+\usepackage{libertine}
+\usepackage[scale=0.96]{zi4}
+\usepackage[maxnames=4, style=alphabetic, maxalphanames=4]{biblatex}
+\addbibresource{refs.bib}
+
+\usepackage{amsmath}
+\newcommand{\C}{\mathcal C}
+\newcommand{\I}{\mathcal I}
+
+\titleformat{\section}
+  {\normalsize\bfseries}{\thesection}{}{}
+
+\title{
+    \Large Letter of Intent \\
+    {\normalsize \emph{Prospects of Formal Mathematics}} \\
+    {\normalsize Hausdorff Research Institute Trimester Program 2024}
+}
+\author{
+    Joshua Chen \\
+    {\normalsize University of Nottingham}
+}
+
+\begin{document}
+
+\maketitle
+
+I am a PhD student working on logical and higher categorical aspects of homotopy type theory (HoTT)~\cite{hott-book}.
+The research topics I would like to work on while at the Hausdorff research trimester are all motivated by the goal of studying $\infty$-categories using the tools that type theory gives us.
+
+\section*{Understanding the ``$\infty$-category theoretic strength'' of homotopy type theory}
+% \paragraph{Higher categorical constructions in homotopy type theory and semisimplicial types.}
+
+% I am currently working on an investigation of obstructions to constructing $(\infty, 1)$-categories in univalent type theory.
+Univalent type theory\footnote{That is, Martin-L\"{o}f type theory with the univalence axiom, aka ``book'' HoTT~\cite{hott-book} without higher inductive types.} is a logic which can be interpreted in any $(\infty, 1)$-topos~\cite{shulman:19:strict-univalent-universes} (up to equivalence of model structures).
+Constructions in this logic are automatically homotopically coherent, without the need to explicitly make them so, or to consider the presentation details of models of higher categories.
+An initial hope was to be able to exploit this phenomenon to formally construct $(\infty, 1)$-categories in HoTT more simply than could be done in non-type-theoretic settings.
+This hope has not yet materialized, as all candidate definitions to date have been rendered type-incorrect by so-called \emph{coherence problems}~\cite{cite Ulrik's talk}---the failure to internalize an infinite tower of coherences that are needed to make the definition type check.
+In definitions of $\infty$-categories based on simplicial sets, this manifests as the seeming intractability of defining \emph{semisimplicial types}, a type theoretic formulation of semisimplicial sets, i.e. presheaves on the direct part of the simplex category $\Delta$~\cite{cite}.
+Frustratingly, neither has anyone been able to prove that constructing semisimplicial types in plain ``book'' HoTT is impossible.
+
+My current research is focused on investigating the obstructions to constructing semisimplicial types---and by extension $(\infty, 1)$-categories---in univalent type theory from a type theoretic perspective, as follows.
+% Coherence conditions? Cite Herbelin.
+% I have been investigating the obstructions to constructing semisimplicial types from a type theoretic perspective, as follows.
+We generalize the problem of constructing semisimplicial types to that of constructing Reedy fibrant diagrams~\cite{riehl:14:cat-homotopy-theory,riehl-verity:14:tap-reedy-categories} over simple index categories~\cite{makkai:95:folds}, in the category of contexts of a category with families~\cite{dybjer:96:internal-tt} modeling Martin-L\"{o}f type theory.
+From this point of view, the coherence problem becomes the problem of internally defining a function that gives the matching objects~\cite{cite} of these Reedy fibrant diagrams.
+
+Now, instead of categories with families (cwfs) in a typical set-based metatheory, we consider \emph{wild cwfs in HoTT itself}~\cite{cite}, which we call \emph{internal wild cwfs} $\C$.
+In this homotopically-aware setting we can use the language of HoTT to discover necessary and sufficient coherence conditions that allow for the definition of the matching contexts, improving on previous work of Herbelin~\cite{herbelin:15:semisimplicial}.
+We can also cast the problem of defining the matching contexts of simple $\I$-diagrams into that of internally defining a (pseudo?-) functor from some category of cosieves in $\I$ to the category of contexts of $\C$.
+Since $\C$ is internal to HoTT, this amounts to defining some higher functor into a (possibly non-coherent) higher category of contexts, and I would like to investigate this further.
+% I would also like to understand the type theoretic construction from a more categorical point of view---in particular the structure that arises from viewing the matching contexts of diagrams in $\C$ as a (pseudo?-) functor from some category of cosieves into the category of contexts of $\C$.
+
+In addition, it is expected that the construction of Reedy fibrant diagrams in an internal cwf $\C$ is possible if we assume that $\C$ is set-based.
+Since the syntax is set-based, our construction would give a ``two level'' type theoretic definition of semisimplicial types, in a HoTT type that encodes the syntactic cwf.
+Now, if we could define the canonical interpretation function of the syntactic cwf back into HoTT, we would then have true semisimplicial types in HoTT.
+In this way we transform the problem of defining semisimplicial types to the (\textit{a priori}, harder) problem of interpreting HoTT in itself\footnote{To my knowledge, this idea first appears publicly in a blog post of Shulman~\cite{shulman:14:hott-should-eat-itself}.}, giving an interesting lower bound on the difficulty of a fundamental logical question (\textit{``Can this logic internalize itself?''}) in a type theoretic setting.
+
+This project involves the formalization, in type theory without uniqueness of identity proofs, of a lot of metatheory of type theory.
+In addition, one may view the diagram construction as the beginning of a formalization of Shulman's inverse diagram model of HoTT~\cite{shulman:15:univalence}.
+
+A brief note outlining (an early version of) these ideas was presented at the 2021 TYPES conference~\cite{chen-kraus:21:internal}, and an Agda formalization and paper on the actual construction is in progress.
+I would like to be able to talk about this project with other participants at the trimester program.
+
+\paragraph{\normalfont \emph{Relevant working goals:}}
+\begin{itemize}
+    \item Investigating the fundamental properties and potential limits of univalent type theory, a foundational logic for formal mathematics, as described above.
+    \item Formalization of the metatheory of type theory, in particular higher-dimensional models of type theory in type theory, and a formalization of Shulman's inverse diagram model.
+    A novel part of this is that we work without the assumption of uniqueness of identity proofs, thus paving the way toward a fuller understanding of the self-interpretation of homotopy type theory.
+\end{itemize}
+
+
+\section*{Simplicial HoTT, two-level type theory and formal $\infty$-category theory}
+
+While the ontological status of $\infty$-categories in univalent type theory is not yet known, in the interim a number of extensions of HoTT that \emph{do} allow for their construction have been proposed.
+Two such theories are the ``simplicial'' HoTT of Riehl and Shulman~\cite{riehl-shulman:17:simplicial-tt} and the two-level type theory of Kraus et al~\cite{acks:17:2ltt}.
+Simplicial HoTT (sHoTT) is directly geared towards being a setting for \emph{synthetic} (i.e.\ axiomatic in an appropriate logic) $\infty$-category theory, using intuitions from the model of $\infty$-categories as (complete) Segal spaces~\cite{rezk:01:model}.
+An amount of theory has already been developed in this setting~\cite{cite}, a number of results of which have been formalized in the recently developed rzk proof assistant~\cite{cite}.
+
+On the other hand, two-level type theory (2LTT) is geared more towards being a general setting for type theoretic higher mathematics, in which one can use strict equality to define constructions that one may later prove (co-)fibrant, i.e.\ equivalent to fully coherent structures.
+One benefit of this viewpoint is, for instance, the ability to talk about ``definability'' of higher structures type theoretically: one formulates a concept in 2LTT using strict equality as an \emph{a priori} outer type $A$, and may then say the concept is definable in HoTT if $A$ is fibrant~\cite{cite}.
+
+Kraus conjectures\footnote{Ongoing work.} that one may model many extensions of HoTT inside 2LTT, and thereby provide a \emph{generous arena} and \emph{shared standard}~\cite{maddy:19:what-do-we-want} in which to situate the various specific type theories that have been developed for higher category theory.
+A possible project would be to model simplicial HoTT in 2LTT, which would also potentially mean being able to use Agda (using its \texttt{--two-level} flag) to work in sHoTT.
+To this end, it would be helpful to be able to interact with other participants who have knowledge of sHoTT, 2LTT, Agda, and/or rzk.
+Simultaneously, it would also be instructive to colloborate on the further development of $\infty$-category theory in rzk, if there were to be interest.
+
+\paragraph{\normalfont \emph{Relevant working goals:}}
+\begin{itemize}
+    \item Embed simplicial HoTT in two-level type theory in Agda, and investigate its suitability for formalizing $\infty$-category theory, potentially porting over existing formalized results.
+    \item Contribute to the formalization of $\infty$-category theory, whether in rzk, Agda, or some other suitable proof assistant.
+\end{itemize}
+
+% A higher category theory has been developed
+% Implementing proof assistants for TT for ∞-cats.
+
+
+\printbibliography[heading=subbibliography]
+
+\end{document}
