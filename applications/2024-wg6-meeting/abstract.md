@@ -5,7 +5,7 @@ Inverse diagrams, i.e. functors indexed by inverse categories, feature prominent
 
 The majority of the above results are developed in a classical metatheory, assuming UIP. We move the fundamental constructions of inverse diagrams and matching objects of Reedy fibrations into a constructive setting without UIP, by describing a construction of inverse diagrams in wild categories with families in HoTT. We develop some theory of wild cwfs, which form a common generalization of set-based and infinity-cwfs and thus include as examples both the syntax and the "standard" universe model. We then construct the matching object as a wild functor from cosieves in sufficiently nice inverse categories to categories of contexts of wild cwfs. This sets the stage for further development of an internalized metatheory of HoTT as well as investigations into the existence of semisimplicial types in plain HoTT.
 
------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 Old draft
 ---------
