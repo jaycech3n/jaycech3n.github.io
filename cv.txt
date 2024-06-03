@@ -291,6 +291,11 @@ Previous Work & Research
         draw certain classes of planar graphs. Part of quantum algebra research
         investigating subfactors and planar algebras.
 
+- 2014--2015
+    * *Miscellaneous technical and service jobs*
+        I worked as a smart electricity meter maintenance technician, a barista,
+        and a bakery assistant and delivery driver.
+
 - 2013--2014
     * *Temperley-Lieb categories and skein modules*
         The Australian National University.
