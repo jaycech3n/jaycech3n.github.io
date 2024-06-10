@@ -1,0 +1,55 @@
+ADD:
+====
+
+Interative Theorem Proving conference paper: homotopy type theory, proof assistant implementation
+
+
+Dear Symbolica team,
+
+I am a mathematician and computer scientist specializing in category theory, type theory and proof assistants. I am currently completing my PhD on the construction of categorical structures in type theory at the Functional Programming Laboratory of the University of Nottingham, and am due to submit my thesis in September this year.
+
+The goal of my research to date has been to understand how we can use type theory to express, reason about, and compute with higher and \(\infty\)-categorical structures that arise in mathematics, software, and physical systems. I am therefore keen to be considered for the position of category theory scientist at Symbolica, to apply category theory and type theory to structure our understanding, design and implementations of machine learning models, just as we have successfully done for the field of functional programming languages.
+
+% My current PhD research is on investigating approximations of semisimplicial types and more general ``Reedy fibrant'' inverse diagrams in homotopy type theory, higher models of type theory, and coherences for such constructions.
+% While this is not in exactly the same niches as the theory currently used in the published categorical deep learning literature, much of the underlying considerations are the same.\footnote{And of course, I am familiar with monad algebras, monoidal categories, and other basics.}
+
+While my current PhD research is not in exactly the same niches as the theory currently used in the published categorical deep learning literature, many of the underlying considerations are the same.
+%\footnote{And of course, I am familiar with monad algebras, monoidal categories, and other basics.}
+In particular, my work heavily involves simultaneously handling incarnations of the same categorical structure at wildly different abstraction levels.
+For instance, in my thesis I construct matching objects of Reedy fibrant diagrams using (op)fibrations of linear cosieves over inverse categories.
+This is concretely incarnated as an implementation in the Agda programming language,  designing encodings of these structures so as to simultaneously balance the constraints of economy of definitions (efficiency) ensuring correctness and termination of the code>.
+My previous research on diagrammatic categories for quantum topological invariants has also 
+
+I have had a longstanding interest in machine learning systems from since before the current boom, and and am very interested in using the mathematics of category theory and type theory to structure our understanding, design and implementations of machine learning models, just as we have successfully done for programming languages via the fields of functional programming and type theory. My current PhD research is aimed at constructing and reasoning with higher and categorical structures
+
+Before I began my PhD, I worked for a year at the Fraunhofer Institute in Germany, developing and implementing probabilistic graph models for natural language processing, which taught 
+
+In addition to my technical interests, I care deeply about guiding our technologies towards the freedom and flourishing of our societies to the best of our ability. I believe that a good mathematical understanding of the systems we create is a crucial aspect of doing so, and one of our responsibilities as scientists.
+
+My relevant experience and qualifications are listed in my CV, but I also summarize some of this below.
+
++ My previous category theory research was in diagrammatic categorical quantum algebra, linear monoidal and spherical fusion categories, with applications to topological invariants.
+  [https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OOY9aVYAAAAJ&citation_for_view=OOY9aVYAAAAJ:2osOgNQ5qMEC].
+
++ My current PhD research has to do with investigating encodings of higher and infinity-categorical structures in homotopy type theory, higher models of type theory, and coherences for such constructions.
+  This heavily involves working simultaneously on abstract categorical structures, such as matching objects of Reedy fibrant diagrams and (op)fibrations of linear cosieves over inverse categories, as well as low-level implementation details: designing encodings of these structures so as to simultaneously balance the constraints of economy of definitions (efficiency) ensuring correctness and termination of the code>.
+
+  - efficiency/economy of definitions
+  - enforce correctness and termination (safety/specification-conformance), provability of guarantees
+  - termination
+  
+  + economy of definition, ease of use, which still provably have all the required correctness properties.
+
+Type theory
+-----------
+
+
+Machine learning
+----------------
+
+Implementation and code
+-----------------------
+
+***Acknowledge that my research in CT has not been geared toward ML, but point to common points in terms of the CT.
+
+I have experience implementing machine learning models for natural language processing in industry, as well as with interfacing them with interactive and automated theorem provers in the form of ``hammer'' systems for proof assistants. 

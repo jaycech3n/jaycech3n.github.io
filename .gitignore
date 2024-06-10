@@ -1,3 +1,6 @@
 raw_files/
 thoughts/
 applications/2024-hausdorff-research-trimester/refs.bib
+*.log
+*.aux
+*.out

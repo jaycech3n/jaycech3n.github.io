@@ -1,0 +1,27 @@
++ In your view, what do category theory and type theory have to offer to deep learning, and machine learning more generally?
+
+Just as the power of category theory to encapsulate and manipulate higher-order functional structure has given us the framework in which to organize, abstract, generalize and exploit many common patterns and invariants in programming languages and algorithms, I believe that uncovering higher categorical structure in ML models will lead to the same benefits for ML architectures and their training algorithms.
+Being able to describe the large-scale structure of neural networks 2-categorically also suggests the possibility that one could describe some sort of higher category of neural networks, and even try to construct a type theory serving as an internal language of such.
+
+
++ How much do you know about machine learning, deep learning and optimisation, and what is your experience with their practical implementations?
+
+I studied the fundamentals of machine learning (fundamental statistical learning algorithms, MLPs, backpropagation, the universal approximation theorem, the basics of reinforcement learning) up to 2018, and led the tutorials for Masters-level courses in these subjects.
+I worked in industrial research at the Fraunhofer Institute in Germany, implementing probabilistic graphical models for textual analysis and natural language processing, which was integrated into the EU's Copernicus emergency response system.
+
+
++ What role do you think foundational mathematical research has in an industrial AI company?
+
+...
+
+
++ How do you think research projects should be designed, chosen, and carried out?
+
+This is a bit of a broad question... I don't think there's a one-size-fits-all approach to designing research projects; it always depends on the ultimate goal of the research, as well as the constraints under which they have to be carried out. But at the very least, I think a research project should always start with an aim in mind, even if this aim is very general. If a project is chosen to address a more targeted goal or solve a specific problem, it might be easier to break it down, think through the deliverables, and set concrete milestones to achieve. More basic curiousity-driven research, where the shape of the outcomes is a priori less clear, will not be as easily broken down into the "intended outcome/schedule" management framework, but one can still organize the project into constituent questions/goals that fit together to address the main aim.
+
+
++ What principles inform how you collaborate, both within a discipline and beyond it?
+
+1. Noncompetition and academic integrity. This goes beyond proper attribution and nonplagiarism. It also includes e.g. being honest about the strengths and weaknesses of any work I do, being able to clearly state and advocate for a particular approach to a problem I may want to take, but also acknowledging the advantages of a collaborator/someone else's approach and being able to switch up to a better approach.
+2. Mutual learning and sharing. In mathematical research, this means I always want to learn the intuitions others use to understand the mathematics, since I believe that having a large set of different points of view on a topic is the way to do good mathematics. For the same reason, I am also always very happy to share my understanding of a topic in hopes of contributing to others' improvement as well.
+When collaborating with people whose discipline or point of view is beyond what I'm familiar with, I always have an open, nonjudgmental mind and do my best to learn to understand things from their viewpoint.
