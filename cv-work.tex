@@ -1,0 +1,339 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode,colorlinks,allcolors=Navy}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage[svgnames,dvipsnames]{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+% \urlstyle{same}
+\hypersetup{}
+
+\author{}
+\date{}
+
+\usepackage[inner=2cm, outer=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{parskip}
+\usepackage{enumitem}
+\setlist{leftmargin=4ex, labelsep=2ex, label={\small\ding{98}}}
+
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\usepackage[p,osf]{cochineal}
+\usepackage[cochineal,vvarbb]{newtxmath}
+\usepackage[bb=libus,cal=boondoxupr,frak=euler]{mathalpha}
+\usepackage[scale=0.9]{newtxtt}
+\usepackage{nunito}
+
+\usepackage{fontawesome5,pifont}
+
+\usepackage{fancyhdr}
+\fancyhead[L,C,R]{}
+\fancyfoot[C]{\scriptsize Print version. Screen version available at \href{https://joshchen.io/cv.pdf}{\nolinkurl{joshchen.io/cv.pdf}}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\begin{document}
+
+\newcommand{\httpsurl}[1]{\href{https://#1}{\nolinkurl{#1}}}
+\newcommand{\pdficon}{{\scriptsize\faFilePdf[regular]}}
+\newcommand{\pdf}[1]{\pdficon\hspace{0.8ex}\httpsurl{#1}}
+
+\thispagestyle{fancy}
+
+{\sc\huge Joshua Chen}
+\vspace{1.5ex}
+\begin{itemize}
+\tightlist
+\item[\small\faPaperPlane] \href{mailto:joshua.chen@nottingham.ac.uk}{\nolinkurl{joshua.chen@nottingham.ac.uk}}
+\item[\small\faGithub] \httpsurl{github.com/jaycech3n}
+\item[\small\faGlobe] \httpsurl{joshchen.io}
+\end{itemize}
+\vspace{1.5ex}
+\textit{I am a PhD researcher at the University of Nottingham.
+I study how to use type theory to express, reason about, and compute with higher categorical structures that arise in mathematics, software and physical systems.}
+
+\subsection{Skills \& Experience}
+
+\begin{itemize}
+\item
+  \textbf{Programming languages and proof assistants}\\[0.8ex]
+  I have ten years of experience with multiple functional, OO and imperative programming languages (Haskell, Scala, OCaml, Standard ML, C++, Java, Python, \textellipsis) and proof assistants (Coq, Agda, Lean, Isabelle).
+
+\item
+  \textbf{Deep thought and critical thinking}\\[0.8ex]
+  My academic research work at the frontiers of mathematics and computer science has required the development of deep and critical thinking, which I'm also able to apply to the planning and design of projects.
+
+\item
+  \textbf{Technical communication}\\[0.8ex]
+  I'm adept at communicating technical and abstract ideas in clear and no-nonsense ways. See, for instance, \hyperref[subsec:expo-writing]{my expository writing}.
+
+\end{itemize}
+
+\subsection{Past Work}
+
+\begin{itemize}
+\item
+  \emph{Dependently typed and set-theoretic foundations for formalized mathematics.}\\
+  University of Innsbruck.\hfill
+  Jan 2019--Aug 2020\\[0.8ex]
+  Investigated dependently typed and set theoretic logics and machine learning-assisted tools for the formalization of mathematics in the Isabelle and Coq proof assistants, under the ERC-funded \href{https://project-smart.uibk.ac.at}{``SMART'' project} at the Computational Logic group.
+  This involved writing code in Standard ML and OCaml.
+
+\item
+  \emph{Machine learning and natural language processing for Copernicus EMS.}\\
+  Fraunhofer Institute for Intelligent Analysis and Information Systems.\hfill
+  2017--2018\\[0.8ex]
+  Worked in the Knowledge Discovery group, implenting and applying probabilistic models to analyze and classify topics in Twitter data corpora.
+  Implemented targeted topic models in Java, and used Python for natural language processing of Twitter and Facebook data.
+  This work was part of the European Union's E2mC project, a pilot project that used publicly available social media data for real-time support of its Copernicus emergency management service.
+
+\item
+  \emph{Enumeration and visualization of planar trivalent graphs.}\\
+  The Australian National University.\hfill
+  2015\\[0.8ex]
+  Developed and implemented algorithms in Scala to count and automatically draw certain classes of planar graphs.
+  Part of quantum algebra research investigating subfactors and planar algebras.
+\end{itemize}
+
+\subsection{Selected Expository Writing}\label{subsec:expo-writing}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Semantic (aka soft) types.}
+  2019.\hspace{0.5ex}
+  \pdf{joshchen.io/pdf/soft-types-abstract.pdf}
+\item
+  \emph{Computational Fact-Checking.}
+  2017.\hspace{0.5ex}
+  \pdf{joshchen.io/pdf/computational-fact-checking-report.pdf}
+\item
+  \emph{A pre-introduction to homotopy type theory.}
+  2017.\hspace{0.5ex}
+  \pdf{joshchen.io/pdf/hott-preintro-notes.pdf}
+\end{itemize}
+
+\subsection{Research}
+
+\begin{itemize}
+\item
+  \emph{Categories as Semicategories with Identities.}
+  \textsc{Extended abstract.}\\
+  29th International Conference on Types for Proofs and Programs (TYPES).
+  Jun 2023.
+  Valencia.\\
+  With Tom de Jong, Nicolai Kraus and Stiéphen Pradal.\\
+  \pdf{types2023.webs.upv.es/TYPES2023.pdf}
+\item
+  \emph{Semisimplicial Types in Internal Categories with Families.}
+  \textsc{Extended abstract.}\\
+  27th International Conference on Types for Proofs and Programs (TYPES).
+  Jun 2021.
+  Leiden (virtual).\\
+  With Nicolai Kraus.\\
+  \pdf{types21.liacs.nl/download/semisimplicial-types-in-internal-categories-with-families}
+\item
+  \emph{Homotopy Type Theory in Isabelle.}
+  \textsc{Conference paper.}\\
+  12th International Conference on Interactive Theorem Proving (ITP).
+  Jun 2021.
+  Rome (virtual).\\
+  \pdf{doi.org/10.4230/LIPIcs.ITP.2021.12}
+\item
+  \emph{An Implementation of Homotopy Type Theory in Isabelle.}
+  \textsc{Masters thesis.}\\
+  Sep 2018.
+  University of Bonn.\\
+  Type theory, mathematical logic and proof assistant implementation.\\
+  \pdf{arxiv.org/abs/1911.00399}
+\item
+  \emph{The Temperley-Lieb categories and skein modules.}
+  \textsc{Honours thesis.}\\
+  May 2014.
+  The Australian National University.\\
+  Diagrammatic quantum algebra and category theory.\\
+  \pdf{arxiv.org/abs/1502.06845}
+\end{itemize}
+
+\subsection{Selected Talks}
+
+\newcommand{\vidicon}{{\scriptsize\faVideo}}
+\newcommand{\slidesicon}{{\scriptsize\faDesktop}}
+\newcommand{\vid}[1]{\vidicon\hspace{0.8ex}\httpsurl{#1}}
+\newcommand{\slides}[1]{\slidesicon\hspace{0.8ex}\httpsurl{#1}}
+
+\begin{itemize}
+\item
+  \emph{Constructing Inverse Diagrams in Homotopical Type Theory.}
+  \textsc{Workshop presentation.}\\
+  EuroProofNet WG6 meeting.
+  Apr 2024.
+  KU Leuven.\\
+  \vid{youtu.be/cB9hml8YBj4}\\
+  \slides{europroofnet.github.io/_pages/WG6/Leuven/slides/jchen.pdf}
+\item
+  \emph{On internal models of type theory and Reedy fibrant diagrams.}
+  \textsc{Invited seminar talk.}\\
+  YaMCATS Meeting 29.
+  Dec 2022.
+  University of Manchester.\\
+  \slides{conferences.leeds.ac.uk/yamcats/wp-content/uploads/sites/84/2022/12/Joshua.pdf}
+\item
+  \emph{Semisimplicial Types in Internal Categories with Families.}
+  \textsc{Workshop presentation.}\\
+  27th International Conference on Types for Proofs and Programs (TYPES).
+  Jun 2021.
+  Leiden (virtual).\\
+  \vidicon\hspace{0.8ex}\href{https://joshchen.io/media/semisimplicial-types-in-internal-categories-with-families.mp4}{\texttt{joshchen.io/media/semisimplicial-types-in-internal-categories-with-families.mp4}}\\
+  \slides{joshchen.io/pdf/types-2021-slides.pdf}
+\item
+  \emph{Homotopy Type Theory in Isabelle.}
+  \textsc{Conference presentation.}\\
+  12th International Conference on Interactive Theorem Proving (ITP).
+  Jun 2021.
+  Rome (virtual).\\
+  \vid{youtu.be/fGnIdt_jPfA?t=4630}\\
+  \slides{joshchen.io/pdf/itp-2021-slides.pdf}
+\item
+  \emph{Isabelle/HoTT.}
+  \textsc{Invited seminar talk.}\\
+  Chair for Logic and Verification, Technical University of Munich.
+  Jul 2019.
+\item
+\emph{Hybrid and Alternative Logics in Isabelle: Isabelle/Set.}
+  \textsc{Doctoral program talk.}\\
+  Conference on Intelligent Computer Mathematics.
+  Jul 2019.
+  Prague.\\
+  \slides{joshchen.io/pdf/cicm-2019-slides.pdf}
+\end{itemize}
+
+\subsection{Teaching}
+
+I have been tutor and/or teaching assistant for the following courses.
+
+\begin{itemize}[leftmargin=7ex]
+\tightlist
+\item[2024]
+  \emph{\href{https://github.com/tomdjong/MGS-categorical-realizability}{Categorical realizability.}}
+  \textsc{Graduate course.}
+  \href{https://www.cs.le.ac.uk/events/mgs2024/}{Midlands Graduate School '24}.
+\item[2023]
+  \emph{\href{https://github.com/tomdjong/MGS-domain-theory}{Domain theory and denotational semantics.}}
+  \textsc{Graduate course.}
+  \href{https://www.cs.bham.ac.uk/~mhe/events/MGS23}{Midlands Graduate School '23}.
+\item[\small 2021--2023]
+  \emph{Introduction to formal reasoning.}
+  \textsc{Bachelors course.}
+  Formal logic in the Lean proof assistant.
+  University of Nottingham.
+\item[\small 2021--2023]
+  \emph{Introductory Haskell.}
+  \textsc{Bachelors course.}
+  University of Nottingham.
+\item[\small 2017--2018]
+  \emph{Machine learning.}
+  \textsc{Masters course.}
+  University of Bonn.
+\item[2017]
+  \emph{Data mining and knowledge discovery.}
+  \textsc{Masters course.}
+  University of Bonn.
+\item[2015]
+  \emph{Engineering mathematics.}
+  \textsc{Bachelors course.}
+  University of Canterbury, New Zealand.
+\item[2014]
+  \emph{Mathematics and applications.}
+  \textsc{Bachelors course.}
+  The Australian National University.
+\item[2014]
+  \emph{Mathematics and applications.}
+  \textsc{Bachelors course.}
+  University of Canterbury, New Zealand.
+\item[2013]
+  \emph{Discrete mathematics.}
+  \textsc{Bachelors course.}
+  University of Canterbury, New Zealand.
+\end{itemize}
+
+\subsection{Organization \& Service}
+
+\begin{itemize}[leftmargin=7ex]
+\item[\small 2022--2024]
+  \href{http://www.cs.nott.ac.uk/MGS}{\emph{Midlands Graduate School.}}
+  Supported exercise classes for graduate-level courses at the annual MGS spring school.
+  Organized setup, participant talks and social events at \href{https://www.cs.nott.ac.uk/~psznk/events/mgs22.html}{MGS 2022}.
+\item[\small 2021--2023]
+  \href{https://www.nottingham.ac.uk/research/groups/fp-lab/fp-lunch/fp-lunch.aspx}{\emph{FP Lunch}.}
+  Organized weekly lunchtime research seminar meetings for the Functional Programming Lab at the University of Nottingham.
+\end{itemize}
+
+\subsection{Education}
+
+\begin{itemize}[leftmargin=7ex]
+\item[\small {\scriptsize Oct} '20--]
+  \emph{Ph.D.~in Computer Science.}\\
+  University of Nottingham.
+  Advisor: Nicolai Kraus.
+
+\item[\small {\scriptsize Oct} '15--{\scriptsize Sep} '18]
+  \emph{Masters in Mathematics.}\\
+  University of Bonn.
+  % German GPA 1.9.
+  Advisor: Peter Koepke.
+
+\item[\small {\scriptsize Jun} '13--{\scriptsize Jul} '14]
+  \emph{B.Sc. (Hons) in Mathematics.}\\
+  The Australian National University.
+  % GPA 80\%.
+  First Class Honours.
+  Advisor: Scott Morrison.
+
+\item[\small {\scriptsize Feb} '10--{\scriptsize Dec} '12]
+  \emph{B.Sc. in Mathematics.}\\
+  University of Canterbury.
+  % GPA 8.64/9.00.
+  Dean's Congratulations.
+\end{itemize}
+
+\end{document}
