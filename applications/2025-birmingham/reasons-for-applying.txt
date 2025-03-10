@@ -1,0 +1,21 @@
+Please provide your reasons for applying for this role, skills, experience, and other interests and activities as appropriate to the post for which you are applying. (Please note the limit is 10,000 characters). 
+----
+
+%%%% The underlying motivation of my research is to develop homotopy type theory as a means to express, reason about, and compute with higher categorical structures that arise in mathematics, as well as in mathematical theories and models of software and physical systems.
+
+I am a PhD researcher in homotopy type theory and univalent foundations (HoTT/UF) at the University of Nottingham, supervised by Nicolai Kraus.
+I will soon be submitting my PhD thesis, and am applying to work thereafter with Eric as a postdoctoral researcher as I believe we would have complementary research motivations, interests and approaches.
+
+Over the course of my PhD, my research has focused on investigating constructions of semisimplicial diagrams in appropriate internal models of HoTT/UF. I developed a theory of higher categorical models of dependent type theory in HoTT/UF [preprint], and studied type theoretic representations of Reedy fibrant functors into such models [TYPES, WG6].
+Previous research related to HoTT/UF, proof assistants and categorical algebra is my work on implementation of dependent type theory in simply typed proof assistants [ITP], and on diagrammatic categorical invariants [Hons].
+
+I have given multiple well received talks on ongoing and published work at various conferences and meetings [TYPES, WG6, ITP, ASSUME], including invited talks at the Yorkshire and Midlands category theory seminar [YaMCATS] and at the Logic and Verification group at TU Munich.
+Also contributing to my fluency in communicating technical information is my experience teaching mathematics and computer science at undergraduate and graduate level
+
+[preprint]:
+[TYPES]:
+[WG6]:
+[ITP]:
+[Hons]:
+[YaMCATS]:
+
